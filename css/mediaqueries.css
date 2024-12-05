@@ -1,0 +1,8 @@
+@media screen and (max-width: 970px) {
+    .desktop_nav{
+        display: none;
+    }
+    .hamburger_nav{
+        display: flex;
+    }
+}
