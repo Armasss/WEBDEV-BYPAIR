@@ -114,155 +114,23 @@
     opacity: 1;
 }
 
-/* FAQ Section */
-/* FAQ Section */
-.left-column .faq {
-    margin-top: 40px;
-    padding: 20px;
-    text-align: left; /* Align text to the left */
-    position: relative;
-    max-width: 80%; /* Limit the width */
-    margin-left: auto;
-    margin-right: auto; /* Center the FAQ container */
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.1rem;
-    box-shadow: 0px 4px 15px rgba(255, 215, 0, 0.3); /* Subtle shadow for emphasis */
-    border-radius: 10px; /* Smooth rounded corners */
-    background: rgba(0, 0, 0, 0.5); /* Subtle transparent background */
-    padding: 20px;
-}
 
-/* FAQ Title */
 /* FAQ Section */
-.left-column .faq {
+.faq {
     margin-top: 40px;
     padding: 20px;
-    text-align: left; /* Align text to the left */
     position: relative;
-    max-width: 80%; /* Limit the width */
-    margin-left: auto;
-    margin-right: auto; /* Center the FAQ container */
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.1rem;
-    padding: 20px;
-}
-
-/* FAQ Title */
-/* FAQ Section */
-.left-column .faq {
-    margin-top: 40px;
-    text-align: left; /* Align text to the left */
-    position: relative;
-    max-width: 80%; /* Limit the width */
-    margin-left: auto;
-    margin-right: auto; /* Center the FAQ container */
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.1rem;
-    box-shadow: none; /* Remove box shadow */
-    border-radius: 0px; /* Remove rounded corners */
-    background: none; /* Remove background color */
-}
-
-/* FAQ Title */
-/* FAQ Section */
-.left-column .faq {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center align both title and contents horizontally */
-    justify-content: center; /* Center title vertically in relation to the content */
-    margin-top: 40px;
-    text-align: center;
-    position: relative;
-    max-width: 80%; /* Limit the width */
-    margin-left: auto;
-    margin-right: auto; /* Center the FAQ container */
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.1rem;
-    padding: 40px 20px;
-}
-
-/* FAQ Title */
-/* FAQ Section */
-.left-column .faq {
-    margin-top: 40px;
-    padding: 20px;
-    text-align: center;
-    position: relative;
-    max-width: 80%;
-    margin-left: auto;
+    max-width: 60%; /* Reduce width to prevent horizontal scrolling */
+    margin-left: 1%; /* Offset more to the left */
     margin-right: auto;
     color: white;
     font-family: "Poppins", sans-serif;
     font-size: 1.1rem;
-    padding: 40px 20px;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* FAQ Title */
-/* FAQ Section */
-.left-column .faq {
-    margin-top: 40px;
-    padding: 20px;
-    text-align: right; /* Align text to the right */
-    position: relative;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.1rem;
-    padding: 40px 20px;
-    border-left: 5px solid #ffd700; /* Vertical line on the left */
-}
-
-/* FAQ Title */
-/* FAQ Section */
-.left-column .faq {
-    margin-top: 40px;
-    padding: 20px;
-    position: relative;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.1rem;
-    padding: 20px;
-}
-
-/* FAQ Title */
-.left-column .faq-title {
-    font-size: 2rem; /* Larger font size */
-    font-weight: 900;
-    color: #ffd700; /* Gold color */
-    margin-bottom: 20px;
-    text-align: center; /* Center-align the title */
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Bold black outline */
-    position: relative;
-    display: inline-block;
-    padding-bottom: 5px;
-    border-bottom: 3px solid rgba(255, 215, 0, 0.6); /* Cinematic underline */
-}
-
-/* FAQ Question and Answer */
-/* FAQ Section */
-.left-column .faq {
-    margin-top: 40px;
-    padding: 20px;
-    position: relative;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.1rem;
-}
-
-/* FAQ Title */
-.left-column .faq-title {
+.faq-title {
     font-size: 2rem;
     font-weight: 900;
     color: #ffd700;
@@ -275,7 +143,7 @@
 }
 
 /* FAQ Question and Answer */
-.left-column .faq p {
+.faq p {
     margin: 20px 0;
     padding: 10px 20px;
     color: #ffd700;
@@ -289,10 +157,10 @@
 }
 
 /* Add Vertical Line */
-.left-column .faq p::before {
+.faq p::before {
     content: '';
     position: absolute;
-    left: -15px; /* Adjusted to keep the line close to the text */
+    left: -15px; /* Keep the vertical line close to the text */
     top: 10%;
     height: 80%;
     width: 5px;
@@ -301,12 +169,11 @@
 }
 
 /* Hover Effect */
-.left-column .faq p:hover {
+.faq p:hover {
     transform: scale(1.03);
     color: white;
     text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
 }
-
 
 
 
@@ -427,7 +294,7 @@
 }
 
 
-/* Carousel  */
+/* Carousel */
 /* Main Carousel */
 .main-carousel {
     position: relative;
@@ -435,7 +302,7 @@
     align-items: center;
     justify-content: center;
     margin: 40px auto;
-    overflow: hidden;
+    overflow: visible;
     max-width: 80%;
     height: fit-content;
     padding: 20px;
@@ -461,20 +328,19 @@
     color: #ffd700;
     font-size: 2rem;
     position: absolute;
-    top: 50%;
+    top: 50%; /* Vertically center the buttons */
     transform: translateY(-50%);
     cursor: pointer;
     z-index: 10;
+    pointer-events: all; /* Ensure the buttons are clickable */
 }
 
 .carousel-btn.prev-btn {
-    left: 0;
-    margin-left: -10px;
+    left: -2rem; /* Adjust this value to move further left */
 }
 
 .carousel-btn.next-btn {
-    right: 0;
-    margin-right: 10px;
+    right: -2rem; /* Adjust this value to move further right */
 }
 
 .carousel-btn:hover {
@@ -483,8 +349,8 @@
 
 /* Cards */
 .card {
-    width: 300px;
-    height: 180px;
+    width: 300px; /* Adjust width */
+    aspect-ratio: 16 / 9; /* Maintain 16:9 ratio */
     border-radius: 10px;
     overflow: hidden;
     position: relative;
