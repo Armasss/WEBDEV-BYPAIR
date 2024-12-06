@@ -7,7 +7,7 @@ html, body {
 body {
     font-family: "Inter", sans-serif;
     margin: 0;
-    padding: 1000px 0 0 0; /* Increased top padding to account for fixed navbar */
+    padding: 10px 0 0 0 !important; /* Increased top padding to account for fixed navbar */
     background-color: #000;
     color: #ffd700;
     overflow-y: auto !important; /* Enforce vertical scrolling */
@@ -139,7 +139,9 @@ body {
 /* Email Section */
 .email-contact {
     text-align: left;
-    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-top: 40px;
+    margin-bottom: 200px;
 }
 
 .email-contact h3 {
