@@ -10,7 +10,7 @@
 .index-carousel-container {
     position: relative;
     width: 85%;
-    height: 65vh;
+    height: 70vh;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -179,4 +179,8 @@
     color: black;
     transform: translateY(-50%) scale(1.1);
     box-shadow: 0 8px 16px rgba(255, 215, 0, 0.6);
+}
+
+footer{
+    position: absolute;
 }

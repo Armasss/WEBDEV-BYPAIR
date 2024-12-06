@@ -3,11 +3,11 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: auto;
+    width: 1440px;
     align-items: center;
     justify-content: center;
-    margin-top: 40px;
-    margin-bottom: 200px;
+    margin: 60px auto 100px auto;
+
   
   }
   .container {
@@ -16,6 +16,7 @@
     width: fit-content;
     overflow: hidden;
     border-radius: 10px;
+    transition: transform 0.5s ease;
     
   }
   .card {
@@ -46,6 +47,10 @@
   
   .container:hover video {
     opacity: 1;
+  }
+
+  .container:hover {
+    transform: scale(1.1);
   }
   
   .rating {
@@ -98,6 +103,7 @@
   
   .game-details h3 {
     font-size: 10px;
+    margin-bottom: 10px;
   }
   
   .game-desc {
@@ -106,6 +112,7 @@
   
   .game-desc p {
     text-align: justify;
+    margin-bottom: 10px;
   }
   .platforms {
     margin-top: 10px;
