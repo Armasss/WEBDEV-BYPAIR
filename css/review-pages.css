@@ -287,7 +287,6 @@
 }
 
 
-
 /* Carousel */
 /* Main Carousel */
 .main-carousel {
@@ -341,10 +340,15 @@
     color: white;
 }
 
+.carousel-btn.disabled {
+    opacity: 0.5; /* Dim the button */
+    pointer-events: none; /* Prevent interaction */
+}
+
 /* Cards */
 .card {
-    width: 300px; /* Adjust width */
-    height: 160px; /* Set a custom height slightly smaller than 16:9 */
+    flex: 0 0 calc((100% - 80px) / 5); /* Maintain five visible cards */
+    aspect-ratio: 16 / 9; /* Maintain 16:9 ratio */
     border-radius: 10px;
     overflow: hidden;
     position: relative;
