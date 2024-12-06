@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Game Reviews</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <script src="/js/scripts.js" defer></script>
+    <script src="/js/contact.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="nav">
+            <h1>Game <span>Reviews</span></h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="review_home.html">Review</a>
+                <a href="about.html">About</a>
+                <a class="active" href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+
+        <!-- Email Section -->
+        <div class="email-contact">
+            <h3>Email Us</h3>
+            <ul>
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:jeromebrent.tegrado@tup.edu.ph">jeromebrent.tegrado@tup.edu.ph</a>
+                </li>
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:markrainier.armas@tup.edu.ph">markrainier.armas@tup.edu.ph</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Form Section -->
+        <div class="form-container">
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+                </div>
+                <button type="submit" class="send-btn">Send Message</button>
+            </form>
+        </div>
+
+        <!-- Success Notification -->
+        <div class="notification" id="notification">
+            Email sent successfully!
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mark Rainier Armas & Jerome Brent Tegrado. All rights reserved.</p>
+    </footer>
+</body>
+</html>

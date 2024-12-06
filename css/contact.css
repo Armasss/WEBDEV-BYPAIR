@@ -1,0 +1,138 @@
+/* General Font Style */
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #ffd700;
+}
+
+/* Contact Section */
+.contact-section {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 800px;
+    color: #ffd700;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.email-contact {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.email-contact h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffd700;
+}
+
+.email-contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.email-contact li {
+    margin: 10px 0;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.email-contact li i {
+    margin-right: 10px;
+    color: #ffd700;
+}
+
+.email-contact a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.email-contact a:hover {
+    color: #ffffff;
+}
+
+/* Form Section */
+.form-container {
+    margin: 0 auto;
+    text-align: left;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+input, textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ffd700;
+    background-color: #333;
+    color: #ffd700;
+    outline: none;
+}
+
+textarea {
+    min-height: 100px;
+    resize: none;
+}
+
+input:focus, textarea:focus {
+    border-color: #ffffff;
+}
+
+.send-btn {
+    background-color: #ffd700;
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.send-btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Notification */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: none;
+    z-index: 9999;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
