@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const currentGame = games[currentGameIndex];
         const gameTitle = currentGame.getAttribute("data-title");
         gameTitleElement.textContent = gameTitle;
+        gameTitleElement.style.fontWeight = "900";
   
         // Trigger slide-in animation
         gameTitleElement.style.animation = "none";
