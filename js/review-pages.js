@@ -14,13 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Highlight the right column if the game title matches
-    const details = document.querySelector(".right-column");
-    const header = document.querySelector(".left-column h1");
-
-    if (header.textContent === "Red Dead Redemption 2") {
-        details.style.boxShadow = "0 4px 15px rgba(255, 215, 0, 0.7)";
-    }
 
     // Carousel Logic
     const track = document.querySelector('.carousel-track');

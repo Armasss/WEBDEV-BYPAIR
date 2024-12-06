@@ -85,7 +85,7 @@
     </header>
     <div class="main">
       <div class="container">
-        <div class="card" data-popup="popup1">
+        <div class="card" data-popup="popup1" onclick="window.location.href='/pages-htmls/review-pages/review-rdr2.html'">
           <img
             class="banner"
             src="/assets/images/gamebanner/rdr2.jpg"
@@ -790,5 +790,13 @@
         © 2024 Mark Rainier Armas & Jerome Brent Tegrado. All rights reserved.
       </p>
     </footer>
+
+    <script>
+      // JavaScript to navigate to another page
+      document.getElementById('card').addEventListener('click', function () {
+          // Change the URL to navigate to another HTML file
+          window.location.href = './review-pages/review-rdr2.html';
+      });
+  </script>
   </body>
 </html>

@@ -46,5 +46,7 @@ menuLinks.forEach(link => {
   });
 });
 
+document.addEventListener('click', closeMenuOnClickOutside);
+
 
 

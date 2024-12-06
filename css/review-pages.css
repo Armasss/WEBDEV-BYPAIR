@@ -1,6 +1,6 @@
 /* Main Container */
-*{
-    //border: 1px solid red;
+{
+    border: 1px solid red;
 }
 .breadcrumb {
 
@@ -36,7 +36,6 @@
 }
 
 .main{
-   //border: 1px solid red;
     width: 1280px;
     margin: 0px auto;
     display: flex;
@@ -57,11 +56,11 @@
 
 /* Left Column */
 .left-column {
-    width: 70%
+    width: 75%
 }
 
 .left-column p {
-    margin-bottom: 15px;
+    margin: 30px 0px;
 }
 
 .breadcrumb-active {
@@ -70,39 +69,53 @@
 }
 
 .left-column h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 10px;
     color: #ffd700;
     font-weight: 900;
 }
 
 .left-column h2 {
-    margin: 20px 0 10px;
-    font-size: 1.5rem;
+    margin: 40px 0px;
+    font-size: 2.5rem;
     color: white;
     border-bottom: 2px solid #ffd700;
     display: inline-block;
     font-weight: 700;
 }
-
+.trailer{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 iframe {
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.7);
-    width: 800px;
+    width: 80%;
     aspect-ratio: 16 / 9;
-    margin: 0px auto;
+    margin: auto;
 }
 
 /* Image Hover Effect */
 .image-container {
+    border-radius: 10px;
+    overflow: hidden;
     position: relative;
-    margin-bottom: 20px;
+    width: 600px;
+    aspect-ratio: 16/9;
+    background-color: #000;
+    transition: transform 0.5s ease;
+    margin: 0px auto;
 }
 
 .image-container img {
-    width: 80% !important; /* Adjust the width */
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 
@@ -110,13 +123,18 @@ iframe {
     position: absolute;
     bottom: 10px;
     left: 10px;
-    background: rgba(0, 0, 0, 0.6);
-    color: #ffd700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 5px 10px;
     border-radius: 5px;
-    opacity: 0;
+    color: #ffd700;
+    font-size: 16px;
+    background-color: black;
     transition: opacity 0.3s ease;
+    opacity: 0;
 }
+
 
 .image-container:hover img {
     box-shadow: 0px 4px 15px rgba(255, 215, 0, 0.7);
@@ -129,16 +147,12 @@ iframe {
 
 /* FAQ Section */
 .faq {
-    margin-top: 40px;
+    margin: 40px auto;
     padding: 20px;
     position: relative;
-    max-width: 60%; /* Reduce width to prevent horizontal scrolling */
-    margin-left: 1%; /* Offset more to the left */
-    margin-right: auto;
     color: white;
     font-family: "Poppins", sans-serif;
     font-size: 1.1rem;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* FAQ Title */
@@ -168,8 +182,10 @@ iframe {
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
+
+
 /* Add Vertical Line */
-.faq p::before {
+.qna p::before {
     content: '';
     position: absolute;
     left: -15px; /* Keep the vertical line close to the text */
@@ -192,7 +208,8 @@ iframe {
 
 /* Right Column */
 .right-column {
-    width: 30%;
+    width: 25%;
+    height: auto;
 }
 
 /* Header */
@@ -397,3 +414,51 @@ iframe {
     background-color: black;
     opacity: 1;
 }
+
+.rating i{
+font-size: 10px;
+padding: 0px 1.5px;
+}
+
+
+#faq-container {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  .title {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+.title{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffd700;
+  }
+  .faq-container {
+    width: 50%;
+  }
+  .faq {
+    margin-bottom: 1rem;
+    width: 70%;
+  }
+  blockquote {
+    border-left: 6px solid White;
+    padding-left: 1rem;
+  }
+  h4 {
+    color: #ffd700;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
