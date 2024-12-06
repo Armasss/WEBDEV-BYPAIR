@@ -1,0 +1,398 @@
+/* Main Container */
+
+.breadcrumb {
+    background-color: rgba(0, 0, 0, 0.8); /* Subtle dark background */
+    color: #ffd700; /* Gold text color */
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin-top: 80px; /* Space below the navbar */
+    margin-bottom: 20px; /* Space above the game title */
+    border-radius: 5px; /* Smooth rounded edges */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    text-align: left;
+}
+
+.breadcrumb p {
+    margin: 0;
+}
+
+.breadcrumb a {
+    color: #ffffff; /* White for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+    color: #ffd700; /* Gold on hover */
+}
+
+.breadcrumb-active {
+    font-weight: bold;
+    color: #ffd700;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 20px auto;
+    color: white;
+    padding-bottom: 20px;
+    overflow-x: hidden; /* Remove horizontal scrollbar */
+}
+
+/* Left Column */
+.left-column {
+    flex: 3;
+    padding: 20px;
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+.left-column p {
+    margin-bottom: 15px;
+}
+
+.breadcrumb-active {
+    font-weight: bold;
+    color: #ffd700;
+}
+
+.left-column h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ffd700;
+    font-weight: 900;
+}
+
+.left-column h2 {
+    margin: 20px 0 10px;
+    font-size: 1.5rem;
+    color: white;
+    border-bottom: 2px solid #ffd700;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.trailer iframe {
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.7);
+}
+
+/* Image Hover Effect */
+.image-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 80% !important; /* Adjust the width */
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.image-container .hover-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffd700;
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover img {
+    box-shadow: 0px 4px 15px rgba(255, 215, 0, 0.7);
+}
+
+.image-container:hover .hover-text {
+    opacity: 1;
+}
+
+
+/* FAQ Section */
+.faq {
+    margin-top: 40px;
+    padding: 20px;
+    position: relative;
+    max-width: 60%; /* Reduce width to prevent horizontal scrolling */
+    margin-left: 1%; /* Offset more to the left */
+    margin-right: auto;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* FAQ Title */
+.faq-title {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #ffd700;
+    margin-bottom: 20px;
+    text-align: left; /* Align title to the left */
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 3px solid rgba(255, 215, 0, 0.6);
+    margin-left: -200px; /* Push title to the utmost left */
+}
+
+/* FAQ Question and Answer */
+.faq p {
+    margin: 20px 0;
+    padding: 10px 20px;
+    color: #ffd700;
+    font-weight: bold;
+    line-height: 1.5;
+    cursor: pointer;
+    text-align: left;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    position: relative;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Add Vertical Line */
+.faq p::before {
+    content: '';
+    position: absolute;
+    left: -15px; /* Keep the vertical line close to the text */
+    top: 10%;
+    height: 80%;
+    width: 5px;
+    background: linear-gradient(to bottom, white 50%, #ffd700 50%);
+    border-radius: 5px;
+}
+
+/* Hover Effect */
+.faq p:hover {
+    transform: scale(1.03);
+    color: white;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
+
+
+
+/* Right Column */
+.right-column {
+    flex: 1 !important; /* Maintain size proportion */
+    padding: 0 !important; /* Remove unnecessary padding */
+    position: sticky !important;
+    top: 70px !important; /* Stick at the top */
+    margin-left: -280px; /* Move column more to the left */
+    margin-right: 20px; /* Maintain space from the scrollbar */
+    margin-bottom: 40px !important; /* Add spacing below */
+    color: white !important;
+    font-family: "Poppins", sans-serif !important;
+    width: 90% !important; /* Set a manageable width */
+    max-width: 350px !important; /* Limit the maximum width */
+    height: fit-content !important; /* Adjust dynamically to content */
+    overflow: hidden !important; /* Prevent unwanted scrolling */
+    background: none !important; /* Fully remove the background */
+    box-shadow: none !important; /* Remove the shadow effect */
+}
+
+/* Header */
+.right-column .game-details h2 {
+    font-size: 1.4rem !important;
+    color: #ffd700 !important;
+    margin-bottom: 5px !important;
+    text-align: center !important;
+}
+
+.right-column .game-details h3 {
+    font-size: 1.1rem !important;
+    color: #ffffff !important;
+    text-align: center !important;
+    margin-bottom: 10px !important;
+}
+
+/* Game Description */
+.right-column .game-desc p {
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+    text-align: justify !important;
+    color: #ffffff !important;
+}
+
+/* Platforms Section */
+.right-column .platforms {
+    margin-top: 15px !important;
+}
+
+.right-column .platforms h2 {
+    font-size: 1.1rem !important;
+    color: #ffd700 !important;
+    margin-bottom: 10px !important;
+}
+
+.right-column .platforms .platform-ctn {
+    display: flex !important;
+    justify-content: space-evenly !important; /* Equal spacing */
+    gap: 10px !important;
+}
+
+.right-column .platforms .platform-icon {
+    width: 30px !important; /* Adjusted size */
+    height: 30px !important;
+    filter: drop-shadow(0px 2px 5px rgba(255, 255, 255, 0.3)) !important;
+    transition: transform 0.3s ease, filter 0.3s ease !important;
+    margin: 0 5px 10px !important; /* Add spacing between icons */
+}
+
+.right-column .platforms .platform-icon:hover {
+    transform: scale(1.1) !important;
+    filter: drop-shadow(0px 4px 15px rgba(255, 255, 255, 0.8)) !important;
+}
+
+/* Tags Section */
+.right-column .tags-container {
+    margin-top: 15px !important;
+}
+
+.right-column .tags-container h2 {
+    font-size: 1.1rem !important;
+    color: #ffd700 !important;
+    margin-bottom: 10px !important;
+}
+
+.right-column .tags-container ul {
+    list-style: none !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+}
+
+.right-column .tags-container ul li {
+    display: inline-block !important;
+    padding: 5px 10px !important;
+    font-size: 0.85rem !important; /* Reduced size */
+    font-weight: bold !important;
+    background-color: #ffd700 !important;
+    color: #000000 !important;
+    border-radius: 5px !important;
+    transition: transform 0.3s ease, background-color 0.3s ease !important;
+}
+
+.right-column .tags-container ul li:hover {
+    transform: scale(1.1) !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+
+
+/* Carousel */
+/* Main Carousel */
+.main-carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+    overflow: visible;
+    max-width: 80%;
+    height: fit-content;
+    padding: 20px;
+}
+
+/* Carousel Track */
+.carousel-track-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+/* Carousel Buttons */
+.carousel-btn {
+    background: none;
+    border: none;
+    color: #ffd700;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%; /* Vertically center the buttons */
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+    pointer-events: all; /* Ensure the buttons are clickable */
+}
+
+.carousel-btn.prev-btn {
+    left: -2rem; /* Adjust this value to move further left */
+}
+
+.carousel-btn.next-btn {
+    right: -2rem; /* Adjust this value to move further right */
+}
+
+.carousel-btn:hover {
+    color: white;
+}
+
+/* Cards */
+.card {
+    width: 300px; /* Adjust width */
+    height: 160px; /* Set a custom height slightly smaller than 16:9 */
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    background-color: #000;
+    transition: transform 0.5s ease;
+}
+
+.card img,
+.card video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card video {
+    opacity: 0;
+}
+
+.card:hover video {
+    opacity: 1;
+}
+
+.card:hover img {
+    opacity: 0;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+/* Ratings */
+.rating {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #ffd700;
+    font-size: 16px;
+    background-color: black;
+    opacity: 0.8;
+}

@@ -1,10 +1,10 @@
-/* Index JS */
+/* Main JS */
 document.addEventListener("DOMContentLoaded", () => {
-    const indexGames = document.querySelectorAll(".index-game-carousel");
-    const gameTitleElement = document.querySelector("#index-game-title");
-    const leftBtn = document.querySelector("#index-left-btn");
-    const rightBtn = document.querySelector("#index-right-btn");
-    const indexWords = document.querySelectorAll(".index-word");
+    const games = document.querySelectorAll(".game-carousel");
+    const gameTitleElement = document.querySelector("#game-title");
+    const leftBtn = document.querySelector("#left-btn");
+    const rightBtn = document.querySelector("#right-btn");
+    const words = document.querySelectorAll(".word");
   
     let currentGameIndex = 0;
     let currentImageIndex = 0;
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     // Update game title dynamically
     function updateGameTitle() {
-        const currentGame = indexGames[currentGameIndex];
+        const currentGame = games[currentGameIndex];
         const gameTitle = currentGame.getAttribute("data-title");
         gameTitleElement.textContent = gameTitle;
   
@@ -26,14 +26,14 @@ document.addEventListener("DOMContentLoaded", () => {
   
     // Show a specific image within a game
     function showImage(gameIndex, imageIndex) {
-        const images = indexGames[gameIndex].querySelectorAll("img");
+        const images = games[gameIndex].querySelectorAll("img");
         images.forEach((img, i) => img.classList.toggle("active", i === imageIndex));
     }
   
     // Start cycling images for the active game
     function startImageCycle() {
         clearInterval(imageInterval);
-        const images = indexGames[currentGameIndex].querySelectorAll("img");
+        const images = games[currentGameIndex].querySelectorAll("img");
         currentImageIndex = 0;
         showImage(currentGameIndex, currentImageIndex);
   
@@ -46,33 +46,32 @@ document.addEventListener("DOMContentLoaded", () => {
     // Start cycling words for cinematic text
     function startCinematicText() {
         setInterval(() => {
-            indexWords.forEach((word, i) => {
-                word.classList.toggle("index-yellow", i === currentWordIndex);
+            words.forEach((word, i) => {
+                word.classList.toggle("yellow", i === currentWordIndex);
             });
-            currentWordIndex = (currentWordIndex + 1) % indexWords.length;
+            currentWordIndex = (currentWordIndex + 1) % words.length;
         }, 2000);
     }
   
     // Show a specific game
     function showGame(index) {
-        indexGames.forEach((game, i) => game.classList.toggle("active", i === index));
+        games.forEach((game, i) => game.classList.toggle("active", i === index));
         updateGameTitle();
         startImageCycle();
     }
   
     // Event listeners for navigation
     rightBtn.addEventListener("click", () => {
-        currentGameIndex = (currentGameIndex + 1) % indexGames.length;
+        currentGameIndex = (currentGameIndex + 1) % games.length;
         showGame(currentGameIndex);
     });
   
     leftBtn.addEventListener("click", () => {
-        currentGameIndex = (currentGameIndex - 1 + indexGames.length) % indexGames.length;
+        currentGameIndex = (currentGameIndex - 1 + games.length) % games.length;
         showGame(currentGameIndex);
     });
   
     // Initialize
     showGame(currentGameIndex);
     startCinematicText();
-  });
-  
+});
