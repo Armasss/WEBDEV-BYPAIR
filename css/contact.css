@@ -80,8 +80,10 @@ body {
 
 .email-contact a:hover {
     color: #ffffff;
-    transform: scale(1.1); /* Hover effect */
+    text-decoration: underline;
+    transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
 }
+
 
 /* Form Section */
 .form-container {
