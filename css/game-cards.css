@@ -1,0 +1,154 @@
+/* Game Cards with pop up card */
+.main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 200px;
+  
+  }
+  .container {
+    position: relative;
+    margin: 30px;
+    width: fit-content;
+    overflow: hidden;
+    border-radius: 10px;
+    
+  }
+  .card {
+    width: 28.125rem;
+    aspect-ratio: 16 / 9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+  
+  .card img,
+  .card video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease;
+  }
+  
+  .card video {
+    opacity: 0;
+  }
+  
+  .container:hover .banner {
+    opacity: 0;
+  }
+  
+  .container:hover video {
+    opacity: 1;
+  }
+  
+  .rating {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #ffd700; /* Gold color for stars */
+    font-size: 16px;
+    background-color: black;
+  }
+  
+  .container:hover .rating {
+    opacity: 0; /* Stars fade out with the image */
+    transition: opacity 0.5s ease;
+  }
+  
+  .rating i {
+    padding: 0px 2px;
+  }
+  
+  .popup-card {
+    position: absolute;
+    top: 0;
+    left: 440px;
+    width: 300px;
+    height: auto;
+    background-color: rgb(10, 10, 10);
+    color: #fff;
+    border-radius: 8px;
+    display:none;
+    padding: 20px;
+    z-index: 9999;
+    font-size: 12px;
+  }
+  
+  
+  .game-details * {
+    margin: 0px;
+  }
+  .game-details h2 {
+    color: rgba(225, 215, 0, 1);
+    font-size: 18px;
+    margin-bottom: 3px;
+  }
+  
+  .game-details h3 {
+    font-size: 10px;
+  }
+  
+  .game-desc {
+    margin-top: 10px;
+  }
+  
+  .game-desc p {
+    text-align: justify;
+  }
+  .platforms {
+    margin-top: 10px;
+  }
+  
+  .platforms h2{
+    color: #ffd700;
+    margin-bottom:  0px
+  }
+  
+  .platform-ctn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .platforms img {
+    width: 1.5rem;
+  }
+  
+  .tags-container {
+    margin-top: 10px;
+  }
+  
+  .tags-container h2 {
+    margin-bottom: 10px;
+    color: #ffd700
+  }
+  
+  .tags-container li {
+    list-style: none;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    background-color: #ffd700;
+    color: black;
+    border-radius: 5px;
+    padding: 3px 10px;
+  }
+  
+  /* end of game cards with popup */
+  
