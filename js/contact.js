@@ -3,17 +3,25 @@ document.addEventListener("DOMContentLoaded", () => {
     const notification = document.getElementById("notification");
 
     form.addEventListener("submit", (e) => {
-        e.preventDefault(); // Prevent form submission
+        e.preventDefault(); // Prevent default form submission
 
-        // Display the notification
-        notification.style.display = "flex";
+        // Check if the form is valid
+        if (form.checkValidity()) {
+            // Add 'show' class to display notification
+            notification.classList.remove('hide');
+            notification.classList.add('show');
 
-        // Automatically hide the notification after 3 seconds
-        setTimeout(() => {
-            notification.style.display = "none";
-        }, 3000);
+            // Remove 'show' class and add 'hide' class after 3 seconds
+            setTimeout(() => {
+                notification.classList.remove('show');
+                notification.classList.add('hide');
+            }, 3000);
 
-        // Clear the form fields
-        form.reset();
+            // Clear the form fields after showing the notification
+            form.reset();
+        } else {
+            // If the form is invalid, let the browser show validation messages
+            form.reportValidity();
+        }
     });
 });
