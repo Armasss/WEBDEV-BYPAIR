@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: #000;
     color: #ffd700;
+    overflow-y: auto !important; /* Enforce vertical scrolling */
 }
 
 /* Contact Section */
@@ -13,14 +14,26 @@ body {
     margin: 50px auto;
     max-width: 800px;
     color: #ffd700;
+    padding: 0 15px; /* Add padding for better view on smaller screens */
 }
 
 .contact-section h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
     color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: transform 0.3s, color 0.3s; /* Add hover transition */
 }
 
+.contact-section h2:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    color: #ffd700; /* Hover color */
+}
+
+/* Email Section */
 .email-contact {
     text-align: left;
     margin-bottom: 40px;
@@ -30,6 +43,9 @@ body {
     font-size: 1.5rem;
     margin-bottom: 10px;
     color: #ffd700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .email-contact ul {
@@ -43,10 +59,10 @@ body {
     display: flex;
     align-items: center;
     color: #ffffff;
+    gap: 10px;
 }
 
 .email-contact li i {
-    margin-right: 10px;
     color: #ffd700;
 }
 
@@ -54,11 +70,12 @@ body {
     color: #ffd700;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
+    transition: color 0.3s, transform 0.3s; /* Hover transition */
 }
 
 .email-contact a:hover {
     color: #ffffff;
+    transform: scale(1.1); /* Hover effect */
 }
 
 /* Form Section */
@@ -83,6 +100,9 @@ label {
     font-size: 1rem;
     margin-bottom: 5px;
     color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 input, textarea {
@@ -93,15 +113,22 @@ input, textarea {
     background-color: #333;
     color: #ffd700;
     outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:hover, textarea:hover {
+    border-color: #ffffff;
+    box-shadow: 0 0 10px #ffd700; /* Glow effect */
+}
+
+input:focus, textarea:focus {
+    border-color: #ffffff;
+    box-shadow: 0 0 8px #ffffff; /* Focus highlight */
 }
 
 textarea {
     min-height: 100px;
     resize: none;
-}
-
-input:focus, textarea:focus {
-    border-color: #ffffff;
 }
 
 .send-btn {
@@ -114,25 +141,51 @@ input:focus, textarea:focus {
     border-radius: 5px;
     cursor: pointer;
     text-transform: uppercase;
-    transition: all 0.3s;
+    transition: all 0.3s, transform 0.3s; /* Hover transition */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 .send-btn:hover {
     background-color: #fff;
     color: #000;
+    transform: scale(1.05); /* Hover zoom effect */
 }
 
 /* Notification */
 .notification {
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: #28a745;
     color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1rem;
-    display: none;
-    z-index: 9999;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    display: none !important; /* Initially hidden */
+    z-index: 1000;
+    box-shadow: 0 8px 20px rgba(40, 167, 69, 0.8); /* Stronger shadow */
+    border: 2px solid #fff; /* Added contrast */
+    animation: fadeInOut 3s ease-in-out forwards; /* Fade-in-out animation */
+    align-items: center;
+    gap: 10px;
+}
+
+/* Keyframes for Notification Animation */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    10%, 90% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -40%);
+    }
 }
