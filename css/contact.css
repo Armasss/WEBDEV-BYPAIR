@@ -1,11 +1,15 @@
 /* General Font Style */
+html, body {
+    height: 100%;
+    overflow-y: auto !important; /* Enforce vertical scrolling */
+}
+
 body {
     font-family: "Inter", sans-serif;
     margin: 0;
     padding: 0;
     background-color: #000;
     color: #ffd700;
-    overflow-y: auto !important; /* Enforce vertical scrolling */
 }
 
 /* Contact Section */
@@ -156,36 +160,46 @@ textarea {
 
 /* Notification */
 .notification {
-    position: fixed;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #28a745;
-    color: #fff;
-    padding: 20px 30px;
-    border-radius: 10px;
-    font-size: 1.2rem;
+    position: fixed !important;
+    top: 20% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    background-color: #28a745 !important;
+    color: #fff !important;
+    padding: 20px 30px !important;
+    border-radius: 10px !important;
+    font-size: 1.2rem !important;
     display: none !important; /* Initially hidden */
-    z-index: 1000;
-    box-shadow: 0 8px 20px rgba(40, 167, 69, 0.8); /* Stronger shadow */
-    border: 2px solid #fff; /* Added contrast */
-    animation: fadeInOut 3s ease-in-out forwards; /* Fade-in-out animation */
-    align-items: center;
-    gap: 10px;
+    z-index: 10000 !important;
+    box-shadow: 0 8px 20px rgba(40, 167, 69, 0.8) !important; /* Stronger shadow */
+    border: 2px solid #fff !important; /* Added contrast */
+    align-items: center !important;
+    gap: 10px !important;
+}
+
+/* Notification Visible */
+.notification.show {
+    display: flex !important;
+    animation: fadeInOut 3s ease-in-out forwards !important;
+}
+
+/* Notification Hidden */
+.notification.hide {
+    display: none !important;
 }
 
 /* Keyframes for Notification Animation */
 @keyframes fadeInOut {
     0% {
         opacity: 0;
-        transform: translate(-50%, -60%);
+        transform: translate(-50%, -60%) !important;
     }
     10%, 90% {
         opacity: 1;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%) !important;
     }
     100% {
         opacity: 0;
-        transform: translate(-50%, -40%);
+        transform: translate(-50%, -40%) !important;
     }
 }
