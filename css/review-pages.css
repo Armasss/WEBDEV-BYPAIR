@@ -140,7 +140,6 @@
     display: inline-block;
     padding-bottom: 5px;
     border-bottom: 3px solid rgba(255, 215, 0, 0.6);
-    margin-left: -200px; /* Push title to the utmost left */
 }
 
 /* FAQ Question and Answer */

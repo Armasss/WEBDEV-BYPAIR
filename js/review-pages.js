@@ -22,3 +22,29 @@ document.addEventListener("DOMContentLoaded", () => {
         details.style.boxShadow = "0 4px 15px rgba(255, 215, 0, 0.7)";
     }
 });
+
+const track = document.querySelector('.carousel-track');
+const slides = Array.from(track.children);
+const prevButton = document.querySelector('.prev-btn');
+const nextButton = document.querySelector('.next-btn');
+
+let currentSlideIndex = 0;
+
+const updateCarousel = () => {
+    const slideWidth = slides[0].getBoundingClientRect().width;
+    track.style.transform = `translateX(-${currentSlideIndex * slideWidth}px)`;
+};
+
+nextButton.addEventListener('click', () => {
+    if (currentSlideIndex < slides.length - 1) {
+        currentSlideIndex++;
+        updateCarousel();
+    }
+});
+
+prevButton.addEventListener('click', () => {
+    if (currentSlideIndex > 0) {
+        currentSlideIndex--;
+        updateCarousel();
+    }
+});
