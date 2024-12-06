@@ -1,18 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@300;400;500;700;900&display=swap");
 
-
-*{
-  //border: 1px solid red;
-}
-
-
 :root{
   font-size: 16px;
 }
 
 
 body {
-  font-family: Inter, sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: rgb(12, 12, 12);
   background-image: url("/assets/controller-svgrepo-com.svg");
   background-size: 25px; /* Adjust size of each image */
@@ -195,5 +189,6 @@ footer{
   bottom: 0;
   left: 0;
   z-index: 9999;
+  font-weight: 700;
 }
 
