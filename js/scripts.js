@@ -111,6 +111,12 @@ document.addEventListener("DOMContentLoaded", () => {
       const currentGame = indexGames[currentGameIndex];
       const gameTitle = currentGame.getAttribute("data-title");
       gameTitleElement.textContent = gameTitle;
+
+      // Trigger slide-in animation
+      gameTitleElement.style.animation = "none";
+      setTimeout(() => {
+          gameTitleElement.style.animation = "title-slide-in 0.8s ease forwards";
+      }, 10);
   }
 
   // Show a specific image within a game
@@ -129,7 +135,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageInterval = setInterval(() => {
           currentImageIndex = (currentImageIndex + 1) % images.length;
           showImage(currentGameIndex, currentImageIndex);
-      }, 3000); // Change image every 3 seconds
+      }, 3000);
   }
 
   // Start cycling words for cinematic text
@@ -139,7 +145,7 @@ document.addEventListener("DOMContentLoaded", () => {
               word.classList.toggle("index-yellow", i === currentWordIndex);
           });
           currentWordIndex = (currentWordIndex + 1) % indexWords.length;
-      }, 2000); // Change word every 2 seconds
+      }, 2000);
   }
 
   // Show a specific game
@@ -164,4 +170,3 @@ document.addEventListener("DOMContentLoaded", () => {
   showGame(currentGameIndex);
   startCinematicText();
 });
-
