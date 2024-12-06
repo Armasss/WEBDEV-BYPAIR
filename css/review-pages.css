@@ -88,10 +88,11 @@
 }
 
 .image-container img {
-    width: 100%;
+    width: 80% !important; /* Adjust the width */
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 .image-container .hover-text {
     position: absolute;
@@ -106,7 +107,6 @@
 }
 
 .image-container:hover img {
-    transform: scale(1.05);
     box-shadow: 0px 4px 15px rgba(255, 215, 0, 0.7);
 }
 
@@ -135,11 +135,12 @@
     font-weight: 900;
     color: #ffd700;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: left; /* Align title to the left */
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     display: inline-block;
     padding-bottom: 5px;
     border-bottom: 3px solid rgba(255, 215, 0, 0.6);
+    margin-left: -200px; /* Push title to the utmost left */
 }
 
 /* FAQ Question and Answer */
@@ -179,119 +180,113 @@
 
 
 /* Right Column */
-/* Right Column */
 .right-column {
-    flex: 1; /* Maintain size proportion */
-    padding: 15px 20px; /* Reduced padding */
-    background: linear-gradient(145deg, rgba(0, 0, 0, 0.8), rgba(20, 20, 20, 0.9)); /* Gradient */
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    position: sticky;
-    top: 70px; /* Lower position to align with content */
-    margin-right: 20px; /* Add margin to separate from scrollbar */
-    margin-bottom: 40px;
-    color: white;
-    font-family: "Poppins", sans-serif;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 90%; /* Adjust width for better alignment */
-    max-width: 350px; /* Set a maximum width */
-    height: fit-content; /* Dynamically adjusts to content height */
-    overflow: hidden; /* Prevent scrollbars */
-}
-
-.right-column:hover {
-    transform: scale(1.02); /* Slight zoom */
-    box-shadow: 0 6px 15px rgba(255, 215, 0, 0.5); /* Enhanced shadow */
+    flex: 1 !important; /* Maintain size proportion */
+    padding: 0 !important; /* Remove unnecessary padding */
+    position: sticky !important;
+    top: 70px !important; /* Stick at the top */
+    margin-left: -280px; /* Move column more to the left */
+    margin-right: 20px; /* Maintain space from the scrollbar */
+    margin-bottom: 40px !important; /* Add spacing below */
+    color: white !important;
+    font-family: "Poppins", sans-serif !important;
+    width: 90% !important; /* Set a manageable width */
+    max-width: 350px !important; /* Limit the maximum width */
+    height: fit-content !important; /* Adjust dynamically to content */
+    overflow: hidden !important; /* Prevent unwanted scrolling */
+    background: none !important; /* Fully remove the background */
+    box-shadow: none !important; /* Remove the shadow effect */
 }
 
 /* Header */
 .right-column .game-details h2 {
-    font-size: 1.4rem;
-    color: #ffd700;
-    margin-bottom: 5px;
-    text-align: center;
+    font-size: 1.4rem !important;
+    color: #ffd700 !important;
+    margin-bottom: 5px !important;
+    text-align: center !important;
 }
 
 .right-column .game-details h3 {
-    font-size: 1.1rem;
-    color: #ffffff;
-    text-align: center;
-    margin-bottom: 10px;
+    font-size: 1.1rem !important;
+    color: #ffffff !important;
+    text-align: center !important;
+    margin-bottom: 10px !important;
 }
 
 /* Game Description */
 .right-column .game-desc p {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    text-align: justify;
-    color: #ffffff;
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+    text-align: justify !important;
+    color: #ffffff !important;
 }
 
 /* Platforms Section */
 .right-column .platforms {
-    margin-top: 15px;
+    margin-top: 15px !important;
 }
 
 .right-column .platforms h2 {
-    font-size: 1.1rem;
-    color: #ffd700;
-    margin-bottom: 10px;
+    font-size: 1.1rem !important;
+    color: #ffd700 !important;
+    margin-bottom: 10px !important;
 }
 
 .right-column .platforms .platform-ctn {
-    display: flex;
-    justify-content: space-evenly; /* Equal spacing */
-    gap: 10px;
+    display: flex !important;
+    justify-content: space-evenly !important; /* Equal spacing */
+    gap: 10px !important;
 }
 
 .right-column .platforms .platform-icon {
-    width: 30px; /* Adjusted size */
-    height: 30px;
-    filter: drop-shadow(0px 2px 5px rgba(255, 255, 255, 0.3));
-    transition: transform 0.3s ease, filter 0.3s ease;
-    margin: 0 5px 10px; /* Add spacing between icons */
+    width: 30px !important; /* Adjusted size */
+    height: 30px !important;
+    filter: drop-shadow(0px 2px 5px rgba(255, 255, 255, 0.3)) !important;
+    transition: transform 0.3s ease, filter 0.3s ease !important;
+    margin: 0 5px 10px !important; /* Add spacing between icons */
 }
 
 .right-column .platforms .platform-icon:hover {
-    transform: scale(1.1);
-    filter: drop-shadow(0px 4px 15px rgba(255, 255, 255, 0.8));
+    transform: scale(1.1) !important;
+    filter: drop-shadow(0px 4px 15px rgba(255, 255, 255, 0.8)) !important;
 }
 
 /* Tags Section */
 .right-column .tags-container {
-    margin-top: 15px;
+    margin-top: 15px !important;
 }
 
 .right-column .tags-container h2 {
-    font-size: 1.1rem;
-    color: #ffd700;
-    margin-bottom: 10px;
+    font-size: 1.1rem !important;
+    color: #ffd700 !important;
+    margin-bottom: 10px !important;
 }
 
 .right-column .tags-container ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    list-style: none !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 10px !important;
 }
 
 .right-column .tags-container ul li {
-    display: inline-block;
-    padding: 5px 10px;
-    font-size: 0.85rem; /* Reduced size */
-    font-weight: bold;
-    background-color: #ffd700;
-    color: #000000;
-    border-radius: 5px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: inline-block !important;
+    padding: 5px 10px !important;
+    font-size: 0.85rem !important; /* Reduced size */
+    font-weight: bold !important;
+    background-color: #ffd700 !important;
+    color: #000000 !important;
+    border-radius: 5px !important;
+    transition: transform 0.3s ease, background-color 0.3s ease !important;
 }
 
 .right-column .tags-container ul li:hover {
-    transform: scale(1.1);
-    background-color: #ffffff;
-    color: #000000;
+    transform: scale(1.1) !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
 }
+
 
 
 /* Carousel */
@@ -350,7 +345,7 @@
 /* Cards */
 .card {
     width: 300px; /* Adjust width */
-    aspect-ratio: 16 / 9; /* Maintain 16:9 ratio */
+    height: 160px; /* Set a custom height slightly smaller than 16:9 */
     border-radius: 10px;
     overflow: hidden;
     position: relative;
@@ -401,4 +396,3 @@
     background-color: black;
     opacity: 0.8;
 }
-
