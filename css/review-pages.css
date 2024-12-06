@@ -1,7 +1,9 @@
 /* Main Container */
-
+*{
+    //border: 1px solid red;
+}
 .breadcrumb {
-    background-color: rgba(0, 0, 0, 0.8); /* Subtle dark background */
+
     color: #ffd700; /* Gold text color */
     font-family: "Poppins", sans-serif;
     font-size: 1rem;
@@ -9,7 +11,7 @@
     margin-top: 80px; /* Space below the navbar */
     margin-bottom: 20px; /* Space above the game title */
     border-radius: 5px; /* Smooth rounded edges */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+
     text-align: left;
 }
 
@@ -33,22 +35,29 @@
     color: #ffd700;
 }
 
+.main{
+   //border: 1px solid red;
+    width: 1280px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+}
 
 .container {
     display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
     justify-content: space-between;
     max-width: 100%;
-    margin: 20px auto;
+
     color: white;
-    padding-bottom: 20px;
+
     overflow-x: hidden; /* Remove horizontal scrollbar */
 }
 
 /* Left Column */
 .left-column {
-    flex: 3;
-    padding: 20px;
-    overflow-y: auto; /* Allow vertical scrolling */
+    width: 70%
 }
 
 .left-column p {
@@ -76,9 +85,12 @@
     font-weight: 700;
 }
 
-.trailer iframe {
+iframe {
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.7);
+    width: 800px;
+    aspect-ratio: 16 / 9;
+    margin: 0px auto;
 }
 
 /* Image Hover Effect */
@@ -180,21 +192,7 @@
 
 /* Right Column */
 .right-column {
-    flex: 1 !important; /* Maintain size proportion */
-    padding: 0 !important; /* Remove unnecessary padding */
-    position: sticky !important;
-    top: 70px !important; /* Stick at the top */
-    margin-left: -280px; /* Move column more to the left */
-    margin-right: 20px; /* Maintain space from the scrollbar */
-    margin-bottom: 40px !important; /* Add spacing below */
-    color: white !important;
-    font-family: "Poppins", sans-serif !important;
-    width: 90% !important; /* Set a manageable width */
-    max-width: 350px !important; /* Limit the maximum width */
-    height: fit-content !important; /* Adjust dynamically to content */
-    overflow: hidden !important; /* Prevent unwanted scrolling */
-    background: none !important; /* Fully remove the background */
-    box-shadow: none !important; /* Remove the shadow effect */
+    width: 30%;
 }
 
 /* Header */
@@ -380,8 +378,8 @@
     opacity: 0;
 }
 
-.card:hover {
-    transform: scale(1.1);
+.card:hover .rating{
+    opacity: 0;
 }
 
 /* Ratings */
@@ -397,5 +395,5 @@
     color: #ffd700;
     font-size: 16px;
     background-color: black;
-    opacity: 0.8;
+    opacity: 1;
 }
