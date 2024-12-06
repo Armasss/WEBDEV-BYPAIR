@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/carousel.css">
     <link rel="stylesheet" href="/css/mediaqueries.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <title>Document</title>
@@ -26,7 +27,7 @@
         <nav class="hamburger_nav">
 
             <div class="logo">
-                <p class="focus">GAME </p>
+                <p class="focus">GAME</p>
                 <p>REVIEWS</p>
             </div>
             <div class="hamburger_menu">
@@ -52,11 +53,12 @@
          </nav>
     </header>
 
+<div class="home-content">
     <div class="index-carousel-container">
         <button id="index-left-btn" class="index-carousel-btn index-left">&lt;</button>
         <div id="index-carousel" class="index-carousel-wrapper">
             <!-- God of War -->
-            <div class="index-game-carousel" data-title="God of War Ragnarök">
+            <div class="index-game-carousel active" data-title="God of War">
                 <img src="./assets/images/gameplay/gow-1.jpg" alt="God of War 1">
                 <img src="./assets/images/gameplay/gow-2.jpg" alt="God of War 2">
                 <img src="./assets/images/gameplay/gow-3.jpg" alt="God of War 3">
@@ -73,30 +75,27 @@
             </div>
         </div>
         <div id="index-game-title" class="index-game-title"></div>
-        <button id="index-left-btn" class="index-carousel-btn index-left">
-            <i class="fa fa-chevron-left"></i>
-        </button>
-        <button id="index-right-btn" class="index-carousel-btn index-right">
-            <i class="fa fa-chevron-right"></i>
-        </button>        
+        <button id="index-right-btn" class="index-carousel-btn index-right">&gt;</button>
     </div>
     
     <div class="index-cinematic-text">
-        <span class="index-word">
+        <div class="index-word">
             <i class="fa fa-search"></i>Discover
-        </span>
-        <span class="index-word">
+        </div>
+        <div class="index-word">
             <i class="fa fa-gamepad"></i>Play
-        </span>
-        <span class="index-word index-yellow">
+        </div>
+        <div class="index-word">
             <i class="fa fa-star"></i>Review
-        </span>
+        </div>
     </div>
+</div>
+ 
     
-    
-    
-    
-    
+    <footer class="foot">
+        <p>© 2024 Mark Rainier Armas & Jerome Brent Tegrado. All rights reserved.</p>
+      </footer>
     <script src="/js/scripts.js"></script>
+    <script src="/js/carousel.js"></script>
 </body>
 </html>
