@@ -1,44 +1,40 @@
 /* For Large Devices (Desktops, 1200px and above) */
 @media (min-width: 1200px) {
     .desktop_nav {
-        display: flex; /* Keep desktop navigation for large screens */
+        display: flex;
     }
     .hamburger_nav, .burger_links {
-        display: none; /* Hide hamburger navigation */
+        display: none;
     }
 }
 
-
-
 /* For Small Devices (Mobile Phones, up to 767px) */
 @media (max-width: 767px) {
-    /* Navbar Adjustments */
     .desktop_nav {
-        display: none; /* Hide desktop navigation */
+        display: none;
     }
     .hamburger_nav {
-        display: flex; /* Show hamburger navigation */
+        display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 20px; /* Adjust padding for smaller screens */
+        padding: 10px 20px;
         background-color: black;
         border-bottom: 2px solid #ffd700;
     }
     .hamburger_nav .logo {
-        font-size: 1.2rem; /* Scale down the logo text */
+        font-size: 1.2rem;
     }
     .hamburger-icon svg {
-        width: 25px; /* Adjust size of burger icon */
+        width: 25px;
         height: 25px;
     }
 
-    /* Burger Menu (Slide Out) */
     .burger_links {
         position: fixed;
         top: 0;
-        right: -300px; /* Hidden by default */
-        width: 250px; /* Smaller menu width */
-        height: 100vh; /* Full height for mobile menu */
+        right: -300px;
+        width: 250px;
+        height: 100vh;
         background-color: black;
         z-index: 1000;
         display: flex;
@@ -51,12 +47,12 @@
     }
 
     .burger_links.show {
-        right: 0; /* Slide-in effect */
+        right: 0;
     }
 
     .burger_links a {
-        font-size: 1rem; /* Smaller link text size */
-        padding: 10px 20px; /* Reduce padding */
+        font-size: 1rem;
+        padding: 10px 20px;
         text-align: center;
         color: white;
         text-transform: none;
@@ -64,14 +60,14 @@
 
     .burger_links a:hover {
         color: black;
-        background-color: #ffd700; /* Highlight effect */
+        background-color: #ffd700;
     }
 
     .close_icon svg {
         align-self: flex-end;
         margin: 10px;
         cursor: pointer;
-        width: 25px; /* Adjust size */
+        width: 25px;
         height: 25px;
         background-color: #ffd700;
         border-radius: 50%;
@@ -79,85 +75,141 @@
     }
 }
 
-/* For Tablets and Medium Screens (768px to 1199px) */
+/* Tablet and Medium Screens (768px to 1199px) */
 @media (min-width: 768px) and (max-width: 1199px) {
     html {
-        font-size: 14px; /* Adjust base font size */
+        font-size: 14px;
     }
 
     .carousel-container {
-        width: 95%; /* Reduce carousel width */
-        height: 80vh; /* Adjust height for tablets */
+        width: 95%;
+        height: 80vh;
     }
 
     .game-title {
-        font-size: 1.2rem; /* Scale down game title */
-        bottom: 15px; /* Adjust spacing */
+        font-size: 1.2rem;
+        bottom: 15px;
         left: 15px;
         padding: 10px 20px;
     }
 
     .cinematic-text {
-        padding: 20px 0; /* Adjust spacing for cinematic text */
+        padding: 20px 0;
         margin-bottom: 30px;
     }
 
     .word {
-        font-size: 1.8rem; /* Reduce word font size */
+        font-size: 1.8rem;
     }
 
     .carousel-btn {
-        width: 50px; /* Reduce button size */
+        width: 50px;
         height: 50px;
     }
 
     footer {
-        font-size: 0.9rem; /* Adjust footer text size */
+        font-size: 0.9rem;
+    }
+
+    /* Make trailer video and images larger, text and right-column wider at tablet size */
+    .trailer iframe {
+        width: 90% !important;
+        height: auto !important;
+    }
+
+    .image-container {
+        width: 90% !important;
+    }
+
+    .left-column h1,
+    .left-column h2,
+    .right-column h2,
+    .right-column h3,
+    .right-column p {
+        font-size: 1.1rem !important;
+        line-height: 1.6 !important;
+        width: 90%;
+    }
+
+    .right-column {
+        width: 90% !important;
+        max-width: 90% !important;
+    }
+
+    .faq-container {
+        width: 90% !important;
     }
 }
 
-/* For Small Devices (Mobile Phones, up to 767px) */
+/* Mobile (up to 767px) */
 @media (max-width: 767px) {
     html {
-        font-size: 12px; /* Reduce base font size further */
+        font-size: 12px;
     }
 
     body {
-        background-size: 10px; /* Scale down background pattern */
+        background-size: 10px;
     }
 
     .carousel-container {
-        width: 95%; /* Full width for carousel */
-        height: 80vh; /* Adjust height for mobile */
+        width: 95%;
+        height: 80vh;
     }
 
     .game-title {
-        font-size: 1rem; /* Further reduce game title font size */
+        font-size: 1rem;
         bottom: 10px;
         left: 10px;
-        padding: 8px 15px; /* Compact padding */
+        padding: 8px 15px;
     }
 
     .cinematic-text {
-        flex-direction: column; /* Stack cinematic text */
+        flex-direction: column;
         align-items: center;
         padding: 15px 0;
     }
 
     .word {
-        font-size: 1.5rem; /* Smaller font for words */
+        font-size: 1.5rem;
         margin-bottom: 10px;
     }
 
     .carousel-btn {
-        width: 40px; /* Reduce button size */
+        width: 40px;
         height: 40px;
-        font-size: 20px; /* Adjust icon size */
+        font-size: 20px;
     }
 
     footer {
-        font-size: 0.8rem; /* Adjust footer text size */
+        font-size: 0.8rem;
         padding: 5px;
     }
-}
 
+    /* Make trailer video and images larger, text and right-column wider at mobile size */
+    .trailer iframe {
+        width: 90% !important;
+        height: auto !important;
+    }
+
+    .image-container {
+        width: 90% !important;
+    }
+
+    .left-column h1,
+    .left-column h2,
+    .right-column h2,
+    .right-column h3,
+    .right-column p {
+        font-size: 1rem !important;
+        line-height: 1.6 !important;
+    }
+
+    .right-column {
+        width: 90% !important;
+        max-width: 90% !important;
+    }
+
+    .faq-container {
+        width: 90% !important;
+    }
+}

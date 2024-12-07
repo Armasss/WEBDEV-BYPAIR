@@ -1,12 +1,5 @@
 /* Base Styles */
 
-/* Box Sizing */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
 /* Breadcrumb */
 .breadcrumb {
     color: #ffd700; /* Gold text color */
@@ -41,8 +34,8 @@
 
 /* Main Container */
 .main {
-    max-width: 90%; /* Changed from 1280px to 90% for flexibility */
-    margin: 0 auto;
+    max-width: 1280px;
+    margin: 0px auto;
     display: flex;
     flex-direction: column;
 }
@@ -57,20 +50,21 @@
 }
 
 .author i {
-    margin-left: 1.875rem; /* 30px to rem */
-    margin-right: 0.625rem; /* 10px to rem */
+    margin-left: 30px;
+    margin-right: 10px;
     color: #ffd700;
     font-size: 1.5rem;
 }
 
 .author-name {
     font-weight: bold;
-    margin-left: 0.3125rem; /* 5px to rem */
+    margin-left: 5px;
 }
 
 /* Container */
 .container {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     color: white;
@@ -78,29 +72,28 @@
 
 /* Left Column */
 .left-column {
-    flex: 0 0 68%; /* Approximately 70% */
-    max-width: 68%;
+    width: 70%;
 }
 
 .left-column p {
-    margin: 1.875rem 0; /* 30px to rem */
+    margin: 30px 0px;
 }
 
 .left-column hr {
     width: 95%;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
 .left-column h1 {
-    font-size: 2rem; /* Changed from 3rem to rem for scalability */
-    margin-bottom: 0.625rem; /* 10px to rem */
+    font-size: 3rem;
+    margin-bottom: 10px;
     color: #ffd700;
     font-weight: 900;
 }
 
 .left-column h2 {
-    margin: 2.5rem 0; /* 40px to rem */
-    font-size: 1.5625rem; /* 25px to rem */
+    margin: 40px 0px;
+    font-size: 2.5rem;
     color: white;
     border-bottom: 2px solid #ffd700;
     display: inline-block;
@@ -108,15 +101,15 @@
 }
 
 .trailer {
-    margin: 1.875rem 0; /* 30px to rem */
+    margin: 30px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 iframe {
-    border-radius: 0.625rem; /* 10px to rem */
-    box-shadow: 0px 0.25rem 0.625rem rgba(255, 215, 0, 0.7); /* 4px 10px to rem */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.7);
     width: 80%;
     aspect-ratio: 16 / 9;
     margin: auto;
@@ -124,15 +117,14 @@ iframe {
 
 /* Image Hover Effect */
 .image-container {
-    border-radius: 0.625rem; /* 10px to rem */
+    border-radius: 10px;
     overflow: hidden;
     position: relative;
-    width: 100%;
-    max-width: 600px;
+    width: 600px;
     aspect-ratio: 16/9;
     background-color: #000;
     transition: transform 0.5s ease;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
 .image-container img {
@@ -146,22 +138,22 @@ iframe {
 
 .image-container .hover-text {
     position: absolute;
-    bottom: 0.625rem; /* 10px to rem */
-    left: 0.625rem; /* 10px to rem */
+    bottom: 10px;
+    left: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.3125rem 0.625rem; /* 5px 10px to rem */
-    border-radius: 0.3125rem; /* 5px to rem */
+    padding: 5px 10px;
+    border-radius: 5px;
     color: #ffd700;
-    font-size: 1rem; /* 16px to rem */
-    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 16px;
+    background-color: black;
     transition: opacity 0.3s ease;
     opacity: 0;
 }
 
 .image-container:hover img {
-    box-shadow: 0px 0.25rem 0.9375rem rgba(255, 215, 0, 0.7); /* 4px 15px to rem */
+    box-shadow: 0px 4px 15px rgba(255, 215, 0, 0.7);
 }
 
 .image-container:hover .hover-text {
@@ -170,21 +162,21 @@ iframe {
 
 /* FAQ Section */
 .faq {
-    margin: 0 auto;
-    padding: 1.25rem 1.25rem; /* 20px to rem */
+    margin: 0 auto; /* Corrected from 'autop' to 'auto' */
+    padding: 20px;
     position: relative;
-    color: black;
+    color: black; /* Black text */
     font-family: "Poppins", sans-serif;
     font-size: 1.1rem;
     display: block;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ddd; /* Divider line between items */
 }
 
 .faq-title {
     font-size: 2rem;
     font-weight: 900;
     color: #ffd700;
-    margin: 0;
+    margin: 0; 
     padding: 0;
     display: block;
 }
@@ -197,13 +189,12 @@ iframe {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 1.875rem 0; /* 30px to rem */
+    margin: 30px 0px;
     padding: 0;
 }
 
 .faq-container {
-    width: 100%; /* Changed from 50% to 100% for flexibility */
-    max-width: 800px; /* Optional: limit max width */
+    width: 50%;
 }
 
 .faq {
@@ -222,25 +213,25 @@ iframe {
 /* FAQ Answers */
 .faq blockquote {
     margin: 0;
-    padding: 0.9375rem 1.25rem; /* 15px 20px to rem */
+    padding: 15px 20px;
     font-style: normal;
-    border-left: 0.3125rem solid #ffd700; /* 5px to rem */
-    background-color: white;
-    color: black;
-    border-radius: 0.3125rem; /* 5px to rem */
+    border-left: 5px solid #ffd700; /* Yellow vertical line */
+    background-color: white; /* White background */
+    color: black; /* Black text */
+    border-radius: 5px; /* Rounded corners */
     text-align: left;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
 
 .faq:hover blockquote {
-    background-color: black;
-    color: #ffd700;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    background-color: black; /* Background turns black on hover */
+    color: #ffd700; /* Text turns yellow on hover */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth scaling */
 }
 
 .faq:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
+    transform: scale(1.05); /* Subtle scaling for the entire FAQ block */
+    transition: transform 0.3s ease; /* Smooth scaling */
 }
 
 .faq-container > .faq + .faq {
@@ -248,117 +239,122 @@ iframe {
 }
 
 /* Right Column */
+.right-column hr {
+    margin: 20px 0 !important; /* Add vertical spacing around horizontal lines */
+    border: none; /* Optional: Customize border */
+    border-top: 1px solid #ddd; /* Optional: Thin border for HR */
+}
+
 .right-column {
-    flex: 0 0 27%; /* Approximately 27% */
-    max-width: 27%;
+    width: 27%;
     height: auto;
-    margin-top: 6.875rem; /* 110px to rem */
+    margin-top: 110px;
 }
 
 /* Header */
 .right-column .game-details h2 {
-    font-size: 2rem;
-    color: #ffd700;
-    margin-bottom: 0.3125rem; /* 5px to rem */
-    text-align: left;
+    font-size: 2rem !important;
+    color: #ffd700 !important;
+    margin-bottom: 5px !important;
+    text-align: left !important;
 }
 
 .right-column .game-details h3 {
-    font-size: 1.5rem;
-    color: #ffffff;
-    text-align: center;
-    margin-bottom: 0.625rem; /* 10px to rem */
+    font-size: 1.5rem !important;
+    color: #ffffff !important;
+    text-align: center !important;
+    margin-bottom: 10px !important;
 }
 
 /* Game Description */
 .right-column .game-desc p {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    text-align: justify;
-    color: #ffffff;
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+    text-align: justify !important;
+    color: #ffffff !important;
 }
 
 /* Platforms Section */
 .right-column .platforms {
-    margin-top: 0.9375rem; /* 15px to rem */
+    margin-top: 15px !important;
 }
 
 .right-column .platforms h2 {
-    font-size: 2rem;
-    color: #ffd700;
-    margin-bottom: 0.625rem; /* 10px to rem */
+    font-size: 2rem !important;
+    color: #ffd700 !important;
+    margin-bottom: 10px !important;
 }
 
 .right-column .platforms .platform-ctn {
-    display: flex;
-    justify-content: space-evenly;
+    display: flex !important;
+    justify-content: space-evenly !important; /* Equal spacing */
     align-items: center;
-    gap: 0.625rem; /* 10px to rem */
+    gap: 10px !important;
 }
 
 .right-column .platforms .platform-icon {
-    width: 2.1875rem; /* 35px to rem */
+    width: 35px;
     height: auto;
-    filter: drop-shadow(0px 0.125rem 0.3125rem rgba(255, 255, 255, 0.3)); /* 2px 5px to rem */
-    transition: transform 0.3s ease, filter 0.3s ease;
-    margin: 0 0.3125rem 0.625rem; /* 5px 5px 10px to rem */
+    filter: drop-shadow(0px 2px 5px rgba(255, 255, 255, 0.3)) !important;
+    transition: transform 0.3s ease, filter 0.3s ease !important;
+    margin: 0 5px 10px !important; /* Add spacing between icons */
 }
 
 .right-column .platforms .platform-icon:hover {
-    transform: scale(1.1);
-    filter: drop-shadow(0px 0.25rem 0.9375rem rgba(255, 255, 255, 0.8)); /* 4px 15px to rem */
+    transform: scale(1.1) !important;
+    filter: drop-shadow(0px 4px 15px rgba(255, 255, 255, 0.8)) !important;
 }
 
 /* Tags Section */
 .right-column .tags-container {
-    margin-top: 0.9375rem; /* 15px to rem */
+    margin-top: 15px !important;
 }
 
 .right-column .tags-container h2 {
-    font-size: 2rem;
-    color: #ffd700;
-    margin-bottom: 0.625rem; /* 10px to rem */
+    font-size: 2rem !important;
+    color: #ffd700 !important;
+    margin-bottom: 10px !important;
 }
 
 .right-column .tags-container ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.625rem; /* 10px to rem */
+    list-style: none !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 10px !important;
 }
 
 .right-column .tags-container ul li {
-    display: inline-block;
-    padding: 0.3125rem 0.625rem; /* 5px 10px to rem */
-    font-size: 0.85rem;
-    font-weight: bold;
-    background-color: #ffd700;
-    color: #000000;
-    border-radius: 0.3125rem; /* 5px to rem */
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: inline-block !important;
+    padding: 5px 10px !important;
+    font-size: 0.85rem !important; /* Reduced size */
+    font-weight: bold !important;
+    background-color: #ffd700 !important;
+    color: #000000 !important;
+    border-radius: 5px !important;
+    transition: transform 0.3s ease, background-color 0.3s ease !important;
 }
 
 .right-column .tags-container ul li:hover {
-    transform: scale(1.1);
-    background-color: #ffffff;
-    color: #000000;
+    transform: scale(1.1) !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
 }
 
 .right-column .ratings-ctn {
-    margin-top: 0.9375rem; /* 15px to rem */
+    margin-top: 15px !important;
 }
 
 .right-column .rating-text h2 {
-    font-size: 2rem;
-    color: #ffd700;
+    font-size: 2rem !important;
+    color: #ffd700 !important;
 }
 
 .right-column .rating-text p {
     font-size: 1.5rem;
     font-weight: 700;
-    margin: auto 0;
-    padding: 0 0.625rem; /* 0px 10px to rem */
+    margin: auto 0px;
+    padding: 0px 10px;
 }
 
 .right-column .rating-text {
@@ -368,9 +364,9 @@ iframe {
 }
 
 .right-column .ratings-ctn .rating-grp {
-    font-size: 2rem;
-    color: #ffd700;
-    margin: 1.25rem auto; /* 20px to rem */
+    font-size: 2rem !important;
+    color: #ffd700 !important;
+    margin: 20px auto;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -385,10 +381,10 @@ iframe {
     align-items: center;
     justify-content: center;
     overflow: visible;
-    max-width: 100%;
+    max-width: auto;
     height: fit-content;
-    padding: 1.25rem; /* 20px to rem */
-    margin: 2.5rem 0; /* 40px to rem */
+    padding: 20px;
+    margin: 40px 0px;
 }
 
 /* Carousel Track */
@@ -400,7 +396,7 @@ iframe {
 .carousel-track {
     display: flex;
     transition: transform 0.5s ease;
-    gap: 1.25rem; /* 20px to rem */
+    gap: 20px;
     justify-content: flex-start;
 }
 
@@ -437,9 +433,9 @@ iframe {
 
 /* Cards */
 .card {
-    flex: 0 0 calc((100% - 5rem) / 5); /* 80px is 5rem */
-    aspect-ratio: 16 / 9;
-    border-radius: 0.625rem; /* 10px to rem */
+    flex: 0 0 calc((100% - 80px) / 5); /* Maintain five visible cards */
+    aspect-ratio: 16 / 9; /* Maintain 16:9 ratio */
+    border-radius: 10px;
     overflow: hidden;
     position: relative;
     cursor: pointer;
@@ -477,20 +473,35 @@ iframe {
 /* Ratings */
 .rating {
     position: absolute;
-    bottom: 0.625rem; /* 10px to rem */
-    left: 0.625rem; /* 10px to rem */
+    bottom: 10px;
+    left: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.3125rem 0.625rem; /* 5px 10px to rem */
-    border-radius: 0.3125rem; /* 5px to rem */
+    padding: 5px 10px;
+    border-radius: 5px;
     color: #ffd700;
-    font-size: 1rem; /* 16px to rem */
-    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 16px;
+    background-color: black;
     opacity: 1;
 }
 
 .rating i {
-    font-size: 0.625rem; /* 10px to rem */
-    padding: 0 0.09375rem; /* 1.5px to rem */
+    font-size: 10px;
+    padding: 0px 1.5px;
+}
+
+.faq-container {
+    width: 50%;
+}
+
+.faq {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+h4 {
+    color: #ffd700;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
 }
