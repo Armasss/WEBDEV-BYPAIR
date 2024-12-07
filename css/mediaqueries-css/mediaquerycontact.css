@@ -174,7 +174,7 @@
 
     .form-group {
         width: 100%; /* Full width for forms on mobile */
-        max-width: 90%; /* Ensure forms fit within screen */
+        max-width: 100%; /* Ensure forms fit within screen */
     }
 
     input, textarea {
@@ -186,6 +186,7 @@
         font-size: 0.9rem; /* Smaller button font size */
         padding: 8px 12px; /* Compact button padding */
         width: auto; /* Fit the button to its content */
+        margin-left: -20px;
     }
 
     footer {
