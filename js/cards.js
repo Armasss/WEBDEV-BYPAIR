@@ -8,7 +8,7 @@ hoverElements.forEach(element => {
   element.addEventListener('mouseover', (event) => {
     const popupId = element.getAttribute('data-popup');
     const popupCard = document.getElementById(popupId);
-    const mainContainer = document.querySelector('.main'); // Get the main container
+    const mainContainer = document.querySelector('.review-home-section'); // Get the main container
 
     if (popupCard && mainContainer) {
       const rect = element.getBoundingClientRect();
@@ -44,5 +44,28 @@ hoverElements.forEach(element => {
       // Hide the popup card
       popupCard.style.display = 'none';
     }
+  });
+});
+
+//for playing video when hovered
+const container = document.querySelectorAll(".container");
+
+container.forEach((container) => {
+  const video = container.querySelector("video");
+
+
+
+  container.addEventListener("mouseenter", () => {
+    video.currentTime = 0; // Start video from the beginning
+    video.play();
+  });
+
+  container.addEventListener("mouseleave", () => {
+    video.pause();
+  });  
+  
+  video.addEventListener("ended", () => {
+    video.currentTime = 0;
+    video.play();
   });
 });
