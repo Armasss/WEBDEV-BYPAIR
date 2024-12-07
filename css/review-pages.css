@@ -147,59 +147,80 @@ iframe {
 
 /* FAQ Section */
 .faq {
-    margin: 40px auto;
+    margin: 0; /* Remove spaces between FAQs */
     padding: 20px;
     position: relative;
-    color: white;
+    color: black; /* Black text */
     font-family: "Poppins", sans-serif;
     font-size: 1.1rem;
+    display: block;
+    border-bottom: 1px solid #ddd; /* Divider line between items */
 }
 
 /* FAQ Title */
-/* FAQ Section */
-.faq {
-    padding: 20px;
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.1rem;
-    margin: 0; /* Remove top and bottom margins */
+.faq-title {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #ffd700; /* Yellow text for title */
+    margin: 0; /* Ensure no margins around the title */
+    padding: 0; /* No padding to ensure proper alignment */
+    display: block; /* Make sure it spans full width */
+    margin-left: -230px;
+    margin-top: 50px;
 }
 
-/* FAQ Title */
-/* FAQ Question and Answer */
-.faq p {
-    margin: 20px 0;
-    padding: 10px 20px;
-    color: #ffd700;
+/* Ensure FAQ Title Container is Properly Aligned */
+#faq-container {
+    margin: 0; /* Remove extra spacing */
+    padding: 0 20px; /* Add some padding for internal content */
+    width: 100%; /* Full width for the container */
+    box-sizing: border-box; /* Ensure proper sizing */
+    margin-left: -50px !important; /* Move the container further to the left */
+}
+
+
+/* FAQ Questions */
+.faq h4 {
+    margin: 0;
     font-weight: bold;
-    line-height: 1.5;
-    cursor: pointer;
+    padding-left: 20px; /* Space from the left vertical line */
+}
+
+/* FAQ Answers */
+.faq blockquote {
+    margin: 0;
+    padding: 15px 20px;
+    font-style: normal;
+    border-left: 5px solid #ffd700; /* Yellow vertical line */
+    background-color: white; /* White background */
+    color: black; /* Black text */
+    border-radius: 5px; /* Rounded corners */
     text-align: left;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    position: relative;
-    transition: transform 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Blockquote Hover Effect */
+.faq:hover blockquote {
+    background-color: black; /* Background turns black on hover */
+    color: #ffd700; /* Text turns yellow on hover */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth scaling */
+}
+
+/* FAQ Hover Effect */
+.faq:hover {
+    transform: scale(1.05); /* Subtle scaling for the entire FAQ block */
+    transition: transform 0.3s ease; /* Smooth scaling */
+}
+
+
+/* Remove gaps between FAQ items */
+.faq-container > .faq + .faq {
+    margin-top: 0;
 }
 
 
 
-/* Add Vertical Line */
-.qna p::before {
-    content: '';
-    position: absolute;
-    left: -15px; /* Keep the vertical line close to the text */
-    top: 10%;
-    height: 80%;
-    width: 5px;
-    background: linear-gradient(to bottom, white 50%, #ffd700 50%);
-    border-radius: 5px;
-}
 
-/* Hover Effect */
-.faq p:hover {
-    transform: scale(1.03);
-    color: white;
-    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
-}
 
 
 
