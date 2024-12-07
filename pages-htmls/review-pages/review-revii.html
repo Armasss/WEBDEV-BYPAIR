@@ -1,1 +1,557 @@
-<p>test</p>
+<li>Platformer</li>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Reviews</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/mediaqueries.css" />
+    <link rel="stylesheet" href="/css/review-pages.css" />
+    <!-- Font Awesome for icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="desktop_nav">
+        <div class="logo">
+          <p class="focus">GAME</p>
+          <p>REVIEWS</p>
+        </div>
+        <ul class="nav_links">
+          <li>
+            <a href="/index.html"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li>
+            <a href="/pages-htmls/review_home.html"
+              ><i class="fas fa-star"></i> Reviews</a
+            >
+          </li>
+          <li>
+            <a href="/pages-htmls/about.html"
+              ><i class="fas fa-info-circle"></i> About</a
+            >
+          </li>
+          <li class="active">
+            <a href="/pages-htmls/contact.html"
+              ><i class="fas fa-envelope"></i> Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="hamburger_nav">
+        <div class="logo">
+          <p class="focus">GAME</p>
+          <p>REVIEWS</p>
+        </div>
+        <div class="hamburger_menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M4 6l16 0" />
+              <path d="M4 12l16 0" />
+              <path d="M4 18l16 0" />
+            </svg>
+          </div>
+          <div class="burger_links">
+            <div onclick="hideMenu()" class="close_icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-x"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M18 6l-12 12" />
+                <path d="M6 6l12 12" />
+              </svg>
+            </div>
+            <div class="link-grp">
+              <a href="/index.html"><i class="fas fa-home"></i> Home</a>
+              <a href="/pages-htmls/review_home.html"
+                ><i class="fas fa-star"></i> Reviews</a
+              >
+              <a href="#Projects"><i class="fas fa-info-circle"></i> About</a>
+              <a href="/pages-htmls/contact.html"
+                ><i class="fas fa-envelope"></i> Contact</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Breadcrumb Section -->
+    <div class="breadcrumb">
+      <p>
+        <a href="/index.html" class="breadcrumb-link">Home</a> >
+        <a href="/pages-htmls/review_home.html" class="breadcrumb-link"
+          >Reviews</a
+        >
+        >
+        <span class="breadcrumb-active">Resident Evil Village</span>
+      </p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+      <div class="container">
+        <!-- Left Column -->
+        <div class="left-column">
+          <h1>Resident Evil Village</h1>
+
+          <!-- Author Section -->
+          <div class="author">
+            <i class="fas fa-user"></i> Made by:
+            <span class="author-name">Mark Rainier Armas</span>
+          </div>
+          <!-- End of Author Section -->
+
+          <hr />
+          <!-- Trailer Section -->
+          <div class="trailer">
+            <iframe
+              src="https://www.youtube.com/embed/tjfTxFzGh3Q?si=cuD3JksFbivD7yaU"
+              title="YouTube video player"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <hr />
+          <!-- Pictures and Descriptions -->
+          <h2>Introduction</h2>
+
+          <div class="image-container">
+            <img
+              src="/assets/images/gameplay/revii/revii-1.jpg"
+              alt="Resident Evil Village - Scene 1"
+            />
+            <p class="hover-text">Dimitrescu Family</p>
+          </div>
+
+          <p>
+            When I started Resident Evil Village, I wasn’t sure how it would
+            follow the intensity of Resident Evil 7: Biohazard. But within
+            minutes, I realized this wasn’t just another horror game—it was an
+            ambitious blend of survival horror and action, delivering both eerie
+            tension and heart-pounding thrills. Capcom didn’t just continue
+            Ethan Winters’ story; they raised the stakes in every possible way.
+          </p>
+          <hr />
+          <h2>Our Insights</h2>
+          <div class="image-container">
+            <img
+              src="/assets/images/gameplay/revii/revii-2.jpg"
+              alt="Resident Evil Village - Scene 2"
+            />
+            <p class="hover-text">Chris Redfield</p>
+          </div>
+          <p>
+            Resident Evil Village masterfully balances atmospheric horror with
+            fast-paced action. Exploring the eerie village and its terrifying
+            locales—like Lady Dimitrescu’s castle and Heisenberg’s factory—was a
+            constant thrill. The game’s enemies are varied and keep you on edge,
+            and the puzzles are clever without being frustrating. What stood out
+            to me most was the sheer variety in gameplay; no section feels
+            repetitive. While the story does lean into the bizarre at times, it
+            never lost my interest. My only gripe is that the game’s second half
+            shifts more toward action, which slightly lessened the horror
+            elements I loved early on.
+          </p>
+          <hr />
+          <h2>Conclusion</h2>
+          <div class="image-container">
+            <img
+              src="/assets/images/gameplay/revii/revii-4.jpg"
+              alt="Resident Evil Village - Scene 3"
+            />
+            <p class="hover-text">Explore Castle Dimitrescu</p>
+          </div>
+          <p>
+            Resident Evil Village is a fantastic evolution of the series,
+            offering an engaging mix of scares, exploration, and combat. Whether
+            you’re a longtime fan or new to the franchise, it’s an unforgettable
+            journey through one of the most atmospheric games I’ve ever played.
+          </p>
+          <hr />
+        </div>
+
+        <!-- Right Column -->
+        <div class="right-column">
+          <div class="game-details">
+            <h2>Release Date</h2>
+            <h3>May 7, 2021</h3>
+          </div>
+          <hr />
+          <div class="game-details">
+            <h2>Developer</h2>
+            <h3>CAPCOM</h3>
+          </div>
+          <hr />
+          <div class="game-desc">
+            <p>
+                Experience survival horror like never before in the 8th major
+                installment in the Resident Evil franchise - Resident Evil Village.
+                With detailed graphics, intense first-person action and masterful
+                storytelling, the terror has never felt more realistic.
+            </p>
+          </div>
+          <hr />
+          <div class="ratings-ctn">
+            <div class="rating-text">
+              <h2>Rating</h2>
+              <p>(4/5)</p>
+            </div>
+
+            <div class="rating-grp">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <hr />
+          <div class="platforms">
+            <h2>Platforms</h2>
+            <div class="platform-ctn">
+              <img
+                class="platform-icon"
+                src="/assets/images/icons/Playstation_logo_colour.png"
+                alt="PlayStation"
+              />
+              <img
+              class="platform-icon"
+              src="/assets/images/icons/Xbox_one_logo.png"
+            />
+              <img
+                class="platform-icon"
+                src="/assets/images/icons/Steam_icon_logo.png"
+                alt="Steam"
+              />
+            </div>
+          </div>
+          <hr />
+          <div class="tags-container">
+            <h2>Tags</h2>
+            <ul>
+                <li>Survival Horror</li>
+                <li>Horror</li>
+                <li>First-Person</li>
+                <li>Singleplayer</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="faq-container">
+        <h3 class="faq-title">FAQ</h3>
+        <!-- This will now align correctly to the left -->
+        <div class="faq-container">
+          <div class="faq">
+            <div>
+              <h4>Do I need to play Resident Evil 7: Biohazard first?</h4>
+              <blockquote>
+                <span
+                  >It’s not necessary, but highly recommended since Village continues Ethan Winters’ story and builds on events from Resident Evil 7.</span
+                >
+              </blockquote>
+            </div>
+          </div>
+          <div class="faq">
+            <div>
+              <h4>How long does it take to complete Resident Evil Village?</h4>
+              <blockquote>
+                <span
+                  >The main story takes about 8-12 hours, but exploring side content can extend playtime to 15-20 hours.
+                </span>
+              </blockquote>
+            </div>
+          </div>
+          <div class="faq">
+            <div>
+              <h4>Is Resident Evil Village more action or horror?</h4>
+              <blockquote>
+                <span
+                  >It’s a mix, with the first half focusing on horror and tension, while the second half leans more into action.</span
+                >
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-carousel">
+        <!-- Previous Button -->
+        <button class="carousel-btn prev-btn">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <div class="carousel-track-container">
+          <div class="carousel-track">
+            <!-- Card 1: Apex Legends -->
+            <div
+              class="card"
+              onclick="window.location.href='/pages-htmls/review-pages/review-apex.html'"
+            >
+              <img
+                class="banner"
+                src="/assets/images/gamebanner/apex.png"
+                alt="Apex Legends"
+              />
+              <video autoplay muted loop>
+                <source src="/assets/videos/apex.mp4" type="video/mp4" />
+              </video>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+
+            <!-- Card 2: Fortnite -->
+            <div
+              class="card"
+              onclick="window.location.href='/pages-htmls/review-pages/review-fortnite.html'"
+            >
+              <img
+                class="banner"
+                src="/assets/images/gamebanner/fortnite.webp"
+                alt="Fortnite"
+              />
+              <video autoplay muted loop>
+                <source src="/assets/videos/fortnite.mp4" type="video/mp4" />
+              </video>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+
+            <!-- Card 3: God of War Ragnarok -->
+            <div
+              class="card"
+              onclick="window.location.href='/pages-htmls/review-pages/review-gow.html'"
+            >
+              <img
+                class="banner"
+                src="/assets/images/gamebanner/gow.webp"
+                alt="God of War"
+              />
+              <video autoplay muted loop>
+                <source src="/assets/videos/gow.mp4" type="video/mp4" />
+              </video>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+
+            <!-- Card 4: Phasmophobia -->
+            <div
+              class="card"
+              onclick="window.location.href='/pages-htmls/review-pages/review-phasmophobia.html'"
+            >
+              <img
+                class="banner"
+                src="/assets/images/gamebanner/phasmophobia.jpg"
+                alt="Phasmophobia"
+              />
+              <video autoplay muted loop>
+                <source
+                  src="/assets/videos/phasmophobia.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+
+            <!-- Card 5: Portal 2 -->
+            <div
+              class="card"
+              onclick="window.location.href='/pages-htmls/review-pages/review-portal.html'"
+            >
+              <img
+                class="banner"
+                src="/assets/images/gamebanner/portal.jpg"
+                alt="Portal"
+              />
+              <video autoplay muted loop>
+                <source src="/assets/videos/portal.mp4" type="video/mp4" />
+              </video>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+
+            <!-- Card 6: Red Dead Redemption 2 -->
+            <div
+              class="card"
+              onclick="window.location.href='/pages-htmls/review-pages/review-rdr2.html'"
+            >
+              <img
+                class="banner"
+                src="/assets/images/gamebanner/rdr2.jpg"
+                alt="Red Dead Redemption 2"
+              />
+              <video autoplay muted loop>
+                <source src="/assets/videos/rdr2.mp4" type="video/mp4" />
+              </video>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+
+            <!-- Card 7: Resident Evil VII -->
+            <div
+              class="card"
+              onclick="window.location.href='/pages-htmls/review-pages/review-revii.html'"
+            >
+              <img
+                class="banner"
+                src="/assets/images/gamebanner/revii.avif"
+                alt="Resident Evil VII"
+              />
+              <video autoplay muted loop>
+                <source src="/assets/videos/revii.mp4" type="video/mp4" />
+              </video>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+
+            <!-- Card 8: Spider-Man -->
+            <div
+              class="card"
+              onclick="window.location.href='/pages-htmls/review-pages/review-spiderman.html'"
+            >
+              <img
+                class="banner"
+                src="/assets/images/gamebanner/spiderman.jpg"
+                alt="Spider-Man"
+              />
+              <video autoplay muted loop>
+                <source src="/assets/videos/spiderman.mp4" type="video/mp4" />
+              </video>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+
+            <!-- Card 9: Valorant -->
+            <div
+              class="card"
+              onclick="window.location.href='/pages-htmls/review-pages/review-valorant.html'"
+            >
+              <img
+                class="banner"
+                src="/assets/images/gamebanner/valorant.jpg"
+                alt="Valorant"
+              />
+              <video autoplay muted loop>
+                <source src="/assets/videos/valorant.mp4" type="video/mp4" />
+              </video>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+
+            <!-- Card 10: Watch Dogs 2 -->
+            <div
+              class="card"
+              onclick="window.location.href='/pages-htmls/review-pages/review-watchdogs.html'"
+            >
+              <img
+                class="banner"
+                src="/assets/images/gamebanner/watchdogs.jpg"
+                alt="Watch Dogs"
+              />
+              <video autoplay muted loop>
+                <source src="/assets/videos/watchdogs.mp4" type="video/mp4" />
+              </video>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Next Button -->
+        <button class="carousel-btn next-btn">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="foot">
+      <p>
+        © 2024 Mark Rainier Armas & Jerome Brent Tegrado.
+        <span style="color: #ffd700">All rights reserved.</span>
+      </p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="/js/scripts.js"></script>
+    <script src="/js/review-pages.js"></script>
+  </body>
+</html>

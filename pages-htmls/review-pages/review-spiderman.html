@@ -16,55 +16,100 @@
   </head>
   <body>
     <header>
-        
-        <nav class="desktop_nav">
-            <div class="logo">
-                <p class="focus">GAME</p>
-                <p>REVIEWS</p>
-            </div>
-            <ul class="nav_links">
-                <li><a href="/index.html"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="/pages-htmls/review_home.html"><i class="fas fa-star"></i> Reviews</a></li>
-                <li><a href="/pages-htmls/about.html"><i class="fas fa-info-circle"></i> About</a></li>
-                <li class="active"><a href="/pages-htmls/contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
-            </ul>
-        </nav>
-        
-        <div class="hamburger_nav">
+      <nav class="desktop_nav">
+        <div class="logo">
+          <p class="focus">GAME</p>
+          <p>REVIEWS</p>
+        </div>
+        <ul class="nav_links">
+          <li>
+            <a href="/index.html"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li>
+            <a href="/pages-htmls/review_home.html"
+              ><i class="fas fa-star"></i> Reviews</a
+            >
+          </li>
+          <li>
+            <a href="/pages-htmls/about.html"
+              ><i class="fas fa-info-circle"></i> About</a
+            >
+          </li>
+          <li class="active">
+            <a href="/pages-htmls/contact.html"
+              ><i class="fas fa-envelope"></i> Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
 
-            <div class="logo">
-                <p class="focus">GAME</p>
-                <p>REVIEWS</p>
-            </div>
-            <div class="hamburger_menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M4 6l16 0" />
-                    <path d="M4 12l16 0" />
-                    <path d="M4 18l16 0" />
-                  </svg>
-            </div>
-            <div class="burger_links">
-                <div onclick="hideMenu()" class="close_icon">
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
-                </div>
-                <div class="link-grp">
-                <a href="/index.html"><i class="fas fa-home"></i> Home</a>
-                <a href="/pages-htmls/review_home.html"><i class="fas fa-star"></i> Reviews</a>
-                <a href="#Projects"><i class="fas fa-info-circle"></i> About</a>
-                <a href="/pages-htmls/contact.html"><i class="fas fa-envelope"></i> Contact</a>
-                </div>
-            </div>
+      <div class="hamburger_nav">
+        <div class="logo">
+          <p class="focus">GAME</p>
+          <p>REVIEWS</p>
         </div>
+        <div class="hamburger_menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M4 6l16 0" />
+              <path d="M4 12l16 0" />
+              <path d="M4 18l16 0" />
+            </svg>
+          </div>
+          <div class="burger_links">
+            <div onclick="hideMenu()" class="close_icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-x"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M18 6l-12 12" />
+                <path d="M6 6l12 12" />
+              </svg>
+            </div>
+            <div class="link-grp">
+              <a href="/index.html"><i class="fas fa-home"></i> Home</a>
+              <a href="/pages-htmls/review_home.html"
+                ><i class="fas fa-star"></i> Reviews</a
+              >
+              <a href="#Projects"><i class="fas fa-info-circle"></i> About</a>
+              <a href="/pages-htmls/contact.html"
+                ><i class="fas fa-envelope"></i> Contact</a
+              >
+            </div>
+          </div>
         </div>
+      </div>
     </header>
 
     <!-- Breadcrumb Section -->
     <div class="breadcrumb">
       <p>
         <a href="/index.html" class="breadcrumb-link">Home</a> >
-        <a href="/pages-htmls/review_home.html" class="breadcrumb-link">Reviews</a> >
+        <a href="/pages-htmls/review_home.html" class="breadcrumb-link"
+          >Reviews</a
+        >
+        >
         <span class="breadcrumb-active">Marvel's Spider-Man Remastered</span>
       </p>
     </div>
@@ -75,7 +120,7 @@
         <!-- Left Column -->
         <div class="left-column">
           <h1>Marvel's Spider-Man Remastered</h1>
-          <hr>
+          <hr />
           <!-- Trailer Section -->
           <div class="trailer">
             <iframe
@@ -84,50 +129,62 @@
               frameborder="0"
             ></iframe>
           </div>
-          <hr>
+          <hr />
           <!-- Pictures and Descriptions -->
           <h2>Introduction</h2>
 
           <div class="image-container">
             <img
-              src="/assets/images/gameplay/rdr2-1.jpg"
+              src="/assets/images/gameplay/spiderman/spiderman-2.jpg"
               alt="Red Dead Redemption 2 - Scene 1"
             />
             <p class="hover-text">The Story Begins</p>
           </div>
 
           <p>
-            Introduction of Review: Dive into the epic tale of Arthur Morgan and
-            the Van der Linde gang.
+            From the moment I started swinging through New York City in Marvel’s
+            Spider-Man, I couldn’t stop smiling. Insomniac Games absolutely
+            nailed what it feels like to be Spider-Man, crafting a game that’s
+            not just fun to play but also packed with heart. This isn’t just
+            another superhero game—it’s an unforgettable experience that
+            captures the essence of both Spider-Man and Peter Parker.
           </p>
-          <hr>
+          <hr />
           <h2>Our Insights</h2>
           <div class="image-container">
             <img
-              src="https://via.placeholder.com/800x400"
+              src="/assets/images/gameplay/spiderman/spiderman-1.jpg"
               alt="Red Dead Redemption 2 - Scene 2"
             />
             <p class="hover-text">Exploring the Wild West</p>
           </div>
           <p>
-            Pros and Cons of the Game:<br /><strong>Pros:</strong> Stunning
-            visuals, captivating storyline.<br /><strong>Cons:</strong> Slow
-            pacing in some missions.
+            The web-swinging is nothing short of magical—smooth, exhilarating,
+            and so addictive I often got sidetracked just zipping around the
+            city. Combat is fast and fluid, mixing Spidey’s acrobatics with
+            gadgets and creative combos that make every fight feel dynamic. The
+            story surprised me with its depth, exploring Peter Parker’s personal
+            struggles and responsibilities alongside his superhero duties. Every
+            character, from Mary Jane to the villains, feels fleshed out and
+            meaningful. While the open-world side activities can get repetitive,
+            the sheer joy of being Spider-Man makes up for it.
           </p>
-          <hr>
+          <hr />
           <h2>Conclusion</h2>
           <div class="image-container">
             <img
-              src="https://via.placeholder.com/800x400"
+              src="/assets/images/gameplay/spiderman/spiderman-4.jpg"
               alt="Red Dead Redemption 2 - Scene 3"
             />
             <p class="hover-text">The Grand Finale</p>
           </div>
           <p>
-            Conclusion of the Review: A breathtaking adventure through the Wild
-            West, leaving players amazed.
+            Marvel’s Spider-Man is everything I could want in a superhero
+            game—fun, emotional, and packed with memorable moments. Whether
+            you’re a lifelong Spider-Man fan or just looking for an amazing
+            action game, this one’s a no-brainer.
           </p>
-          <hr>
+          <hr />
         </div>
 
         <!-- Right Column -->
@@ -137,30 +194,35 @@
             <h3>August 12, 2022</h3>
           </div>
           <hr />
+          <div class="game-details">
+            <h2>Developer</h2>
+            <h3>Insomniac Games</h3>
+          </div>
+          <hr />
           <div class="game-desc">
             <p>
-                In Marvel’s Spider-Man Remastered, the worlds of Peter Parker and
-                Spider-Man collide in an original action-packed story. Play as an
-                experienced Peter Parker, fighting big crime and iconic villains in
-                Marvel’s New York.
+              In Marvel’s Spider-Man Remastered, the worlds of Peter Parker and
+              Spider-Man collide in an original action-packed story. Play as an
+              experienced Peter Parker, fighting big crime and iconic villains
+              in Marvel’s New York.
             </p>
           </div>
           <hr />
           <div class="ratings-ctn">
-          <div class="rating-text">
-            <h2>Rating</h2>
-            <p>(4/5)</p>
+            <div class="rating-text">
+              <h2>Rating</h2>
+              <p>(4.5/5)</p>
+            </div>
+
+            <div class="rating-grp">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
           </div>
-            
-          <div class="rating-grp">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-        </div>
-          <hr>
+          <hr />
           <div class="platforms">
             <h2>Platforms</h2>
             <div class="platform-ctn">
@@ -180,10 +242,10 @@
           <div class="tags-container">
             <h2>Tags</h2>
             <ul>
-                <li>Open World</li>
-                <li>Super Hero</li>
-                <li>Action</li>
-                <li>Singleplayer</li>
+              <li>Open World</li>
+              <li>Super Hero</li>
+              <li>Action</li>
+              <li>Singleplayer</li>
             </ul>
           </div>
         </div>
@@ -195,33 +257,34 @@
         <div class="faq-container">
           <div class="faq">
             <div>
-              <h4>What platforms is the game available on?</h4>
+              <h4>Is Marvel’s Spider-Man connected to the movies?</h4>
               <blockquote>
                 <span
-                  >Red Dead Redemption 2 is available on PS4, Xbox One, and
-                  PC.</span
+                  >No, the game tells an original story separate from the Marvel
+                  Cinematic Universe, though it draws inspiration from
+                  Spider-Man’s comic and film history.</span
                 >
               </blockquote>
             </div>
           </div>
           <div class="faq">
             <div>
-              <h4>Does the game have multiplayer mode?</h4>
+              <h4>How long does it take to complete Marvel’s Spider-Man?</h4>
               <blockquote>
                 <span
-                  >Yes, the game includes Red Dead Online, a multiplayer
-                  mode.</span
+                  >The main story takes about 15-20 hours, but completing side
+                  missions and exploring can extend playtime to 30+ hours.</span
                 >
               </blockquote>
             </div>
           </div>
           <div class="faq">
             <div>
-              <h4>Q: Does the game have multiplayer mode?</h4>
+              <h4>Is Marvel’s Spider-Man available on PC?</h4>
               <blockquote>
                 <span
-                  >A: Yes, the game includes Red Dead Online, a multiplayer
-                  mode.</span
+                  >Yes, it was initially a PlayStation exclusive but is now
+                  available on PC via Steam and the Epic Games Store.</span
                 >
               </blockquote>
             </div>
@@ -236,228 +299,231 @@
         </button>
 
         <div class="carousel-track-container">
-            <div class="carousel-track">
-              <!-- Card 1: Apex Legends -->
-              <div
-                class="card"
-                onclick="window.location.href='/pages-htmls/review-pages/review-apex.html'"
-              >
-                <img
-                  class="banner"
-                  src="/assets/images/gamebanner/apex.png"
-                  alt="Apex Legends"
-                />
-                <video autoplay muted loop>
-                  <source src="/assets/videos/apex.mp4" type="video/mp4" />
-                </video>
-                <div class="rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                </div>
+          <div class="carousel-track">
+            <!-- Card 1: Apex Legends -->
+            <div
+              class="card"
+              onclick="window.location.href='/pages-htmls/review-pages/review-apex.html'"
+            >
+              <img
+                class="banner"
+                src="/assets/images/gamebanner/apex.png"
+                alt="Apex Legends"
+              />
+              <video autoplay muted loop>
+                <source src="/assets/videos/apex.mp4" type="video/mp4" />
+              </video>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
               </div>
-  
-              <!-- Card 2: Fortnite -->
-              <div
-                class="card"
-                onclick="window.location.href='/pages-htmls/review-pages/review-fortnite.html'"
-              >
-                <img
-                  class="banner"
-                  src="/assets/images/gamebanner/fortnite.webp"
-                  alt="Fortnite"
-                />
-                <video autoplay muted loop>
-                  <source src="/assets/videos/fortnite.mp4" type="video/mp4" />
-                </video>
-                <div class="rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                </div>
+            </div>
+
+            <!-- Card 2: Fortnite -->
+            <div
+              class="card"
+              onclick="window.location.href='/pages-htmls/review-pages/review-fortnite.html'"
+            >
+              <img
+                class="banner"
+                src="/assets/images/gamebanner/fortnite.webp"
+                alt="Fortnite"
+              />
+              <video autoplay muted loop>
+                <source src="/assets/videos/fortnite.mp4" type="video/mp4" />
+              </video>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
               </div>
-  
-              <!-- Card 3: God of War Ragnarok -->
-              <div
-                class="card"
-                onclick="window.location.href='/pages-htmls/review-pages/review-gow.html'"
-              >
-                <img
-                  class="banner"
-                  src="/assets/images/gamebanner/gow.webp"
-                  alt="God of War"
-                />
-                <video autoplay muted loop>
-                  <source src="/assets/videos/gow.mp4" type="video/mp4" />
-                </video>
-                <div class="rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
+            </div>
+
+            <!-- Card 3: God of War Ragnarok -->
+            <div
+              class="card"
+              onclick="window.location.href='/pages-htmls/review-pages/review-gow.html'"
+            >
+              <img
+                class="banner"
+                src="/assets/images/gamebanner/gow.webp"
+                alt="God of War"
+              />
+              <video autoplay muted loop>
+                <source src="/assets/videos/gow.mp4" type="video/mp4" />
+              </video>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
               </div>
-  
-              <!-- Card 4: Phasmophobia -->
-              <div
-                class="card"
-                onclick="window.location.href='/pages-htmls/review-pages/review-phasmophobia.html'"
-              >
-                <img
-                  class="banner"
-                  src="/assets/images/gamebanner/phasmophobia.jpg"
-                  alt="Phasmophobia"
+            </div>
+
+            <!-- Card 4: Phasmophobia -->
+            <div
+              class="card"
+              onclick="window.location.href='/pages-htmls/review-pages/review-phasmophobia.html'"
+            >
+              <img
+                class="banner"
+                src="/assets/images/gamebanner/phasmophobia.jpg"
+                alt="Phasmophobia"
+              />
+              <video autoplay muted loop>
+                <source
+                  src="/assets/videos/phasmophobia.mp4"
+                  type="video/mp4"
                 />
-                <video autoplay muted loop>
-                  <source src="/assets/videos/phasmophobia.mp4" type="video/mp4" />
-                </video>
-                <div class="rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
+              </video>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
               </div>
-  
-              <!-- Card 5: Portal 2 -->
-              <div
-                class="card"
-                onclick="window.location.href='/pages-htmls/review-pages/review-portal.html'"
-              >
-                <img
-                  class="banner"
-                  src="/assets/images/gamebanner/portal.jpg"
-                  alt="Portal"
-                />
-                <video autoplay muted loop>
-                  <source src="/assets/videos/portal.mp4" type="video/mp4" />
-                </video>
-                <div class="rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                </div>
+            </div>
+
+            <!-- Card 5: Portal 2 -->
+            <div
+              class="card"
+              onclick="window.location.href='/pages-htmls/review-pages/review-portal.html'"
+            >
+              <img
+                class="banner"
+                src="/assets/images/gamebanner/portal.jpg"
+                alt="Portal"
+              />
+              <video autoplay muted loop>
+                <source src="/assets/videos/portal.mp4" type="video/mp4" />
+              </video>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
               </div>
-  
-              <!-- Card 6: Red Dead Redemption 2 -->
-              <div
-                class="card"
-                onclick="window.location.href='/pages-htmls/review-pages/review-rdr2.html'"
-              >
-                <img
-                  class="banner"
-                  src="/assets/images/gamebanner/rdr2.jpg"
-                  alt="Red Dead Redemption 2"
-                />
-                <video autoplay muted loop>
-                  <source src="/assets/videos/rdr2.mp4" type="video/mp4" />
-                </video>
-                <div class="rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
+            </div>
+
+            <!-- Card 6: Red Dead Redemption 2 -->
+            <div
+              class="card"
+              onclick="window.location.href='/pages-htmls/review-pages/review-rdr2.html'"
+            >
+              <img
+                class="banner"
+                src="/assets/images/gamebanner/rdr2.jpg"
+                alt="Red Dead Redemption 2"
+              />
+              <video autoplay muted loop>
+                <source src="/assets/videos/rdr2.mp4" type="video/mp4" />
+              </video>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
               </div>
-  
-              <!-- Card 7: Resident Evil VII -->
-              <div
-                class="card"
-                onclick="window.location.href='/pages-htmls/review-pages/review-revii.html'"
-              >
-                <img
-                  class="banner"
-                  src="/assets/images/gamebanner/revii.avif"
-                  alt="Resident Evil VII"
-                />
-                <video autoplay muted loop>
-                  <source src="/assets/videos/revii.mp4" type="video/mp4" />
-                </video>
-                <div class="rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                </div>
+            </div>
+
+            <!-- Card 7: Resident Evil VII -->
+            <div
+              class="card"
+              onclick="window.location.href='/pages-htmls/review-pages/review-revii.html'"
+            >
+              <img
+                class="banner"
+                src="/assets/images/gamebanner/revii.avif"
+                alt="Resident Evil VII"
+              />
+              <video autoplay muted loop>
+                <source src="/assets/videos/revii.mp4" type="video/mp4" />
+              </video>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
               </div>
-  
-              <!-- Card 8: Spider-Man -->
-              <div
-                class="card"
-                onclick="window.location.href='/pages-htmls/review-pages/review-spiderman.html'"
-              >
-                <img
-                  class="banner"
-                  src="/assets/images/gamebanner/spiderman.jpg"
-                  alt="Spider-Man"
-                />
-                <video autoplay muted loop>
-                  <source src="/assets/videos/spiderman.mp4" type="video/mp4" />
-                </video>
-                <div class="rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-                </div>
+            </div>
+
+            <!-- Card 8: Spider-Man -->
+            <div
+              class="card"
+              onclick="window.location.href='/pages-htmls/review-pages/review-spiderman.html'"
+            >
+              <img
+                class="banner"
+                src="/assets/images/gamebanner/spiderman.jpg"
+                alt="Spider-Man"
+              />
+              <video autoplay muted loop>
+                <source src="/assets/videos/spiderman.mp4" type="video/mp4" />
+              </video>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
               </div>
-  
-              <!-- Card 9: Valorant -->
-              <div
-                class="card"
-                onclick="window.location.href='/pages-htmls/review-pages/review-valorant.html'"
-              >
-                <img
-                  class="banner"
-                  src="/assets/images/gamebanner/valorant.jpg"
-                  alt="Valorant"
-                />
-                <video autoplay muted loop>
-                  <source src="/assets/videos/valorant.mp4" type="video/mp4" />
-                </video>
-                <div class="rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                </div>
+            </div>
+
+            <!-- Card 9: Valorant -->
+            <div
+              class="card"
+              onclick="window.location.href='/pages-htmls/review-pages/review-valorant.html'"
+            >
+              <img
+                class="banner"
+                src="/assets/images/gamebanner/valorant.jpg"
+                alt="Valorant"
+              />
+              <video autoplay muted loop>
+                <source src="/assets/videos/valorant.mp4" type="video/mp4" />
+              </video>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
               </div>
-  
-              <!-- Card 10: Watch Dogs 2 -->
-              <div
-                class="card"
-                onclick="window.location.href='/pages-htmls/review-pages/review-watchdogs.html'"
-              >
-                <img
-                  class="banner"
-                  src="/assets/images/gamebanner/watchdogs.jpg"
-                  alt="Watch Dogs"
-                />
-                <video autoplay muted loop>
-                  <source src="/assets/videos/watchdogs.mp4" type="video/mp4" />
-                </video>
-                <div class="rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                </div>
+            </div>
+
+            <!-- Card 10: Watch Dogs 2 -->
+            <div
+              class="card"
+              onclick="window.location.href='/pages-htmls/review-pages/review-watchdogs.html'"
+            >
+              <img
+                class="banner"
+                src="/assets/images/gamebanner/watchdogs.jpg"
+                alt="Watch Dogs"
+              />
+              <video autoplay muted loop>
+                <source src="/assets/videos/watchdogs.mp4" type="video/mp4" />
+              </video>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
               </div>
             </div>
           </div>
+        </div>
 
         <!-- Next Button -->
         <button class="carousel-btn next-btn">

@@ -16,243 +16,325 @@
   </head>
   <body>
     <header>
-        
       <nav class="desktop_nav">
-          <div class="logo">
-              <p class="focus">GAME</p>
-              <p>REVIEWS</p>
-          </div>
-          <ul class="nav_links">
-              <li><a href="/index.html"><i class="fas fa-home"></i> Home</a></li>
-              <li class="active"><a href="/pages-htmls/review_home.html"><i class="fas fa-star"></i> Reviews</a></li>
-              <li><a href="/pages-htmls/about.html"><i class="fas fa-info-circle"></i> About</a></li>
-              <li><a href="/pages-htmls/contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
-          </ul>
+        <div class="logo">
+          <p class="focus">GAME</p>
+          <p>REVIEWS</p>
+        </div>
+        <ul class="nav_links">
+          <li>
+            <a href="/index.html"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li class="active">
+            <a href="/pages-htmls/review_home.html"
+              ><i class="fas fa-star"></i> Reviews</a
+            >
+          </li>
+          <li>
+            <a href="/pages-htmls/about.html"
+              ><i class="fas fa-info-circle"></i> About</a
+            >
+          </li>
+          <li>
+            <a href="/pages-htmls/contact.html"
+              ><i class="fas fa-envelope"></i> Contact</a
+            >
+          </li>
+        </ul>
       </nav>
-      
-      <div class="hamburger_nav">
 
-          <div class="logo">
-              <p class="focus">GAME</p>
-              <p>REVIEWS</p>
-          </div>
-          <div class="hamburger_menu">
+      <div class="hamburger_nav">
+        <div class="logo">
+          <p class="focus">GAME</p>
+          <p>REVIEWS</p>
+        </div>
+        <div class="hamburger_menu">
           <div class="hamburger-icon" onclick="toggleMenu()">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <path d="M4 6l16 0" />
-                  <path d="M4 12l16 0" />
-                  <path d="M4 18l16 0" />
-                </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M4 6l16 0" />
+              <path d="M4 12l16 0" />
+              <path d="M4 18l16 0" />
+            </svg>
           </div>
           <div class="burger_links">
-              <div onclick="hideMenu()" class="close_icon">
-                  <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12"/></svg>
-              </div>
-              <div class="link-grp">
+            <div onclick="hideMenu()" class="close_icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-x"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M18 6l-12 12" />
+                <path d="M6 6l12 12" />
+              </svg>
+            </div>
+            <div class="link-grp">
               <a href="/index.html"><i class="fas fa-home"></i> Home</a>
-              <a href="/pages-htmls/review_home.html"><i class="fas fa-star"></i> Reviews</a>
+              <a href="/pages-htmls/review_home.html"
+                ><i class="fas fa-star"></i> Reviews</a
+              >
               <a href="#Projects"><i class="fas fa-info-circle"></i> About</a>
-              <a href="/pages-htmls/contact.html"><i class="fas fa-envelope"></i> Contact</a>
-              </div>
+              <a href="/pages-htmls/contact.html"
+                ><i class="fas fa-envelope"></i> Contact</a
+              >
+            </div>
           </div>
+        </div>
       </div>
-      </div>
-  </header>
+    </header>
     <section class="review-home-section">
       <h2><i class="fas fa-star"></i> Reviews</h2>
       <div class="card-grp">
-      <div class="container">
-        <div class="card" data-popup="popup1" onclick="window.location.href='/pages-htmls/review-pages/review-rdr2.html'">
-          <img
-            class="banner"
-            src="/assets/images/gamebanner/rdr2.jpg"
-            alt="Game Image"
-          />
-          <video>
-            <source src="/assets/videos/rdr2.mp4" type="video/mp4" />
-          </video>
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
+        <div class="container">
+          <div
+            class="card"
+            data-popup="popup1"
+            onclick="window.location.href='/pages-htmls/review-pages/review-rdr2.html'"
+          >
+            <img
+              class="banner"
+              src="/assets/images/gamebanner/rdr2.jpg"
+              alt="Game Image"
+            />
+            <video>
+              <source src="/assets/videos/rdr2.mp4" type="video/mp4" />
+            </video>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div
+            class="card"
+            data-popup="popup2"
+            onclick="window.location.href='/pages-htmls/review-pages/review-gow.html'"
+          >
+            <img
+              class="banner"
+              src="/assets/images/gamebanner/gow.webp"
+              alt="Game Image"
+            />
+            <video>
+              <source src="/assets/videos/gow.mp4" type="video/mp4" />
+            </video>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div
+            class="card"
+            data-popup="popup3"
+            onclick="window.location.href='/pages-htmls/review-pages/review-revii.html'"
+          >
+            <img
+              class="banner"
+              src="/assets/images/gamebanner/revii.avif"
+              alt="Game Image"
+            />
+            <video>
+              <source src="/assets/videos/revii.mp4" type="video/mp4" />
+            </video>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div
+            class="card"
+            data-popup="popup4"
+            onclick="window.location.href='/pages-htmls/review-pages/review-spiderman.html'"
+          >
+            <img
+              class="banner"
+              src="/assets/images/gamebanner/spiderman.jpg"
+              alt="Game Image"
+            />
+            <video>
+              <source src="/assets/videos/spiderman.mp4" type="video/mp4" />
+            </video>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div
+            class="card"
+            data-popup="popup5"
+            onclick="window.location.href='/pages-htmls/review-pages/review-portal.html'"
+          >
+            <img
+              class="banner"
+              src="/assets/images/gamebanner/portal.jpg"
+              alt="Game Image"
+            />
+            <video>
+              <source src="/assets/videos/portal.mp4" type="video/mp4" />
+            </video>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div
+            class="card"
+            data-popup="popup6"
+            onclick="window.location.href='/pages-htmls/review-pages/review-apex.html'"
+          >
+            <img
+              class="banner"
+              src="/assets/images/gamebanner/apex.png"
+              alt="Game Image"
+            />
+            <video>
+              <source src="/assets/videos/apex.mp4" type="video/mp4" />
+            </video>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div
+            class="card"
+            data-popup="popup7"
+            onclick="window.location.href='/pages-htmls/review-pages/review-phasmophobia.html'"
+          >
+            <img
+              class="banner"
+              src="/assets/images/gamebanner/phasmophobia.jpg"
+              alt="Game Image"
+            />
+            <video>
+              <source src="/assets/videos/phasmophobia.mp4" type="video/mp4" />
+            </video>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div
+            class="card"
+            data-popup="popup8"
+            onclick="window.location.href='/pages-htmls/review-pages/review-watchdogs.html'"
+          >
+            <img
+              class="banner"
+              src="/assets/images/gamebanner/watchdogs.jpg"
+              alt="Game Image"
+            />
+            <video>
+              <source src="/assets/videos/watchdogs.mp4" type="video/mp4" />
+            </video>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div
+            class="card"
+            data-popup="popup9"
+            onclick="window.location.href='/pages-htmls/review-pages/review-valorant.html'"
+          >
+            <img
+              class="banner"
+              src="/assets/images/gamebanner/valorant.jpg"
+              alt="Game Image"
+            />
+            <video>
+              <source src="/assets/videos/valorant.mp4" type="video/mp4" />
+            </video>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div
+            class="card"
+            data-popup="popup10"
+            onclick="window.location.href='/pages-htmls/review-pages/review-fortnite.html'"
+          >
+            <img
+              class="banner"
+              src="/assets/images/gamebanner/fortnite.webp"
+              alt="Game Image"
+            />
+            <video>
+              <source src="/assets/videos/fortnite.mp4" type="video/mp4" />
+            </video>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="card" data-popup="popup2" onclick="window.location.href='/pages-htmls/review-pages/review-gow.html'">
-          <img
-            class="banner"
-            src="/assets/images/gamebanner/gow.webp"
-            alt="Game Image"
-          />
-          <video>
-            <source src="/assets/videos/gow.mp4" type="video/mp4" />
-          </video>
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="card" data-popup="popup3" onclick="window.location.href='/pages-htmls/review-pages/review-revii.html'">
-          <img
-            class="banner"
-            src="/assets/images/gamebanner/revii.avif"
-            alt="Game Image"
-          />
-          <video>
-            <source src="/assets/videos/revii.mp4" type="video/mp4" />
-          </video>
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="card" data-popup="popup4" onclick="window.location.href='/pages-htmls/review-pages/review-spiderman.html'">
-          <img
-            class="banner"
-            src="/assets/images/gamebanner/spiderman.jpg"
-            alt="Game Image"
-          />
-          <video>
-            <source src="/assets/videos/spiderman.mp4" type="video/mp4" />
-          </video>
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="card" data-popup="popup5"  onclick="window.location.href='/pages-htmls/review-pages/review-portal.html'">
-          <img
-            class="banner"
-            src="/assets/images/gamebanner/portal.jpg"
-            alt="Game Image"
-          />
-          <video>
-            <source src="/assets/videos/portal.mp4" type="video/mp4"/>
-          </video>
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="card" data-popup="popup6" onclick="window.location.href='/pages-htmls/review-pages/review-apex.html'">
-          <img
-            class="banner"
-            src="/assets/images/gamebanner/apex.png"
-            alt="Game Image"
-          />
-          <video>
-            <source src="/assets/videos/apex.mp4" type="video/mp4" />
-          </video>
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="far fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="card" data-popup="popup7" onclick="window.location.href='/pages-htmls/review-pages/review-phasmophobia.html'">
-          <img
-            class="banner"
-            src="/assets/images/gamebanner/phasmophobia.jpg"
-            alt="Game Image"
-          />
-          <video>
-            <source src="/assets/videos/phasmophobia.mp4" type="video/mp4" />
-          </video>
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="card" data-popup="popup8" onclick="window.location.href='/pages-htmls/review-pages/review-watchdogs.html'">
-          <img
-            class="banner"
-            src="/assets/images/gamebanner/watchdogs.jpg"
-            alt="Game Image"
-          />
-          <video>
-            <source src="/assets/videos/watchdogs.mp4" type="video/mp4" />
-          </video>
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="card" data-popup="popup9" onclick="window.location.href='/pages-htmls/review-pages/review-valorant.html'">
-          <img
-            class="banner"
-            src="/assets/images/gamebanner/valorant.jpg"
-            alt="Game Image"
-          />
-          <video>
-            <source src="/assets/videos/valorant.mp4" type="video/mp4" />
-          </video>
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="card" data-popup="popup10" onclick="window.location.href='/pages-htmls/review-pages/review-fortnite.html'">
-          <img
-            class="banner"
-            src="/assets/images/gamebanner/fortnite.webp"
-            alt="Game Image"
-          />
-          <video>
-            <source src="/assets/videos/fortnite.mp4" type="video/mp4" />
-          </video>
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="far fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-        </div>
-      </div>
-    </div>
     </section>
 
     <div class="popup-card" id="popup1">
@@ -277,7 +359,6 @@
             class="platform-icon"
             src="/assets/images/icons/Playstation_logo_colour.png"
           />
-
           <img
             class="platform-icon"
             src="/assets/images/icons/Xbox_one_logo.png"
@@ -285,14 +366,6 @@
           <img
             class="platform-icon"
             src="/assets/images/icons/Steam_icon_logo.png"
-          />
-          <img
-            class="platform-icon"
-            src="/assets/images/icons/Nintendo_Switch_logo.png"
-          />
-          <img
-            class="platform-icon"
-            src="/assets/images/icons/Apple_logo_white.png"
           />
         </div>
       </div>
@@ -328,33 +401,22 @@
           <img
             class="platform-icon"
             src="/assets/images/icons/Playstation_logo_colour.png"
-          />
-
-          <img
-            class="platform-icon"
-            src="/assets/images/icons/Xbox_one_logo.png"
+            alt="PlayStation"
           />
           <img
             class="platform-icon"
             src="/assets/images/icons/Steam_icon_logo.png"
-          />
-          <img
-            class="platform-icon"
-            src="/assets/images/icons/Nintendo_Switch_logo.png"
-          />
-          <img
-            class="platform-icon"
-            src="/assets/images/icons/Apple_logo_white.png"
+            alt="Steam"
           />
         </div>
       </div>
       <hr />
       <div class="tags-container">
         <h2>Tags:</h2>
-        <li>Open World</li>
-        <li>Story Rich</li>
-        <li>Western</li>
+        <li>Action</li>
         <li>Adventure</li>
+        <li>RPG</li>
+        <li>3D</li>
       </div>
     </div>
 
@@ -388,14 +450,6 @@
           <img
             class="platform-icon"
             src="/assets/images/icons/Steam_icon_logo.png"
-          />
-          <img
-            class="platform-icon"
-            src="/assets/images/icons/Nintendo_Switch_logo.png"
-          />
-          <img
-            class="platform-icon"
-            src="/assets/images/icons/Apple_logo_white.png"
           />
         </div>
       </div>
@@ -431,22 +485,9 @@
             class="platform-icon"
             src="/assets/images/icons/Playstation_logo_colour.png"
           />
-
-          <img
-            class="platform-icon"
-            src="/assets/images/icons/Xbox_one_logo.png"
-          />
           <img
             class="platform-icon"
             src="/assets/images/icons/Steam_icon_logo.png"
-          />
-          <img
-            class="platform-icon"
-            src="/assets/images/icons/Nintendo_Switch_logo.png"
-          />
-          <img
-            class="platform-icon"
-            src="/assets/images/icons/Apple_logo_white.png"
           />
         </div>
       </div>
@@ -480,7 +521,6 @@
             class="platform-icon"
             src="/assets/images/icons/Playstation_logo_colour.png"
           />
-
           <img
             class="platform-icon"
             src="/assets/images/icons/Xbox_one_logo.png"
@@ -488,14 +528,6 @@
           <img
             class="platform-icon"
             src="/assets/images/icons/Steam_icon_logo.png"
-          />
-          <img
-            class="platform-icon"
-            src="/assets/images/icons/Nintendo_Switch_logo.png"
-          />
-          <img
-            class="platform-icon"
-            src="/assets/images/icons/Apple_logo_white.png"
           />
         </div>
       </div>
@@ -541,14 +573,6 @@
             class="platform-icon"
             src="/assets/images/icons/Steam_icon_logo.png"
           />
-          <img
-            class="platform-icon"
-            src="/assets/images/icons/Nintendo_Switch_logo.png"
-          />
-          <img
-            class="platform-icon"
-            src="/assets/images/icons/Apple_logo_white.png"
-          />
         </div>
       </div>
       <hr />
@@ -581,24 +605,7 @@
         <div class="platform-ctn">
           <img
             class="platform-icon"
-            src="/assets/images/icons/Playstation_logo_colour.png"
-          />
-
-          <img
-            class="platform-icon"
-            src="/assets/images/icons/Xbox_one_logo.png"
-          />
-          <img
-            class="platform-icon"
             src="/assets/images/icons/Steam_icon_logo.png"
-          />
-          <img
-            class="platform-icon"
-            src="/assets/images/icons/Nintendo_Switch_logo.png"
-          />
-          <img
-            class="platform-icon"
-            src="/assets/images/icons/Apple_logo_white.png"
           />
         </div>
       </div>
@@ -645,18 +652,14 @@
             class="platform-icon"
             src="/assets/images/icons/Nintendo_Switch_logo.png"
           />
-          <img
-            class="platform-icon"
-            src="/assets/images/icons/Apple_logo_white.png"
-          />
         </div>
       </div>
       <hr />
       <div class="tags-container">
         <h2>Tags:</h2>
+        <li>Action</li>
         <li>Open World</li>
-        <li>Story Rich</li>
-        <li>Western</li>
+        <li>Hacking</li>
         <li>Adventure</li>
       </div>
     </div>
@@ -682,7 +685,6 @@
             class="platform-icon"
             src="/assets/images/icons/Playstation_logo_colour.png"
           />
-
           <img
             class="platform-icon"
             src="/assets/images/icons/Xbox_one_logo.png"
@@ -691,29 +693,20 @@
             class="platform-icon"
             src="/assets/images/icons/Steam_icon_logo.png"
           />
-          <img
-            class="platform-icon"
-            src="/assets/images/icons/Nintendo_Switch_logo.png"
-          />
-          <img
-            class="platform-icon"
-            src="/assets/images/icons/Apple_logo_white.png"
-          />
         </div>
       </div>
       <hr />
       <div class="tags-container">
-        <h2>Tags:</h2>
-        <li>Open World</li>
-        <li>Story Rich</li>
-        <li>Western</li>
-        <li>Adventure</li>
+        <li>Multiplayer</li>
+        <li>Tactical Shooter</li>
+        <li>Competitive</li>
+        <li>Strategy</li>
       </div>
     </div>
 
     <div class="popup-card" id="popup10">
       <div class="game-details">
-        <h2>gow</h2>
+        <h2>Fortnite</h2>
         <h3>October 26, 2018</h3>
       </div>
       <hr />
@@ -732,42 +725,54 @@
           <img
             class="platform-icon"
             src="/assets/images/icons/Playstation_logo_colour.png"
+            alt="PlayStation"
           />
-
           <img
             class="platform-icon"
             src="/assets/images/icons/Xbox_one_logo.png"
-          />
-          <img
-            class="platform-icon"
-            src="/assets/images/icons/Steam_icon_logo.png"
+            alt="Xbox"
           />
           <img
             class="platform-icon"
             src="/assets/images/icons/Nintendo_Switch_logo.png"
+            alt="Nintendo Switch"
+          />
+          <img
+            class="platform-icon"
+            src="/assets/images/icons/Steam_icon_logo.png"
+            alt="Windows"
+          />
+          <img
+            class="platform-icon"
+            src="/assets/images/icons/Android_robot.svg.png"
+            alt="Android"
           />
           <img
             class="platform-icon"
             src="/assets/images/icons/Apple_logo_white.png"
+            alt="Apple"
           />
         </div>
       </div>
       <hr />
       <div class="tags-container">
         <h2>Tags:</h2>
-        <li>Open World</li>
-        <li>Story Rich</li>
-        <li>Western</li>
-        <li>Adventure</li>
+        <li>Battle Royale</li>
+        <li>Multiplayer</li>
+        <li>Creative</li>
+        <li>Casual</li>
       </div>
     </div>
 
     <script src="/js/scripts.js"></script>
     <script src="/js/cards.js"></script>
     <footer>
-        <p>© 2024 Mark Rainier Armas & Jerome Brent Tegrado. <span style="color: #ffd700;">All rights reserved.</span></p>
+      <p>
+        © 2024 Mark Rainier Armas & Jerome Brent Tegrado.
+        <span style="color: #ffd700">All rights reserved.</span>
+      </p>
     </footer>
-    
+
     <script src="/js/cards.js"></script>
     <script src="/js/scripts.js"></script>
   </body>
