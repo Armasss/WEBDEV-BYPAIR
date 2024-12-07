@@ -1,0 +1,163 @@
+/* For Large Devices (Desktops, 1200px and above) */
+@media (min-width: 1200px) {
+    .desktop_nav {
+        display: flex; /* Keep desktop navigation for large screens */
+    }
+    .hamburger_nav, .burger_links {
+        display: none; /* Hide hamburger navigation */
+    }
+}
+
+
+
+/* For Small Devices (Mobile Phones, up to 767px) */
+@media (max-width: 767px) {
+    /* Navbar Adjustments */
+    .desktop_nav {
+        display: none; /* Hide desktop navigation */
+    }
+    .hamburger_nav {
+        display: flex; /* Show hamburger navigation */
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px; /* Adjust padding for smaller screens */
+        background-color: black;
+        border-bottom: 2px solid #ffd700;
+    }
+    .hamburger_nav .logo {
+        font-size: 1.2rem; /* Scale down the logo text */
+    }
+    .hamburger-icon svg {
+        width: 25px; /* Adjust size of burger icon */
+        height: 25px;
+    }
+
+    /* Burger Menu (Slide Out) */
+    .burger_links {
+        position: fixed;
+        top: 0;
+        right: -300px; /* Hidden by default */
+        width: 250px; /* Smaller menu width */
+        height: 100vh; /* Full height for mobile menu */
+        background-color: black;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 20px;
+        transition: right 0.3s ease;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .burger_links.show {
+        right: 0; /* Slide-in effect */
+    }
+
+    .burger_links a {
+        font-size: 1rem; /* Smaller link text size */
+        padding: 10px 20px; /* Reduce padding */
+        text-align: center;
+        color: white;
+        text-transform: none;
+    }
+
+    .burger_links a:hover {
+        color: black;
+        background-color: #ffd700; /* Highlight effect */
+    }
+
+    .close_icon svg {
+        align-self: flex-end;
+        margin: 10px;
+        cursor: pointer;
+        width: 25px; /* Adjust size */
+        height: 25px;
+        background-color: #ffd700;
+        border-radius: 50%;
+        padding: 5px;
+    }
+}
+
+/* For Tablets and Medium Screens (768px to 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    html {
+        font-size: 14px; /* Adjust base font size */
+    }
+
+    .carousel-container {
+        width: 90%; /* Reduce carousel width */
+        height: 70vh; /* Adjust height for tablets */
+    }
+
+    .game-title {
+        font-size: 1.2rem; /* Scale down game title */
+        bottom: 15px; /* Adjust spacing */
+        left: 15px;
+        padding: 10px 20px;
+    }
+
+    .cinematic-text {
+        padding: 20px 0; /* Adjust spacing for cinematic text */
+        margin-bottom: 30px;
+    }
+
+    .word {
+        font-size: 1.8rem; /* Reduce word font size */
+    }
+
+    .carousel-btn {
+        width: 50px; /* Reduce button size */
+        height: 50px;
+    }
+
+    footer {
+        font-size: 0.9rem; /* Adjust footer text size */
+    }
+}
+
+/* For Small Devices (Mobile Phones, up to 767px) */
+@media (max-width: 767px) {
+    html {
+        font-size: 12px; /* Reduce base font size further */
+    }
+
+    body {
+        background-size: 10px; /* Scale down background pattern */
+    }
+
+    .carousel-container {
+        width: 95%; /* Full width for carousel */
+        height: 60vh; /* Adjust height for mobile */
+    }
+
+    .game-title {
+        font-size: 1rem; /* Further reduce game title font size */
+        bottom: 10px;
+        left: 10px;
+        padding: 8px 15px; /* Compact padding */
+    }
+
+    .cinematic-text {
+        flex-direction: column; /* Stack cinematic text */
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    .word {
+        font-size: 1.5rem; /* Smaller font for words */
+        margin-bottom: 10px;
+    }
+
+    .carousel-btn {
+        width: 40px; /* Reduce button size */
+        height: 40px;
+        font-size: 20px; /* Adjust icon size */
+    }
+
+    footer {
+        font-size: 0.8rem; /* Adjust footer text size */
+        padding: 5px;
+    }
+}
+
