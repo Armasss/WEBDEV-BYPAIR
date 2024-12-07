@@ -79,9 +79,17 @@ header a{
   font-size: 16px;  
   font-weight: 700;
   padding: 10px 15px;
+  border-radius: 10px;
 }
 
 .desktop_nav li a:hover{
+  transition: all 0.3s ease 0s;
+  color: black;
+  background-color: #ffd700;
+  border-radius: 10px;
+}
+
+.desktop_nav .active a{
   transition: all 0.3s ease 0s;
   color: black;
   background-color: #ffd700;
