@@ -9,8 +9,8 @@
 
 .carousel-container {
     position: relative;
-    width: 85%;
-    height: 70vh;
+    width: 80%;
+    height: 80vh;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -19,7 +19,7 @@
     margin: 0 auto;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    margin-top: 20px;
+    margin-top: 90px;
 }
 
 .carousel-wrapper {
@@ -110,7 +110,7 @@
     z-index: 20;
     letter-spacing: 4px;
     padding: 25px 0px;
-    margin-top: 10px;
+    margin-bottom: 55px;
 }
 
 .word {
