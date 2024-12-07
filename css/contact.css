@@ -1,10 +1,15 @@
-/* Reset height */
+/* Reset height and set up Flexbox */
 html, body {
-    height: auto !important;
+    min-height: 100vh; /* Ensures the body takes at least the full viewport height */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    display: flex; /* Enables Flexbox on the body */
+    flex-direction: column; /* Stacks children vertically */
 }
 
 /* Contact Section */
 .contact-section {
+    flex: 1; /* Allows the contact section to grow and fill available space */
     text-align: center;
     margin-top: 100px;
     max-width: 800px;
@@ -149,12 +154,12 @@ textarea {
     margin-bottom: 20px; /* Added space below the send button */
 }
 
-
 .send-btn:hover {
     background-color: #fff;
     color: #000;
     transform: scale(1.05); /* Hover zoom effect */
 }
+
 
 /* Notification */
 .notification {
