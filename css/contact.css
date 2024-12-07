@@ -1,18 +1,16 @@
-body {
-    font-family: "Inter", sans-serif;
-    background-color: rgb(16, 16, 16) !important;
-    background-image: url("/assets/controller-svgrepo-com.svg");
-    background-size: 25px; /* Adjust size of each image */
-  }
-  
+/* Reset height */
+html, body {
+    height: auto !important;
+}
 
 /* Contact Section */
 .contact-section {
     text-align: center;
-    margin-top: -50px !important;
+    margin-top: 100px;
     max-width: 800px;
     color: #ffd700;
     padding: 0 15px; /* Add padding for better view on smaller screens */
+    margin-left: 400px; /* Increased to shift the contact section further to the right */
 }
 
 .contact-section h2 {
@@ -35,8 +33,8 @@ body {
 .email-contact {
     text-align: left;
     margin-left: 20px;
-    margin-top: 40px;
-    margin-bottom: 200px;
+    margin-top: 20px;
+    margin-bottom: 60px;
 }
 
 .email-contact h3 {
@@ -148,7 +146,9 @@ textarea {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    margin-bottom: 20px; /* Added space below the send button */
 }
+
 
 .send-btn:hover {
     background-color: #fff;
