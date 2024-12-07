@@ -343,6 +343,36 @@ iframe {
     background-color: #ffffff !important;
     color: #000000 !important;
 }
+.right-column .ratings-ctn{
+    margin-top: 15px !important;
+}
+
+.right-column .rating-text h2{
+    font-size: 2rem !important;
+    color: #ffd700 !important;
+}
+
+.right-column .rating-text p{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: auto 0px;
+    padding: 0px 10px;
+}
+
+.right-column .rating-text{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.right-column .ratings-ctn .rating-grp{
+    font-size: 2rem !important;
+    color: #ffd700 !important;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    width: 80%;
+}
 
 
 /* Carousel */
