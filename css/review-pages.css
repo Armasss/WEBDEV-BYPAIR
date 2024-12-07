@@ -43,6 +43,27 @@
     flex-direction: column;
 }
 
+/* Author Section */
+.author {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.author i {
+    margin-left: 30px;
+    margin-right: 10px;
+    color: #ffd700;
+    font-size: 1.5rem;
+}
+
+.author-name {
+    font-weight: bold;
+    margin-left: 5px;
+}
+
 .container {
     display: flex;
     flex-direction: row;
@@ -252,7 +273,7 @@ iframe {
 .right-column {
     width: 27%;
     height: auto;
-    margin-top: 80px;
+    margin-top: 110px;
 }
 
 /* Header */
