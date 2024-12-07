@@ -11,22 +11,26 @@ html, body {
 .contact-section {
     flex: 1; /* Allows the contact section to grow and fill available space */
     text-align: center;
-    margin-top: 100px;
-    max-width: 800px;
+    max-width: 90%; /* Allows scaling for responsiveness */
+    padding: 20px; /* Add padding for better spacing */
+    margin: 0 auto; /* Centers horizontally */
     color: #ffd700;
-    padding: 0 15px; /* Add padding for better view on smaller screens */
-    margin-left: 400px; /* Increased to shift the contact section further to the right */
 }
 
+/* Header in Contact Section */
 .contact-section h2 {
-    margin-bottom: 40px;
-    font-size: 2.5rem;
+    margin-left: -50px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    font-size: 3rem; /* Increased size for visibility */
     color: #ffffff;
+    font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
     transition: transform 0.3s, color 0.3s; /* Add hover transition */
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.8); /* Add text shadow for better visibility */
 }
 
 .contact-section h2:hover {
@@ -36,10 +40,10 @@ html, body {
 
 /* Email Section */
 .email-contact {
-    text-align: left;
-    margin-left: 20px;
-    margin-top: 20px;
+    text-align: left; /* Center text for responsiveness */
+    margin: 20px auto;
     margin-bottom: 40px;
+    max-width: 600px; /* Ensures it scales on smaller screens */
 }
 
 .email-contact h3 {
@@ -54,6 +58,7 @@ html, body {
 .email-contact ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .email-contact li {
@@ -63,6 +68,7 @@ html, body {
     align-items: center;
     color: #ffffff;
     gap: 10px;
+    margin-left: 5px;
 }
 
 .email-contact li i {
@@ -82,20 +88,23 @@ html, body {
     transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
 }
 
-
 /* Form Section */
 .form-container {
     margin: 0 auto;
-    text-align: left;
+    text-align: center;
+    max-width: 90%; /* Scales properly on smaller screens */
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px; /* Increase gap for spacing */
+    align-items: center;
 }
 
 .form-group {
+    width: 200%; /* Reduced the width of form inputs */
+    max-width: 800px; /* Prevent it from being too wide on larger screens */
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -111,10 +120,11 @@ label {
 }
 
 input, textarea {
-    padding: 10px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: 1px solid #ffd700;
+    width: 100%; /* Full width for responsiveness */
+    padding: 15px; /* Increased padding for better UX */
+    font-size: 1.1rem; /* Slightly larger font */
+    border-radius: 8px; /* Softer corners */
+    border: 2px solid #ffd700; /* Thicker border for visibility */
     background-color: #333;
     color: #ffd700;
     outline: none;
@@ -132,18 +142,19 @@ input:focus, textarea:focus {
 }
 
 textarea {
-    min-height: 100px;
+    min-height: 150px; /* Increased height for better usability */
     resize: none;
 }
 
+/* Send Button */
 .send-btn {
     background-color: #ffd700;
     color: #000;
-    font-size: 1.2rem;
+    font-size: 1.2rem; /* Larger font for prominence */
     font-weight: bold;
-    padding: 10px;
+    padding: 20px 20px; /* Adjust padding for visual balance */
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     text-transform: uppercase;
     transition: all 0.3s, transform 0.3s; /* Hover transition */
@@ -151,7 +162,8 @@ textarea {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin-bottom: 20px; /* Added space below the send button */
+    width: 250px; /* Automatically fits content width */
+    margin-bottom: 20px; /* Added space below the button */
 }
 
 .send-btn:hover {
@@ -160,49 +172,46 @@ textarea {
     transform: scale(1.05); /* Hover zoom effect */
 }
 
-
 /* Notification */
 .notification {
-    position: fixed !important;
-    top: 20% !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%) !important;
-    background-color: #28a745 !important;
-    color: #fff !important;
-    padding: 20px 30px !important;
-    border-radius: 10px !important;
-    font-size: 1.2rem !important;
-    display: none !important; /* Initially hidden */
-    z-index: 10000 !important;
-    box-shadow: 0 8px 20px rgba(40, 167, 69, 0.8) !important; /* Stronger shadow */
-    border: 2px solid #fff !important; /* Added contrast */
-    align-items: center !important;
-    gap: 10px !important;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #28a745;
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    display: none; /* Initially hidden */
+    z-index: 10000;
+    box-shadow: 0 8px 20px rgba(40, 167, 69, 0.8); /* Stronger shadow */
+    border: 2px solid #fff; /* Added contrast */
+    align-items: center;
+    gap: 10px;
 }
 
-/* Notification Visible */
 .notification.show {
-    display: flex !important;
-    animation: fadeInOut 3s ease-in-out forwards !important;
+    display: flex;
+    animation: fadeInOut 3s ease-in-out forwards;
 }
 
-/* Notification Hidden */
 .notification.hide {
-    display: none !important;
+    display: none;
 }
 
 /* Keyframes for Notification Animation */
 @keyframes fadeInOut {
     0% {
         opacity: 0;
-        transform: translate(-50%, -60%) !important;
+        transform: translate(-50%, -60%);
     }
     10%, 90% {
         opacity: 1;
-        transform: translate(-50%, -50%) !important;
+        transform: translate(-50%, -50%);
     }
     100% {
         opacity: 0;
-        transform: translate(-50%, -40%) !important;
+        transform: translate(-50%, -40%);
     }
 }

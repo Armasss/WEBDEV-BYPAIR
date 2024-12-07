@@ -1,0 +1,195 @@
+/* For Large Devices (Desktops, 1200px and above) */
+@media (min-width: 1200px) {
+    .desktop_nav {
+        display: flex; /* Keep desktop navigation for large screens */
+    }
+    .hamburger_nav, .burger_links {
+        display: none; /* Hide hamburger navigation */
+    }
+}
+
+/* For Tablets and Medium Screens (768px to 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .desktop_nav {
+        display: none; /* Hide desktop navigation */
+    }
+    .hamburger_nav {
+        display: flex; /* Show hamburger navigation */
+        justify-content: space-between;
+        align-items: center;
+    }
+    .burger_links {
+        display: none; /* Keep burger menu hidden by default */
+    }
+}
+
+/* For Small Devices (Mobile Phones, up to 767px) */
+@media (max-width: 767px) {
+    /* Navbar Adjustments */
+    .desktop_nav {
+        display: none; /* Hide desktop navigation */
+    }
+    .hamburger_nav {
+        display: flex; /* Show hamburger navigation */
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px; /* Adjust padding for smaller screens */
+        background-color: black;
+        border-bottom: 2px solid #ffd700;
+    }
+    .hamburger_nav .logo {
+        font-size: 1.2rem; /* Scale down the logo text */
+    }
+    .hamburger-icon svg {
+        width: 25px; /* Adjust size of burger icon */
+        height: 25px;
+    }
+
+    /* Burger Menu (Slide Out) */
+    .burger_links {
+        position: fixed;
+        top: 0;
+        right: -300px; /* Hidden by default */
+        width: 250px; /* Smaller menu width */
+        height: 100vh; /* Full height for mobile menu */
+        background-color: black;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 20px;
+        transition: right 0.3s ease;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .burger_links.show {
+        right: 0; /* Slide-in effect */
+    }
+
+    .burger_links a {
+        font-size: 1rem; /* Smaller link text size */
+        padding: 10px 20px; /* Reduce padding */
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    .burger_links a:hover {
+        color: black;
+        background-color: #ffd700; /* Highlight effect */
+    }
+
+    .close_icon svg {
+        align-self: flex-end;
+        margin: 10px;
+        cursor: pointer;
+        width: 25px; /* Adjust size */
+        height: 25px;
+        background-color: #ffd700;
+        border-radius: 50%;
+        padding: 5px;
+    }
+}
+
+/* For Tablets and Medium Screens (768px to 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    html {
+        font-size: 14px; /* Reduce base font size */
+    }
+
+    body {
+        background-size: 20px; /* Adjust background size */
+    }
+
+    .logo p {
+        font-size: 1.8rem; /* Slightly smaller logo text */
+    }
+
+    header a {
+        font-size: 0.9rem; /* Scale down nav links */
+    }
+
+    .contact-section h2 {
+        font-size: 2.5rem; /* Reduce heading size */
+        margin-top: 60px; /* Adjust spacing */
+        margin-bottom: 20px;
+    }
+
+    .email-contact h3 {
+        font-size: 1.2rem; /* Smaller email heading */
+    }
+
+    .form-group {
+        width: 150%; /* Reduce form width */
+        max-width: 600px; /* Ensure forms fit smaller screens */
+    }
+
+    input, textarea {
+        padding: 12px; /* Adjust padding */
+        font-size: 1rem; /* Reduce font size */
+    }
+
+    .send-btn {
+        font-size: 1rem; /* Adjust button font size */
+        padding: 10px 15px; /* Adjust button padding */
+        width: auto; /* Fit the button to its content */
+    }
+
+    footer {
+        font-size: 0.9rem; /* Scale down footer text */
+    }
+}
+
+/* For Mobile Devices (Up to 767px) */
+@media (max-width: 767px) {
+    html {
+        font-size: 12px; /* Smaller base font size */
+    }
+
+    body {
+        background-size: 15px; /* Further adjust background size */
+    }
+
+    .logo p {
+        font-size: 1.5rem; /* Smaller logo text */
+    }
+
+    header a {
+        font-size: 0.8rem; /* Reduce nav link font size further */
+    }
+    .contact-section {
+        margin-top: 40px;
+    }
+    .contact-section h2 {
+        font-size: 2rem; /* Smaller heading size */
+        margin-top: 40px; /* Adjust top spacing */
+        margin-bottom: 30px;
+    }
+
+    .email-contact h3 {
+        font-size: 1rem; /* Scale down email heading */
+        margin-left: 5px;
+    }
+
+    .form-group {
+        width: 100%; /* Full width for forms on mobile */
+        max-width: 90%; /* Ensure forms fit within screen */
+    }
+
+    input, textarea {
+        padding: 10px; /* Adjust padding */
+        font-size: 0.9rem; /* Smaller font size */
+    }
+
+    .send-btn {
+        font-size: 0.9rem; /* Smaller button font size */
+        padding: 8px 12px; /* Compact button padding */
+        width: auto; /* Fit the button to its content */
+    }
+
+    footer {
+        font-size: 0.8rem; /* Scale down footer text size */
+        padding: 5px 10px; /* Adjust footer spacing */
+    }
+}
