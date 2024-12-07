@@ -6,6 +6,9 @@ html{
   font-size: 16px;
 }
 
+{
+  border: 1px solid red;
+}
 
 body {
   font-family: "Inter", sans-serif;
@@ -122,17 +125,13 @@ header a{
   stroke: white;
 }
 .close_icon{
-
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  width: 10px;
 }
 .close_icon svg{
   cursor: pointer;
   stroke: black;
   background-color: #ffd700;
   border-radius: 100px;
-
 }
 
 .close_icon svg:hover{

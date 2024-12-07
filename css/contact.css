@@ -1,19 +1,15 @@
-/* Reset height and set up Flexbox */
+/* Reset height */
 html, body {
-    min-height: 100vh; /* Ensures the body takes at least the full viewport height */
-    margin: 0; /* Removes default margin */
-    padding: 0; /* Removes default padding */
-    display: flex; /* Enables Flexbox on the body */
-    flex-direction: column; /* Stacks children vertically */
+    height: auto !important;
 }
+
 
 /* Contact Section */
 .contact-section {
     flex: 1; /* Allows the contact section to grow and fill available space */
     text-align: center;
-    max-width: 90%; /* Allows scaling for responsiveness */
-    padding: 20px; /* Add padding for better spacing */
-    margin: 0 auto; /* Centers horizontally */
+    margin: 60px auto;
+    max-width: 800px;
     color: #ffd700;
 }
 
