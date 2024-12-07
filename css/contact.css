@@ -1,12 +1,15 @@
-/* Reset height */
-html, body {
-    height: auto !important;
-}
+body {
+    font-family: "Inter", sans-serif;
+    background-color: rgb(16, 16, 16) !important;
+    background-image: url("/assets/controller-svgrepo-com.svg");
+    background-size: 25px; /* Adjust size of each image */
+  }
+  
 
 /* Contact Section */
 .contact-section {
     text-align: center;
-    margin: 50px auto;
+    margin-top: -50px !important;
     max-width: 800px;
     color: #ffd700;
     padding: 0 15px; /* Add padding for better view on smaller screens */
