@@ -141,9 +141,11 @@
     }
 
     .image-container {
-        width: 90%;
+        width: 80% !important;
+        max-width: none; /* Allow full width */
     }
 
+    
     .breadcrumb {
         font-size: 0.8rem;
         padding: 8px 15px;
@@ -158,7 +160,7 @@
     }
 
     .faq-container {
-        width: 90%;
+        width: 90% !important;
     }
 
     .main-carousel .card {
@@ -194,4 +196,41 @@
         max-width: 100%;
         height: auto;
     }
+
+    /* Target the main game title (h1) */
+.main .left-column h1 {
+    font-size: 3rem; /* Example: customize size */
+    color: #ffd700; /* Example: change color */
+    text-align: center; /* Example: align center */
 }
+
+/* Target section titles like 'Introduction', 'Our Opinion', 'Conclusion' (h2) */
+.main .left-column h2 {
+    font-size: 2.5rem;
+    color: white;
+    border-bottom: 2px solid #ffd700;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+
+/* Target all game descriptions (p tags) inside .left-column */
+.main .left-column p {
+    font-size: 0.80rem; /* Customize font size */
+    line-height: 1.6; /* Adjust line height for readability */
+    color: #ffffff; /* Example: white text */
+    margin: 20px 0; /* Add spacing */
+    margin-left: 50px;
+    width:250px;
+}
+
+/* Target hover text inside .image-container (specific p tags) */
+.main .left-column .image-container .hover-text {
+    font-size: 0.9rem; /* Smaller text for hover descriptions */
+    color: #ffd700; /* Highlight hover text */
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
+    padding: 5px 10px; /* Add padding */
+    border-radius: 5px;
+}
+
+}
+
