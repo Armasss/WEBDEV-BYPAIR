@@ -92,12 +92,14 @@ header a{
   display: none; 
   justify-content: space-between;
   align-items: center;
+  top: 0px;
   padding: 10px 10%;
   position: fixed;
   width: 100%;
   background-color: black;
   box-shadow: -10px 0 15px rgba(0, 0, 0, 0.3);
-  z-index: 999;
+  z-index: 99999;
+  border-bottom: 3px solid white;
 }
 
 
@@ -111,7 +113,9 @@ header a{
   cursor: pointer;
   stroke: white;
 }
-
+.close_icon{
+  width: auto;
+}
 .close_icon svg{
   cursor: pointer;
   stroke: white;
@@ -121,7 +125,7 @@ header a{
   cursor: pointer;
   stroke: black;
   border-radius: 100px;
-  background-color: white;
+  background-color: #ffd700;
 }
 
 .burger_links {
@@ -149,6 +153,7 @@ header a{
   text-align: center;
   padding: 16px;
   width: 100%;
+  color: white;
   font-weight: 700;
   font-size: 1rem;
 
@@ -156,7 +161,7 @@ header a{
 
 .burger_links a:hover {
   color: black;
-  background-color: white; 
+  background-color: #ffd700; 
 }
 
 .hamburger-icon svg {

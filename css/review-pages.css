@@ -36,7 +36,7 @@
 }
 
 .main{
-    width: 1280px;
+    max-width: 1280px;
     margin: 0px auto;
     display: flex;
     flex-direction: column;
@@ -45,18 +45,14 @@
 .container {
     display: flex;
     flex-direction: row;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 100%;
-
     color: white;
-
-    overflow-x: hidden; /* Remove horizontal scrollbar */
 }
 
 /* Left Column */
 .left-column {
-    width: 75%
+    width: 70%
 }
 
 .left-column p {
@@ -68,6 +64,10 @@
     color: #ffd700;
 }
 
+.left-column hr{
+    width: 95%;
+    margin: 0px auto;
+}
 .left-column h1 {
     font-size: 3rem;
     margin-bottom: 10px;
@@ -84,7 +84,7 @@
     font-weight: 700;
 }
 .trailer{
-    margin-top: 30px;
+    margin: 30px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -147,7 +147,7 @@ iframe {
 
 /* FAQ Section */
 .faq {
-    margin: 0; /* Remove spaces between FAQs */
+    margin: 0 autop; /* Remove spaces between FAQs */
     padding: 20px;
     position: relative;
     color: black; /* Black text */
@@ -161,29 +161,39 @@ iframe {
 .faq-title {
     font-size: 2rem;
     font-weight: 900;
-    color: #ffd700; /* Yellow text for title */
-    margin: 0; /* Ensure no margins around the title */
-    padding: 0; /* No padding to ensure proper alignment */
-    display: block; /* Make sure it spans full width */
-    margin-left: -230px;
-    margin-top: 50px;
+    color: #ffd700;
+    margin: 0; 
+    padding: 0;
+    display: block;
 }
 
 /* Ensure FAQ Title Container is Properly Aligned */
 #faq-container {
-    margin: 0; /* Remove extra spacing */
-    padding: 0 20px; /* Add some padding for internal content */
-    width: 100%; /* Full width for the container */
-    box-sizing: border-box; /* Ensure proper sizing */
-    margin-left: -50px !important; /* Move the container further to the left */
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0px;
+    padding: 0;
 }
 
+.faq-container {
+    width: 50%;
+  }
+.faq {
+    margin-bottom: 1rem;
+    width: 100%;
+}
 
-/* FAQ Questions */
 .faq h4 {
     margin: 0;
     font-weight: bold;
-    padding-left: 20px; /* Space from the left vertical line */
+    color: #ffd700;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
 }
 
 /* FAQ Answers */
@@ -228,10 +238,7 @@ iframe {
 
 
 /* Right Column */
-/* Right Column Sections */
-.right-column > div {
-    margin-bottom: 20px !important; /* Add spacing between sections */
-}
+
 
 /* Optional: Adjust HR Styling for More Spacing */
 .right-column hr {
@@ -242,21 +249,21 @@ iframe {
 
 
 .right-column {
-    width: 25%;
+    width: 27%;
     height: auto;
-    margin-top: 90px;
+    margin-top: 80px;
 }
 
 /* Header */
 .right-column .game-details h2 {
-    font-size: 1.4rem !important;
+    font-size: 2rem !important;
     color: #ffd700 !important;
     margin-bottom: 5px !important;
-    text-align: center !important;
+    text-align: left !important;
 }
 
 .right-column .game-details h3 {
-    font-size: 1.1rem !important;
+    font-size: 1.5rem !important;
     color: #ffffff !important;
     text-align: center !important;
     margin-bottom: 10px !important;
@@ -276,7 +283,7 @@ iframe {
 }
 
 .right-column .platforms h2 {
-    font-size: 1.1rem !important;
+    font-size: 2rem !important;
     color: #ffd700 !important;
     margin-bottom: 10px !important;
 }
@@ -284,12 +291,13 @@ iframe {
 .right-column .platforms .platform-ctn {
     display: flex !important;
     justify-content: space-evenly !important; /* Equal spacing */
+    align-items: center;
     gap: 10px !important;
 }
 
 .right-column .platforms .platform-icon {
-    width: 30px !important; /* Adjusted size */
-    height: 30px !important;
+    width: 35px;
+    height: auto;
     filter: drop-shadow(0px 2px 5px rgba(255, 255, 255, 0.3)) !important;
     transition: transform 0.3s ease, filter 0.3s ease !important;
     margin: 0 5px 10px !important; /* Add spacing between icons */
@@ -306,7 +314,7 @@ iframe {
 }
 
 .right-column .tags-container h2 {
-    font-size: 1.1rem !important;
+    font-size: 2rem !important;
     color: #ffd700 !important;
     margin-bottom: 10px !important;
 }
@@ -344,11 +352,11 @@ iframe {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 40px auto;
     overflow: visible;
-    max-width: 80%;
+    max-width: auto;
     height: fit-content;
     padding: 20px;
+    margin: 40px 0px;
 }
 
 /* Carousel Track */
@@ -456,42 +464,14 @@ padding: 0px 1.5px;
 }
 
 
-#faq-container {
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-  }
-  .title {
-    text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-
-.title{
-    text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-size: 3rem;
-    font-weight: 700;
-    color: #ffd700;
-  }
   .faq-container {
     width: 50%;
   }
   .faq {
     margin-bottom: 1rem;
-    width: 70%;
+    width: 100%;
   }
-  blockquote {
-    border-left: 6px solid White;
-    padding-left: 1rem;
-  }
+
   h4 {
     color: #ffd700;
     margin-top: 0;
