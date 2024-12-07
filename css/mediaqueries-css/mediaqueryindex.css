@@ -86,8 +86,8 @@
     }
 
     .carousel-container {
-        width: 90%; /* Reduce carousel width */
-        height: 70vh; /* Adjust height for tablets */
+        width: 100%; /* Reduce carousel width */
+        height: 100vh; /* Adjust height for tablets */
     }
 
     .game-title {
@@ -127,8 +127,8 @@
     }
 
     .carousel-container {
-        width: 95%; /* Full width for carousel */
-        height: 60vh; /* Adjust height for mobile */
+        width: 100%; /* Full width for carousel */
+        height: 100vh; /* Adjust height for mobile */
     }
 
     .game-title {
