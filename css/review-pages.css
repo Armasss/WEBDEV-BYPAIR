@@ -1,10 +1,14 @@
-/* Main Container 
-{
-    border: 1px solid red;
-}
-*/
-.breadcrumb {
+/* Base Styles */
 
+/* Box Sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Breadcrumb */
+.breadcrumb {
     color: #ffd700; /* Gold text color */
     font-family: "Poppins", sans-serif;
     font-size: 1rem;
@@ -12,7 +16,6 @@
     margin-top: 80px; /* Space below the navbar */
     margin-bottom: 20px; /* Space above the game title */
     border-radius: 5px; /* Smooth rounded edges */
-
     text-align: left;
 }
 
@@ -36,9 +39,10 @@
     color: #ffd700;
 }
 
-.main{
-    max-width: 1280px;
-    margin: 0px auto;
+/* Main Container */
+.main {
+    max-width: 90%; /* Changed from 1280px to 90% for flexibility */
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
 }
@@ -53,20 +57,20 @@
 }
 
 .author i {
-    margin-left: 30px;
-    margin-right: 10px;
+    margin-left: 1.875rem; /* 30px to rem */
+    margin-right: 0.625rem; /* 10px to rem */
     color: #ffd700;
     font-size: 1.5rem;
 }
 
 .author-name {
     font-weight: bold;
-    margin-left: 5px;
+    margin-left: 0.3125rem; /* 5px to rem */
 }
 
+/* Container */
 .container {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     color: white;
@@ -74,46 +78,45 @@
 
 /* Left Column */
 .left-column {
-    width: 70%
+    flex: 0 0 68%; /* Approximately 70% */
+    max-width: 68%;
 }
 
 .left-column p {
-    margin: 30px 0px;
+    margin: 1.875rem 0; /* 30px to rem */
 }
 
-.breadcrumb-active {
-    font-weight: bold;
-    color: #ffd700;
-}
-
-.left-column hr{
+.left-column hr {
     width: 95%;
-    margin: 0px auto;
+    margin: 0 auto;
 }
+
 .left-column h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
+    font-size: 2rem; /* Changed from 3rem to rem for scalability */
+    margin-bottom: 0.625rem; /* 10px to rem */
     color: #ffd700;
     font-weight: 900;
 }
 
 .left-column h2 {
-    margin: 40px 0px;
-    font-size: 2.5rem;
+    margin: 2.5rem 0; /* 40px to rem */
+    font-size: 1.5625rem; /* 25px to rem */
     color: white;
     border-bottom: 2px solid #ffd700;
     display: inline-block;
     font-weight: 700;
 }
-.trailer{
-    margin: 30px 0px;
+
+.trailer {
+    margin: 1.875rem 0; /* 30px to rem */
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 iframe {
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.7);
+    border-radius: 0.625rem; /* 10px to rem */
+    box-shadow: 0px 0.25rem 0.625rem rgba(255, 215, 0, 0.7); /* 4px 10px to rem */
     width: 80%;
     aspect-ratio: 16 / 9;
     margin: auto;
@@ -121,14 +124,15 @@ iframe {
 
 /* Image Hover Effect */
 .image-container {
-    border-radius: 10px;
+    border-radius: 0.625rem; /* 10px to rem */
     overflow: hidden;
     position: relative;
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     aspect-ratio: 16/9;
     background-color: #000;
     transition: transform 0.5s ease;
-    margin: 0px auto;
+    margin: 0 auto;
 }
 
 .image-container img {
@@ -140,56 +144,51 @@ iframe {
     left: 0;
 }
 
-
 .image-container .hover-text {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
+    bottom: 0.625rem; /* 10px to rem */
+    left: 0.625rem; /* 10px to rem */
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 0.3125rem 0.625rem; /* 5px 10px to rem */
+    border-radius: 0.3125rem; /* 5px to rem */
     color: #ffd700;
-    font-size: 16px;
-    background-color: black;
+    font-size: 1rem; /* 16px to rem */
+    background-color: rgba(0, 0, 0, 0.7);
     transition: opacity 0.3s ease;
     opacity: 0;
 }
 
-
 .image-container:hover img {
-    box-shadow: 0px 4px 15px rgba(255, 215, 0, 0.7);
+    box-shadow: 0px 0.25rem 0.9375rem rgba(255, 215, 0, 0.7); /* 4px 15px to rem */
 }
 
 .image-container:hover .hover-text {
     opacity: 1;
 }
 
-
 /* FAQ Section */
 .faq {
-    margin: 0 autop; /* Remove spaces between FAQs */
-    padding: 20px;
+    margin: 0 auto;
+    padding: 1.25rem 1.25rem; /* 20px to rem */
     position: relative;
-    color: black; /* Black text */
+    color: black;
     font-family: "Poppins", sans-serif;
     font-size: 1.1rem;
     display: block;
-    border-bottom: 1px solid #ddd; /* Divider line between items */
+    border-bottom: 1px solid #ddd;
 }
 
-/* FAQ Title */
 .faq-title {
     font-size: 2rem;
     font-weight: 900;
     color: #ffd700;
-    margin: 0; 
+    margin: 0;
     padding: 0;
     display: block;
 }
 
-/* Ensure FAQ Title Container is Properly Aligned */
 #faq-container {
     font-family: "Inter", sans-serif;
     font-weight: 400;
@@ -198,13 +197,15 @@ iframe {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 30px 0px;
+    margin: 1.875rem 0; /* 30px to rem */
     padding: 0;
 }
 
 .faq-container {
-    width: 50%;
-  }
+    width: 100%; /* Changed from 50% to 100% for flexibility */
+    max-width: 800px; /* Optional: limit max width */
+}
+
 .faq {
     margin-bottom: 1rem;
     width: 100%;
@@ -221,183 +222,160 @@ iframe {
 /* FAQ Answers */
 .faq blockquote {
     margin: 0;
-    padding: 15px 20px;
+    padding: 0.9375rem 1.25rem; /* 15px 20px to rem */
     font-style: normal;
-    border-left: 5px solid #ffd700; /* Yellow vertical line */
-    background-color: white; /* White background */
-    color: black; /* Black text */
-    border-radius: 5px; /* Rounded corners */
+    border-left: 0.3125rem solid #ffd700; /* 5px to rem */
+    background-color: white;
+    color: black;
+    border-radius: 0.3125rem; /* 5px to rem */
     text-align: left;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Blockquote Hover Effect */
 .faq:hover blockquote {
-    background-color: black; /* Background turns black on hover */
-    color: #ffd700; /* Text turns yellow on hover */
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth scaling */
+    background-color: black;
+    color: #ffd700;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
-/* FAQ Hover Effect */
 .faq:hover {
-    transform: scale(1.05); /* Subtle scaling for the entire FAQ block */
-    transition: transform 0.3s ease; /* Smooth scaling */
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
-
-/* Remove gaps between FAQ items */
 .faq-container > .faq + .faq {
     margin-top: 0;
 }
 
-
-
-
-
-
-
-
-
-
 /* Right Column */
-
-
-/* Optional: Adjust HR Styling for More Spacing */
-.right-column hr {
-    margin: 20px 0 !important; /* Add vertical spacing around horizontal lines */
-    border: none; /* Optional: Customize border */
-    border-top: 1px solid #ddd; /* Optional: Thin border for HR */
-}
-
-
 .right-column {
-    width: 27%;
+    flex: 0 0 27%; /* Approximately 27% */
+    max-width: 27%;
     height: auto;
-    margin-top: 110px;
+    margin-top: 6.875rem; /* 110px to rem */
 }
 
 /* Header */
 .right-column .game-details h2 {
-    font-size: 2rem !important;
-    color: #ffd700 !important;
-    margin-bottom: 5px !important;
-    text-align: left !important;
+    font-size: 2rem;
+    color: #ffd700;
+    margin-bottom: 0.3125rem; /* 5px to rem */
+    text-align: left;
 }
 
 .right-column .game-details h3 {
-    font-size: 1.5rem !important;
-    color: #ffffff !important;
-    text-align: center !important;
-    margin-bottom: 10px !important;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 0.625rem; /* 10px to rem */
 }
 
 /* Game Description */
 .right-column .game-desc p {
-    font-size: 0.95rem !important;
-    line-height: 1.6 !important;
-    text-align: justify !important;
-    color: #ffffff !important;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: justify;
+    color: #ffffff;
 }
 
 /* Platforms Section */
 .right-column .platforms {
-    margin-top: 15px !important;
+    margin-top: 0.9375rem; /* 15px to rem */
 }
 
 .right-column .platforms h2 {
-    font-size: 2rem !important;
-    color: #ffd700 !important;
-    margin-bottom: 10px !important;
+    font-size: 2rem;
+    color: #ffd700;
+    margin-bottom: 0.625rem; /* 10px to rem */
 }
 
 .right-column .platforms .platform-ctn {
-    display: flex !important;
-    justify-content: space-evenly !important; /* Equal spacing */
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 10px !important;
+    gap: 0.625rem; /* 10px to rem */
 }
 
 .right-column .platforms .platform-icon {
-    width: 35px;
+    width: 2.1875rem; /* 35px to rem */
     height: auto;
-    filter: drop-shadow(0px 2px 5px rgba(255, 255, 255, 0.3)) !important;
-    transition: transform 0.3s ease, filter 0.3s ease !important;
-    margin: 0 5px 10px !important; /* Add spacing between icons */
+    filter: drop-shadow(0px 0.125rem 0.3125rem rgba(255, 255, 255, 0.3)); /* 2px 5px to rem */
+    transition: transform 0.3s ease, filter 0.3s ease;
+    margin: 0 0.3125rem 0.625rem; /* 5px 5px 10px to rem */
 }
 
 .right-column .platforms .platform-icon:hover {
-    transform: scale(1.1) !important;
-    filter: drop-shadow(0px 4px 15px rgba(255, 255, 255, 0.8)) !important;
+    transform: scale(1.1);
+    filter: drop-shadow(0px 0.25rem 0.9375rem rgba(255, 255, 255, 0.8)); /* 4px 15px to rem */
 }
 
 /* Tags Section */
 .right-column .tags-container {
-    margin-top: 15px !important;
+    margin-top: 0.9375rem; /* 15px to rem */
 }
 
 .right-column .tags-container h2 {
-    font-size: 2rem !important;
-    color: #ffd700 !important;
-    margin-bottom: 10px !important;
+    font-size: 2rem;
+    color: #ffd700;
+    margin-bottom: 0.625rem; /* 10px to rem */
 }
 
 .right-column .tags-container ul {
-    list-style: none !important;
-    padding: 0 !important;
-    display: flex !important;
-    flex-wrap: wrap !important;
-    gap: 10px !important;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem; /* 10px to rem */
 }
 
 .right-column .tags-container ul li {
-    display: inline-block !important;
-    padding: 5px 10px !important;
-    font-size: 0.85rem !important; /* Reduced size */
-    font-weight: bold !important;
-    background-color: #ffd700 !important;
-    color: #000000 !important;
-    border-radius: 5px !important;
-    transition: transform 0.3s ease, background-color 0.3s ease !important;
+    display: inline-block;
+    padding: 0.3125rem 0.625rem; /* 5px 10px to rem */
+    font-size: 0.85rem;
+    font-weight: bold;
+    background-color: #ffd700;
+    color: #000000;
+    border-radius: 0.3125rem; /* 5px to rem */
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .right-column .tags-container ul li:hover {
-    transform: scale(1.1) !important;
-    background-color: #ffffff !important;
-    color: #000000 !important;
-}
-.right-column .ratings-ctn{
-    margin-top: 15px !important;
+    transform: scale(1.1);
+    background-color: #ffffff;
+    color: #000000;
 }
 
-.right-column .rating-text h2{
-    font-size: 2rem !important;
-    color: #ffd700 !important;
+.right-column .ratings-ctn {
+    margin-top: 0.9375rem; /* 15px to rem */
 }
 
-.right-column .rating-text p{
+.right-column .rating-text h2 {
+    font-size: 2rem;
+    color: #ffd700;
+}
+
+.right-column .rating-text p {
     font-size: 1.5rem;
     font-weight: 700;
-    margin: auto 0px;
-    padding: 0px 10px;
+    margin: auto 0;
+    padding: 0 0.625rem; /* 0px 10px to rem */
 }
 
-.right-column .rating-text{
+.right-column .rating-text {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
 }
-.right-column .ratings-ctn .rating-grp{
-    font-size: 2rem !important;
-    color: #ffd700 !important;
-    margin: 20px auto;
+
+.right-column .ratings-ctn .rating-grp {
+    font-size: 2rem;
+    color: #ffd700;
+    margin: 1.25rem auto; /* 20px to rem */
     display: flex;
     align-items: center;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     width: 80%;
 }
-
-
-
 
 /* Carousel */
 /* Main Carousel */
@@ -407,10 +385,10 @@ iframe {
     align-items: center;
     justify-content: center;
     overflow: visible;
-    max-width: auto;
+    max-width: 100%;
     height: fit-content;
-    padding: 20px;
-    margin: 40px 0px;
+    padding: 1.25rem; /* 20px to rem */
+    margin: 2.5rem 0; /* 40px to rem */
 }
 
 /* Carousel Track */
@@ -422,7 +400,7 @@ iframe {
 .carousel-track {
     display: flex;
     transition: transform 0.5s ease;
-    gap: 20px;
+    gap: 1.25rem; /* 20px to rem */
     justify-content: flex-start;
 }
 
@@ -459,9 +437,9 @@ iframe {
 
 /* Cards */
 .card {
-    flex: 0 0 calc((100% - 80px) / 5); /* Maintain five visible cards */
-    aspect-ratio: 16 / 9; /* Maintain 16:9 ratio */
-    border-radius: 10px;
+    flex: 0 0 calc((100% - 5rem) / 5); /* 80px is 5rem */
+    aspect-ratio: 16 / 9;
+    border-radius: 0.625rem; /* 10px to rem */
     overflow: hidden;
     position: relative;
     cursor: pointer;
@@ -492,42 +470,27 @@ iframe {
     opacity: 0;
 }
 
-.card:hover .rating{
+.card:hover .rating {
     opacity: 0;
 }
 
 /* Ratings */
 .rating {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
+    bottom: 0.625rem; /* 10px to rem */
+    left: 0.625rem; /* 10px to rem */
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 0.3125rem 0.625rem; /* 5px 10px to rem */
+    border-radius: 0.3125rem; /* 5px to rem */
     color: #ffd700;
-    font-size: 16px;
-    background-color: black;
+    font-size: 1rem; /* 16px to rem */
+    background-color: rgba(0, 0, 0, 0.7);
     opacity: 1;
 }
 
-.rating i{
-font-size: 10px;
-padding: 0px 1.5px;
+.rating i {
+    font-size: 0.625rem; /* 10px to rem */
+    padding: 0 0.09375rem; /* 1.5px to rem */
 }
-
-
-  .faq-container {
-    width: 50%;
-  }
-  .faq {
-    margin-bottom: 1rem;
-    width: 100%;
-  }
-
-  h4 {
-    color: #ffd700;
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-  }
