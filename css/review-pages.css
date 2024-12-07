@@ -226,7 +226,6 @@ iframe {
 
 
 
-
 /* Right Column */
 .right-column {
     width: 25%;
@@ -234,52 +233,64 @@ iframe {
     margin-top: 90px;
 }
 
+/* Right Column Sections */
+.right-column > div {
+    margin-bottom: 22px !important; /* Slightly smaller spacing between sections */
+}
+
+/* HR Styling for More Spacing */
+.right-column hr {
+    margin: 22px 0 !important; /* Slightly smaller vertical spacing around horizontal lines */
+    border: none; /* Optional: Customize border */
+    border-top: 1px solid #ddd; /* Optional: Thin border for HR */
+}
+
 /* Header */
 .right-column .game-details h2 {
-    font-size: 1.4rem !important;
+    font-size: 1.9rem !important; /* Slightly smaller font size */
     color: #ffd700 !important;
-    margin-bottom: 5px !important;
+    margin-bottom: 10px !important; /* Adjusted spacing */
     text-align: center !important;
 }
 
 .right-column .game-details h3 {
-    font-size: 1.1rem !important;
+    font-size: 1.5rem !important; /* Slightly smaller font size */
     color: #ffffff !important;
     text-align: center !important;
-    margin-bottom: 10px !important;
+    margin-bottom: 15px !important; /* Adjusted spacing */
 }
 
 /* Game Description */
 .right-column .game-desc p {
-    font-size: 0.95rem !important;
-    line-height: 1.6 !important;
+    font-size: 1.15rem !important; /* Slightly smaller font size */
+    line-height: 1.85 !important; /* Balanced readability */
     text-align: justify !important;
     color: #ffffff !important;
 }
 
 /* Platforms Section */
 .right-column .platforms {
-    margin-top: 15px !important;
+    margin-top: 22px !important; /* Slightly smaller spacing above */
 }
 
 .right-column .platforms h2 {
-    font-size: 1.1rem !important;
+    font-size: 1.35rem !important; /* Slightly smaller font size */
     color: #ffd700 !important;
-    margin-bottom: 10px !important;
+    margin-bottom: 10px !important; /* Adjusted spacing */
 }
 
 .right-column .platforms .platform-ctn {
     display: flex !important;
     justify-content: space-evenly !important; /* Equal spacing */
-    gap: 10px !important;
+    gap: 10px !important; /* Adjusted gap */
 }
 
 .right-column .platforms .platform-icon {
-    width: 30px !important; /* Adjusted size */
-    height: 30px !important;
+    width: 42px !important; /* Slightly smaller size */
+    height: 42px !important;
     filter: drop-shadow(0px 2px 5px rgba(255, 255, 255, 0.3)) !important;
     transition: transform 0.3s ease, filter 0.3s ease !important;
-    margin: 0 5px 10px !important; /* Add spacing between icons */
+    margin: 0 5px 10px !important; /* Adjusted spacing */
 }
 
 .right-column .platforms .platform-icon:hover {
@@ -289,13 +300,13 @@ iframe {
 
 /* Tags Section */
 .right-column .tags-container {
-    margin-top: 15px !important;
+    margin-top: 22px !important; /* Slightly smaller spacing above */
 }
 
 .right-column .tags-container h2 {
-    font-size: 1.1rem !important;
+    font-size: 1.35rem !important; /* Slightly smaller font size */
     color: #ffd700 !important;
-    margin-bottom: 10px !important;
+    margin-bottom: 10px !important; /* Adjusted spacing */
 }
 
 .right-column .tags-container ul {
@@ -303,13 +314,13 @@ iframe {
     padding: 0 !important;
     display: flex !important;
     flex-wrap: wrap !important;
-    gap: 10px !important;
+    gap: 10px !important; /* Adjusted gap */
 }
 
 .right-column .tags-container ul li {
     display: inline-block !important;
-    padding: 5px 10px !important;
-    font-size: 0.85rem !important; /* Reduced size */
+    padding: 8px 15px !important; /* Slightly smaller padding */
+    font-size: 1rem !important; /* Slightly smaller font size */
     font-weight: bold !important;
     background-color: #ffd700 !important;
     color: #000000 !important;
