@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 word.classList.toggle("yellow", i === currentWordIndex);
             });
             currentWordIndex = (currentWordIndex + 1) % words.length;
-        }, 2000);
+        }, 1000);
     }
   
     // Show a specific game
