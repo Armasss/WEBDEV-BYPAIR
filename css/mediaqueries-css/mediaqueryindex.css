@@ -212,4 +212,26 @@
     .faq-container {
         width: 90% !important;
     }
+  
 }
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    body {
+        margin-bottom: 16rem;
+    }
+}
+
+/* For iPhone 12 Pro (390px width) */
+@media screen and (max-width: 390px) and (min-height: 844px) {
+    body {
+        margin-bottom: 2rem; /* Adjust this value as per the footer visibility */
+    }
+}
+
+/* For Samsung Galaxy S8+ (360px width) */
+@media screen and (max-width: 360px) and (min-height: 740px) {
+    body {
+        margin-bottom: 5rem; /* Adjust this value as per the footer visibility */
+    }
+}
+

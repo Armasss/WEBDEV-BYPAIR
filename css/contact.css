@@ -16,8 +16,8 @@ html, body {
 /* Header in Contact Section */
 .contact-section h2 {
     margin-left: -50px;
-    margin-top: 80px;
-    margin-bottom: 30px;
+    margin-top: 100px;
+    margin-bottom: 40px;
     font-size: 3rem; /* Increased size for visibility */
     color: #ffffff;
     font-weight: bold;
@@ -40,6 +40,7 @@ html, body {
     margin: 20px auto;
     margin-bottom: 40px;
     max-width: 600px; /* Ensures it scales on smaller screens */
+    margin-left: 5px;
 }
 
 .email-contact h3 {

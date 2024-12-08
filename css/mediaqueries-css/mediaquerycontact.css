@@ -112,7 +112,7 @@
 
     .contact-section h2 {
         font-size: 2.5rem; /* Reduce heading size */
-        margin-top: 60px; /* Adjust spacing */
+        margin-top: 150px; /* Adjust spacing */
         margin-bottom: 20px;
     }
 
@@ -163,14 +163,26 @@
     }
     .contact-section h2 {
         font-size: 2rem; /* Smaller heading size */
-        margin-top: 40px; /* Adjust top spacing */
+        margin-top:90px; /* Adjust top spacing */
         margin-bottom: 30px;
     }
 
     .email-contact h3 {
         font-size: 1rem; /* Scale down email heading */
-        margin-left: 5px;
+        margin-left: 3px;
     }
+
+    .email-contact li {
+        display: flex; /* Align icon and text inline */
+        align-items: center; /* Vertically center */
+        margin-bottom: 10px; /* Add spacing between items */
+    }
+    
+
+    .email-contact i {
+        margin-left: 20px;
+    }
+  
 
     .form-group {
         width: 100%; /* Full width for forms on mobile */
@@ -192,5 +204,22 @@
     footer {
         font-size: 0.8rem; /* Scale down footer text size */
         padding: 5px 10px; /* Adjust footer spacing */
+    }
+    body {
+        margin-bottom: 16rem;
+    }
+}
+
+/* For iPhone 12 Pro (390px width) */
+@media screen and (max-width: 390px) and (min-height: 844px) {
+    body {
+        margin-bottom: 2rem; /* Adjust this value as per the footer visibility */
+    }
+}
+
+/* For Samsung Galaxy S8+ (360px width) */
+@media screen and (max-width: 360px) and (min-height: 740px) {
+    body {
+        margin-bottom: 5rem; /* Adjust this value as per the footer visibility */
     }
 }
