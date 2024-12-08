@@ -67,7 +67,7 @@ function handlePlay() {
   container.style.transform = "scale(1.1)";
   video.style.opacity = "1";
   rating.style.opacity = "0";
-  img.style.opacity = "1";
+  img.style.opacity = "0";
   video.play();
 }
 

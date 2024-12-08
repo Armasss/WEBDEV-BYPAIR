@@ -83,41 +83,7 @@
     <footer>
         <p>© 2024 Mark Rainier Armas & Jerome Brent Tegrado. <span style="color: #ffd700;">All rights reserved.</span></p>
     </footer>
-    <script>
-
-      const imgContainers = document.querySelectorAll('.img-ctn');
-      let currentIndex = 0;
-      let intervalId;
-    
-  
-      function cycleImages() {
-   
-        imgContainers.forEach((img) => img.classList.remove('active'));
-        imgContainers[currentIndex].classList.add('active');
-        currentIndex = (currentIndex + 1) % imgContainers.length; 
-      }
-    
-
-      function startImageCycleIfNeeded() {
-        const screenWidth = window.innerWidth;
-  
-        if (screenWidth <= 870) {
-          if (!intervalId) {
-            intervalId = setInterval(cycleImages, 3000); 
-          }
-        } else {
-
-          if (intervalId) {
-            clearInterval(intervalId);
-            intervalId = null; 
-          }
-        }
-      }
-    
-      startImageCycleIfNeeded();
-    
-      window.addEventListener('resize', startImageCycleIfNeeded);
-    </script>
+    <script src="/js/about.js"></script>
     <script src="/js/scripts.js"></script>
     <script src="/js/cards.js"></script>
   </body>
