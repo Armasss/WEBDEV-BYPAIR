@@ -163,11 +163,11 @@ header a{
 .burger_links a {
   display: block;
   text-align: center;
-  padding: 16px;
+  padding: 15px;
   width: 100%;
   color: #ffd700;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 24px;
 
 }
 
@@ -186,7 +186,7 @@ header a{
 
 .burger_links svg {
   cursor: pointer;
-  width: 100%;
+  width: 25px;
   align-self: flex-end;
   margin-bottom: 20px;
 }
