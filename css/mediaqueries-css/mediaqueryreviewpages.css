@@ -1,282 +1,164 @@
-/* For Large Devices (Desktops, 1200px and above) */
-@media (min-width: 1200px) {
-    .desktop_nav {
-        display: flex;
+@media screen and (max-width: 1025px) {
+    .container{
+        flex-direction: column !important;
+        align-items: center;
     }
-    .hamburger_nav, .burger_links {
-        display: none;
+    .left-column{
+        width: 100% !important;
+        flex-direction: column !important;
+        align-items: center;
+    }
+    .right-column{
+        width: 70% !important;
     }
 }
 
-/* For Small Devices (Mobile Phones, up to 767px) */
-@media (max-width: 767px) {
-    .desktop_nav {
-        display: none;
-    }
-    .hamburger_nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-        background-color: black;
-        border-bottom: 2px solid #ffd700;
-    }
-    .hamburger_nav .logo {
-        font-size: 1.2rem;
-    }
-    .hamburger-icon svg {
-        width: 25px;
-        height: 25px;
-    }
-    .burger_links {
-        position: fixed;
-        top: 0;
-        right: -300px;
-        width: 250px;
-        height: 100vh;
-        background-color: black;
-        z-index: 1000;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        padding-top: 20px;
-        transition: right 0.3s ease;
-        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
-    }
-    .burger_links.show {
-        right: 0;
-    }
-    .burger_links a {
-        font-size: 1rem;
-        padding: 10px 20px;
-        text-align: center;
-        color: white;
-        text-transform: none;
-    }
-    .burger_links a:hover {
-        color: black;
-        background-color: #ffd700;
-    }
-    .close_icon svg {
-        align-self: flex-end;
-        margin: 10px;
-        cursor: pointer;
-        width: 25px;
-        height: 25px;
-        background-color: #ffd700;
-        border-radius: 50%;
-        padding: 5px;
-    }
-}
-
-/* Tablet */
-@media screen and (max-width: 1024px) {
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .left-column, .right-column {
-        flex: 0 0 100%;
-        max-width: 100%;
-        margin: 10px 0;
-    }
-
-    .right-column {
-        margin-top: 20px;
-    }
-
-    .image-container {
-        width: 80%;
-    }
-
-    .breadcrumb {
-        font-size: 0.9rem;
-    }
-
-    .left-column h1 {
-        font-size: 2.5rem;
-    }
-
-    .left-column h2 {
-        font-size: 1rem;
-    }
-
+@media screen and (max-width: 850px) {
     .faq-container {
-        width: 80%;
+        width:80% !important;
     }
 
-    .main-carousel .card {
-        flex: 0 0 calc((100% - 60px) / 3);
-    }
+    .trailer {
+        margin: 20px 0px !important;
+         width: 750px !important;
 
-    .carousel-btn.prev-btn {
-        left: -1rem;
-    }
-
-    .carousel-btn.next-btn {
-        right: -1rem;
     }
 }
 
-@media screen and (max-width: 767px) {
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+@media screen and (max-width: 640px) {
+    .faq-container {
+        width: 450px !important;
     }
 
-    .left-column, .right-column {
-        flex: 0 0 100%;
-        max-width: 100%;
-        margin: 10px 0;
+    .left-column h1{
+        font-size: 35px !important;
     }
-    .left-column p {
-        font-size: 10px; /* Adjust font size */
-        color: #ffffff; /* White text */
-        margin: 10px 0; /* Add spacing outside the element */
-        padding: 10px; /* Add space inside the element on all sides */
-        background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a background for visibility */
-        border-radius: 5px; /* Optional: Add rounded corners */
+    .left-column h2{
+        font-size: 30px !important;
+    }
+    .left-column p{
+        font-size: 14px !important;
     }
 
-    /* Style for main title (h1) */
-.left-column h1 {
-    font-size: 1rem;
-    color: #ffd700;
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-#introduction {
-    margin-left: 0.6rem;
-    font-size: 2rem;
-    margin-top: 20px;
-}
-
-#our-opinion {
-    margin-left: 0.6rem;
-    font-size: 2.5rem;
-    margin-top: 20px;
-}
-
-#conclusion {
-    margin-left: 0.6rem;
-    font-size: 2rem;
-    margin-top: 20px;
-}
-
-
-
-.author {
-    display: flex;
-    align-items: center;
-    font-size: 0.5rem; /* Adjust font size */
-    color: #ffffff; /* White text */
-    margin-bottom: 20px;
-}
-
-    
-    .right-column {
-        display: block;
-        margin-top: 20px;
+    .image-container{
+        width:450px !important;
     }
 
-    .image-container {
+    .trailer {
+        margin: 20px 0px !important;
+         width: 550px !important;
+
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .faq-container {
+        width: 400px !important;
+    }
+
+    .left-column p{
+        font-size: 14px !important;
+        width: 100%;
+    }
+
+    .image-container{
+        width:400px !important;
+    }
+
+    .trailer {
+        margin: 20px 0px !important;
+         width: 500px !important;
+
+    }
+    .right-column{
         width: 80% !important;
-        max-width: none; /* Allow full width */
     }
-
-    .breadcrumb {
-        font-size: 0.8rem;
-        padding: 8px 15px;
+    footer p{
+        font-size: 10px !important;
     }
+}
 
-    .left-column h1 {
-        font-size: 2rem;
-    }
-
-    .left-column h2 {
-        font-size: 1.8rem;
-    }
-
+@media screen and (max-width: 440px) {
     .faq-container {
-        width: 90% !important;
+        width: 350px !important;
     }
 
-    .main-carousel .card {
-        flex: 0 0 calc((100% - 40px) / 1);
+    .left-column p{
+        font-size: 14px !important;
+        width: 100%;
     }
 
-    .carousel-btn.prev-btn,
-.carousel-btn.next-btn {
-    font-size: 1.5rem;
-    position: absolute; /* Ensure the buttons are positioned relative to their container */
-    top: 50%; /* Center vertically */
-    transform: translateY(-50%); /* Offset by half of their height to center accurately */
-    left: 15rem; /* Adjust the position for the previous button */
-    right: 15rem; /* Adjust the position for the next button */
-    margin-top: 8rem;
-}
-
-
-
-
-    .right-column .game-details h2,
-    .right-column .game-details h3,
-    .right-column .platforms h2,
-    .right-column .tags-container h2,
-    .right-column .rating-text h2 {
-        font-size: 1.5rem !important;
-        margin-left: 25px;
+    .image-container{
+        width:350px !important;
     }
 
-    .right-column .game-desc p,
-    .right-column .tags-container ul li,
-    .right-column .rating-text p {
-        font-size: 0.85rem !important;
-        padding: 10px;
-    }
+    .trailer {
+        margin: 20px 0px !important;
+         width: 400px !important;
 
-    .right-column .tags-container ul li {
-        margin-left: 40px;
     }
-
-    img, iframe, video {
-        max-width: 100%;
-        height: auto;
+    .right-column{
+        width: 80% !important;
     }
-
-    body {
-        margin-bottom: 16rem;
+    .author i {
+        font-size: 0.75rem !important;
+    }
+    
+    .author-name {
+        font-size: 1rem !important;
     }
 }
 
+@media screen and (max-width: 375px) {
+    .faq-container {
+        width: 300px !important;
+    }
 
-/* For iPhone 12 Pro (390px width) */
-@media screen and (max-width: 390px) and (min-height: 844px) {
-    body {
-        margin-bottom: 2rem; /* Adjust this value as per the footer visibility */
+    .left-column p{
+        font-size: 14px !important;
+        width: 100%;
+    }
+
+    .image-container{
+        width:300px !important;
+    }
+
+    .trailer {
+        margin: 20px 0px !important;
+         width: 400px !important;
+
+    }
+    .right-column{
+        width: 80% !important;
     }
 }
 
-/* For Samsung Galaxy S8+ (360px width) */
-@media screen and (max-width: 360px) and (min-height: 740px) {
-    body {
-        margin-bottom: 5rem; /* Adjust this value as per the footer visibility */
+@media screen and (max-width: 350px) {
+    .faq-container {
+        width: 250px !important;
     }
-    .carousel-btn.prev-btn,
-    .carousel-btn.next-btn {
-        font-size: 1.5rem;
-        position: absolute; /* Ensure the buttons are positioned relative to their container */
-        top: 50%; /* Center vertically */
-        transform: translateY(-50%); /* Offset by half of their height to center accurately */
-        left: 15rem; /* Adjust the position for the previous button */
-        right: 15rem; /* Adjust the position for the next button */
-        margin-top: 7rem;
-    }    
+
+    .left-column p{
+        font-size: 12px !important;
+        width: 100%;
+    }
+
+    .image-container{
+        width:250px !important;
+    }
+
+    .trailer {
+        margin: 20px 0px !important;
+         width: 300px !important;
+
+    }
+    .right-column{
+        width: 80% !important;
+    }
 }
 
+@media screen and (max-width: 1300px) {
+    .main-carousel {
+        display: none !important;
+    }
+}

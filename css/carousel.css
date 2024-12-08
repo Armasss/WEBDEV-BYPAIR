@@ -1,6 +1,6 @@
 /* Full-Screen Carousel */
 .home-content {
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,7 +110,7 @@
     z-index: 20;
     letter-spacing: 4px;
     padding: 25px 0px;
-    margin-bottom: 55px;
+    margin-bottom: 60px;
 }
 
 .word {
@@ -178,6 +178,3 @@
     box-shadow: 0 8px 16px rgba(255, 215, 0, 0.6);
 }
 
-footer {
-    position: absolute;
-}

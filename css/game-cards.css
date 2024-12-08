@@ -66,17 +66,6 @@
     opacity: 0;
   }
   
-  .container:hover .banner {
-    opacity: 0;
-  }
-  
-  .container:hover video {
-    opacity: 1;
-  }
-
-  .container:hover {
-    transform: scale(1.1);
-  }
   
   .rating {
     position: absolute;
@@ -92,10 +81,6 @@
     background-color: black;
   }
   
-  .container:hover .rating {
-    opacity: 0; /* Stars fade out with the image */
-    transition: opacity 0.5s ease;
-  }
   
   .rating i {
     padding: 0px 2px;

@@ -1,0 +1,91 @@
+
+
+.about-main{
+    max-width: 80rem;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+}
+.about-main h1{
+    margin-bottom: 60px;
+    font-size: 3rem; /* Increased size for visibility */
+    color: #ffffff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: transform 0.3s, color 0.3s; /* Add hover transition */
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.8); /* Add text shadow for better visibility */
+
+}
+
+.about-main h1:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    color: #ffd700; /* Hover color */
+}
+
+.img-grp{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    height: fit-content;
+}
+
+.img-ctn{
+  width: 18.75rem;
+  height: 25rem;
+  overflow: hidden;
+  border-radius: 10px; 
+  box-shadow: 0 0 10px 1px rgba(255, 255, 255, 1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+img{
+    object-fit: cover;
+    width: 18.75rem;
+    height: 25rem;
+}
+
+.img-ctn:hover{
+    box-shadow: 0 0 10px 5px rgba(255, 215, 0, 0.7);
+}
+
+#top{
+    margin-top: 6.25rem;
+}
+#btm{
+    margin-bottom: 6.25rem;
+}
+
+.about-content{
+    margin-top: 3.75rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content h2{
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+    transition: transform 0.3s, color 0.3s;
+    gap: 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-main h2:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    color: #ffd700; /* Hover color */
+}
+
+.about-content p{
+    font-size: 1.5rem;
+    margin-bottom: 1.25 rem;
+    text-align: justify;
+}
+

@@ -1,0 +1,86 @@
+@media screen and (max-width: 1400px) {
+    :root{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1015px) {
+    :root{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .img-grp{
+        flex-direction: column;
+        margin-bottom: -40px;
+    }
+    .img-ctn{
+        margin: 20px 0px;
+        width: 400px !important;
+        height: 500px !important;
+    }
+    img{
+        object-fit: cover;
+        width: 100% !important;
+        height: 100% !important;
+    }
+    #top{
+        margin-bottom: 6.25rem !important;
+    }
+    #btm{
+        margin-top: 6.25rem !important;
+    }
+    .img-ctn {
+        display: none !important ;  /* Hide images by default */
+        opacity: 0 !important; /* Start with zero opacity */
+        transition: opacity 1s ease-in-out !important; /* Smooth fade-in/fade-out transition */
+      }
+      
+      .img-ctn.active {
+        display: block !important; /* Show active image */
+        opacity: 1 !important; /* Set opacity to 1 to make the image visible */
+      }
+    .about-content .p, h2{
+        width: 80%;
+    }
+    h2{
+        text-align: center;
+        margin-bottom: 30px !important;
+    }
+    .about-main h1{
+        margin-bottom: -20px !important;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .img-grp{
+        flex-direction: column;
+    }
+
+    #top{
+        margin-bottom: 6.25rem;
+    }
+    #btm{
+        margin-top: 6.25rem;
+    }
+    
+    .img-ctn{
+        width: 300px !important;
+        height: 400px !important;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    :root{
+        font-size: 8px;
+    }
+    .img-ctn{
+        width: 200px !important;
+        height: 300px !important;
+    }
+}
+
+

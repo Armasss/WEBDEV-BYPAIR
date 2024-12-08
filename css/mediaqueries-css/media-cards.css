@@ -1,0 +1,23 @@
+@media screen and (max-width: 550px) {
+    .card {
+        width: 22rem !important;
+      }
+}
+
+@media screen and (max-width: 440px) {
+    .card {
+        width: 18rem !important;
+      }
+}
+
+@media screen and (max-width: 370px) {
+    .card {
+        width: 15rem !important;
+      }
+}
+
+@media screen and (max-width: 370px) {
+    footer p {
+        font-size: 10px;
+      }
+}
