@@ -65,6 +65,11 @@
   .card video {
     opacity: 0;
   }
+
+  .card img {
+    opacity: 1;
+  }
+  
   
   
   .rating {
