@@ -212,14 +212,12 @@
     .faq-container {
         width: 90% !important;
     }
-  
-}
-
-@media (min-width: 768px) and (max-width: 1199px) {
     body {
         margin-bottom: 16rem;
     }
+  
 }
+
 
 /* For iPhone 12 Pro (390px width) */
 @media screen and (max-width: 390px) and (min-height: 844px) {
