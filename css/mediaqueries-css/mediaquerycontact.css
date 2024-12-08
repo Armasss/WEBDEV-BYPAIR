@@ -14,10 +14,7 @@
         font-size: 1.8rem; /* Slightly smaller logo text */
     }
 
-    header a {
-        font-size: 0.9rem; /* Scale down nav links */
-    }
-
+  
     .contact-section h2 {
         font-size: 2.5rem; /* Reduce heading size */
         margin-top: 150px; /* Adjust spacing */
@@ -63,9 +60,6 @@
         font-size: 1.5rem; /* Smaller logo text */
     }
 
-    header a {
-        font-size: 0.8rem; /* Reduce nav link font size further */
-    }
     .contact-section {
         margin-top: 40px;
     }
