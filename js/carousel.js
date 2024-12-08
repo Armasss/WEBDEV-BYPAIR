@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
         imageInterval = setInterval(() => {
             currentImageIndex = (currentImageIndex + 1) % images.length;
             showImage(currentGameIndex, currentImageIndex);
-        }, 2500);
+        }, 2250);
     }
   
     // Start cycling words for cinematic text
