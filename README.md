@@ -1,7 +1,6 @@
 # WebDev Activity 4: Game Review Website 
-## (By Pair - Armas and Tegrado)
 
-## Project Overview
+## Project Overview (By Pair - Armas and Tegrado)
 This website is a static game review platform designed using **HTML**, **CSS**, and **JavaScript**. It highlights our passion for gaming and our intrigue in the gaming world and community. The website showcases our personal reviews of games that we enjoy, created with creativity and technical skills. The website is hosted using **Netlify**.
 
 ## Features
