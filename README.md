@@ -24,8 +24,8 @@ This website is a static game review platform designed using **HTML**, **CSS**, 
 2. Open the project folder.
 3. Access the index.html file:
    - Navigate to the index.html file inside the project directory.
-  - Open it in any modern web browser (e.g., Chrome, Firefox).
-  - Explore the pages by clicking on the links or navigating through the menu.
+   - Open it in any modern web browser (e.g., Chrome, Firefox).
+   - Explore the pages by clicking on the links or navigating through the menu.
 
 ## Tools Used
 - **HTML** for structuring content.
