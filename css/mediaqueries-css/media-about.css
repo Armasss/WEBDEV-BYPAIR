@@ -32,7 +32,7 @@
         margin-top: 6.25rem !important;
     }
     .img-ctn {
-        position: relative;
+        position: none;
         display: none !important ;  /* Hide images by default */
         opacity: 0 !important; /* Start with zero opacity */
         transition: opacity 1s ease-in-out !important; /* Smooth fade-in/fade-out transition */

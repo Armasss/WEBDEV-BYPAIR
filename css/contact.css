@@ -89,6 +89,7 @@ html, body {
 .form-container {
     margin: 0 auto;
     text-align: center;
+    height: fit-content;
     max-width: 90%; /* Scales properly on smaller screens */
 }
 
@@ -160,7 +161,7 @@ textarea {
     justify-content: center;
     gap: 10px;
     width: 250px; /* Automatically fits content width */
-    margin-bottom: 20px; /* Added space below the button */
+
 }
 
 .send-btn:hover {
