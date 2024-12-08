@@ -1,9 +1,15 @@
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 1000px) {
     .desktop_nav{
         display: none;
     }
     .hamburger_nav{
         display: flex;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .logo p{
+        font-size: 16px !important;
     }
 }
 

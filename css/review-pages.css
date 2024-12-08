@@ -2,6 +2,7 @@
 html, body {
     overflow-x: hidden;
 }
+
 /* Breadcrumb */
 .breadcrumb {
     color: #ffd700; /* Gold text color */
@@ -38,17 +39,21 @@ html, body {
 .main {
     max-width: 1280px;
     margin: 0px auto;
+    padding: 0px 20px;
     display: flex;
     flex-direction: column;
 }
 
 /* Author Section */
 .author {
-    display: flex;
+    align-self: flex-start;
     align-items: center;
     color: #ffffff;
     font-size: 1.2rem;
     margin-bottom: 20px;
+}
+.left-column h1{
+    align-self:flex-start;
 }
 
 .author i {
@@ -75,6 +80,9 @@ html, body {
 /* Left Column */
 .left-column {
     width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .left-column p {
@@ -108,11 +116,13 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 60rem;
+    aspect-ratio: 16/9;
 }
 
 iframe {
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.7);
+    box-shadow: 0 0 10px 2px rgba(255, 215, 0, 0.7);
     width: 80%;
     aspect-ratio: 16 / 9;
     margin: auto;
@@ -141,12 +151,12 @@ iframe {
 
 .image-container .hover-text {
     position: absolute;
-    bottom: 10px;
+    bottom: -15px;
     left: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5px 10px;
+    padding: 5px 5px;
     border-radius: 5px;
     color: #ffd700;
     font-size: 16px;
@@ -197,7 +207,7 @@ iframe {
 }
 
 .faq-container {
-    width: 50%;
+    width: 700px;
 }
 
 .faq {
@@ -494,17 +504,3 @@ iframe {
     padding: 0px 1.5px;
 }
 
-.faq-container {
-    width: 50%;
-}
-
-.faq {
-    margin-bottom: 1rem;
-    width: 100%;
-}
-
-h4 {
-    color: #ffd700;
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-}

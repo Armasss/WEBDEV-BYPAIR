@@ -9,10 +9,11 @@
     />
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/mediaqueries.css" />
-    <link rel="stylesheet" href="/css/game-cards.css" />
+    <link rel="stylesheet" href="/css/mediaqueries-css/media-about.css" />
+    <link rel="stylesheet" href="/css/about.css" />
     <!-- Font Awesome for stars -->
 
-    <title>Document</title>
+    <title>Game Reviews</title>
   </head>
   <body>
     <header>
@@ -52,23 +53,24 @@
               <div class="link-grp">
               <a href="/index.html"><i class="fas fa-home"></i> Home</a>
               <a href="/pages-htmls/review_home.html"><i class="fas fa-star"></i> Reviews</a>
-              <a href="#Projects"><i class="fas fa-info-circle"></i> About</a>
+              <a href="/pages-htmls/about.html"><i class="fas fa-info-circle"></i> About</a>
               <a href="/pages-htmls/contact.html"><i class="fas fa-envelope"></i> Contact</a>
               </div>
           </div>
       </div>
       </div>
   </header>
-    <section class="review-home-section">
-        <h2><i class="fas fa-code"></i> Meet the Developers</h2>
-        <div class="img-ctn">
-            <img src="https://via.placeholder.com/300x400" alt="">
-            <img src="https://via.placeholder.com/300x400" alt="">
-            <img src="https://via.placeholder.com/300x400" alt="">
-            <img src="https://via.placeholder.com/300x400" alt="">
+    <section class="about-main">
+        <h1><i class="fas fa-code"></i> Meet the Developers</h1>
+        <div class="img-grp">
+            <div class="img-ctn" id="btm" ><img src="/assets/images/armas1.webp" alt=""></div>
+            <div class="img-ctn" id="top"><img src="/assets/images/armas2.webp" alt=""></div>
+            <div class="img-ctn"  id="btm"><img src="/assets/images/jerome1.webp" alt=""></div>
+            <div class="img-ctn" id="top"><img src="/assets/images/jerome2.webp" alt=""></div>
         </div>
-        <div>
-          <p></p>
+        <div class="about-content">
+          <h2>Why We Created This Website ?</h2>
+          <p>We decided to create this website as part of our web development project, combining our skills in coding with our shared passion for gaming. This site serves as a platform where we can showcase not only our technical abilities but also our love for video games. By blending our enthusiasm for gaming with the practical experience of building a website from the ground up, we aim to create something that is both enjoyable and meaningful. Our goal is to provide a space where fellow gamers can connect, find helpful content, and share in the experiences that make gaming so special to us.</p>
         </div>
     
     
@@ -81,7 +83,41 @@
     <footer>
         <p>© 2024 Mark Rainier Armas & Jerome Brent Tegrado. <span style="color: #ffd700;">All rights reserved.</span></p>
     </footer>
+    <script>
+
+      const imgContainers = document.querySelectorAll('.img-ctn');
+      let currentIndex = 0;
+      let intervalId;
     
+  
+      function cycleImages() {
+   
+        imgContainers.forEach((img) => img.classList.remove('active'));
+        imgContainers[currentIndex].classList.add('active');
+        currentIndex = (currentIndex + 1) % imgContainers.length; 
+      }
+    
+
+      function startImageCycleIfNeeded() {
+        const screenWidth = window.innerWidth;
+  
+        if (screenWidth <= 870) {
+          if (!intervalId) {
+            intervalId = setInterval(cycleImages, 3000); 
+          }
+        } else {
+
+          if (intervalId) {
+            clearInterval(intervalId);
+            intervalId = null; 
+          }
+        }
+      }
+    
+      startImageCycleIfNeeded();
+    
+      window.addEventListener('resize', startImageCycleIfNeeded);
+    </script>
     <script src="/js/scripts.js"></script>
     <script src="/js/cards.js"></script>
   </body>
