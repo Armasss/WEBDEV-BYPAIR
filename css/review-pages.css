@@ -1,5 +1,7 @@
 /* Base Styles */
-
+html, body {
+    overflow-x: hidden;
+}
 /* Breadcrumb */
 .breadcrumb {
     color: #ffd700; /* Gold text color */
@@ -77,6 +79,7 @@
 
 .left-column p {
     margin: 30px 0px;
+    text-align: justify;
 }
 
 .left-column hr {

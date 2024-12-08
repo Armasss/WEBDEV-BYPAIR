@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-
     // Carousel Logic
     const track = document.querySelector('.carousel-track');
     const slides = Array.from(track.children);
@@ -22,13 +21,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const nextButton = document.querySelector('.next-btn');
 
     let currentSlideIndex = 0;
-    const visibleCards = 5; // Number of visible cards
+
     const slideWidth = slides[0].getBoundingClientRect().width;
 
+    // Determine visible cards and max cards based on screen size
+    const isPhone = window.matchMedia("(max-width: 767px)").matches;
+    const visibleCards = isPhone ? 1 : 5; // Phones: 1 card, Others: 5 cards
+    const maxCards = isPhone ? 10 : 11; // Phones: 10 cards, Others: 11 cards
+
     const updateCarousel = () => {
-        const maxSlideIndex = slides.length - visibleCards; // Index to stop at the last fully visible set
-        const extraSpace = 1; // Allow space for the 11th card buffer
-        const adjustedMaxSlideIndex = slides.length - visibleCards + extraSpace;
+        const maxSlideIndex = maxCards - visibleCards; // Limit scrolling to max cards
 
         track.style.transform = `translateX(-${currentSlideIndex * slideWidth}px)`;
 
@@ -42,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         // Disable next button if at the last fully visible set
-        if (currentSlideIndex >= adjustedMaxSlideIndex) {
+        if (currentSlideIndex >= maxSlideIndex) {
             nextButton.disabled = true;
             nextButton.style.opacity = "0.5";
         } else {
@@ -52,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     nextButton.addEventListener('click', () => {
-        const maxSlideIndex = slides.length - visibleCards + 1; // Stop at the last fully visible set with buffer
+        const maxSlideIndex = maxCards - visibleCards; // Stop at the last valid slide
         if (currentSlideIndex < maxSlideIndex) {
             currentSlideIndex++;
             updateCarousel();
@@ -69,5 +71,3 @@ document.addEventListener("DOMContentLoaded", () => {
     // Initialize carousel
     updateCarousel();
 });
-
-

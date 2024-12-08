@@ -101,7 +101,7 @@
     }
 
     .left-column h2 {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .faq-container {
@@ -121,7 +121,6 @@
     }
 }
 
-/* Mobile */
 @media screen and (max-width: 767px) {
     .container {
         display: flex;
@@ -134,7 +133,53 @@
         max-width: 100%;
         margin: 10px 0;
     }
+    .left-column p {
+        font-size: 10px; /* Adjust font size */
+        color: #ffffff; /* White text */
+        margin: 10px 0; /* Add spacing outside the element */
+        padding: 10px; /* Add space inside the element on all sides */
+        background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a background for visibility */
+        border-radius: 5px; /* Optional: Add rounded corners */
+    }
 
+    /* Style for main title (h1) */
+.left-column h1 {
+    font-size: 1rem;
+    color: #ffd700;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#introduction {
+    margin-left: 0.6rem;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+#our-opinion {
+    margin-left: 0.6rem;
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+
+#conclusion {
+    margin-left: 0.6rem;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+
+
+.author {
+    display: flex;
+    align-items: center;
+    font-size: 0.5rem; /* Adjust font size */
+    color: #ffffff; /* White text */
+    margin-bottom: 20px;
+}
+
+    
     .right-column {
         display: block;
         margin-top: 20px;
@@ -145,7 +190,6 @@
         max-width: none; /* Allow full width */
     }
 
-    
     .breadcrumb {
         font-size: 0.8rem;
         padding: 8px 15px;
@@ -168,15 +212,18 @@
     }
 
     .carousel-btn.prev-btn,
-    .carousel-btn.next-btn {
-        font-size: 1.5rem;
-        left: 0.5rem;
-        right: 0.5rem;
-    }
+.carousel-btn.next-btn {
+    font-size: 1.5rem;
+    position: absolute; /* Ensure the buttons are positioned relative to their container */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Offset by half of their height to center accurately */
+    left: 15rem; /* Adjust the position for the previous button */
+    right: 15rem; /* Adjust the position for the next button */
+    margin-top: 8rem;
+}
 
-    .author {
-        font-size: 1rem;
-    }
+
+
 
     .right-column .game-details h2,
     .right-column .game-details h3,
@@ -184,12 +231,18 @@
     .right-column .tags-container h2,
     .right-column .rating-text h2 {
         font-size: 1.5rem !important;
+        margin-left: 25px;
     }
 
     .right-column .game-desc p,
     .right-column .tags-container ul li,
     .right-column .rating-text p {
         font-size: 0.85rem !important;
+        padding: 10px;
+    }
+
+    .right-column .tags-container ul li {
+        margin-left: 40px;
     }
 
     img, iframe, video {
@@ -197,40 +250,33 @@
         height: auto;
     }
 
-    /* Target the main game title (h1) */
-.main .left-column h1 {
-    font-size: 3rem; /* Example: customize size */
-    color: #ffd700; /* Example: change color */
-    text-align: center; /* Example: align center */
+    body {
+        margin-bottom: 16rem;
+    }
 }
 
-/* Target section titles like 'Introduction', 'Our Opinion', 'Conclusion' (h2) */
-.main .left-column h2 {
-    font-size: 2.5rem;
-    color: white;
-    border-bottom: 2px solid #ffd700;
-    margin-bottom: 10px;
-    margin-left: 40px;
+
+/* For iPhone 12 Pro (390px width) */
+@media screen and (max-width: 390px) and (min-height: 844px) {
+    body {
+        margin-bottom: 2rem; /* Adjust this value as per the footer visibility */
+    }
 }
 
-/* Target all game descriptions (p tags) inside .left-column */
-.main .left-column p {
-    font-size: 0.80rem; /* Customize font size */
-    line-height: 1.6; /* Adjust line height for readability */
-    color: #ffffff; /* Example: white text */
-    margin: 20px 0; /* Add spacing */
-    margin-left: 50px;
-    width:250px;
-}
-
-/* Target hover text inside .image-container (specific p tags) */
-.main .left-column .image-container .hover-text {
-    font-size: 0.9rem; /* Smaller text for hover descriptions */
-    color: #ffd700; /* Highlight hover text */
-    background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
-    padding: 5px 10px; /* Add padding */
-    border-radius: 5px;
-}
-
+/* For Samsung Galaxy S8+ (360px width) */
+@media screen and (max-width: 360px) and (min-height: 740px) {
+    body {
+        margin-bottom: 5rem; /* Adjust this value as per the footer visibility */
+    }
+    .carousel-btn.prev-btn,
+    .carousel-btn.next-btn {
+        font-size: 1.5rem;
+        position: absolute; /* Ensure the buttons are positioned relative to their container */
+        top: 50%; /* Center vertically */
+        transform: translateY(-50%); /* Offset by half of their height to center accurately */
+        left: 15rem; /* Adjust the position for the previous button */
+        right: 15rem; /* Adjust the position for the next button */
+        margin-top: 7rem;
+    }    
 }
 
