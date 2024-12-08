@@ -20,7 +20,7 @@ This website is a static game review platform designed using **HTML**, **CSS**, 
 ### Local Development
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-github-username/your-repo-name.git
+   git clone https://github.com/Armasss/WEBDEV-BYPAIR.git
 2. Open the project folder.
 3. Access the index.html file:
    - Navigate to the index.html file inside the project directory.
