@@ -68,7 +68,6 @@ function handlePlay() {
   video.style.opacity = "1";
   rating.style.opacity = "0";
   img.style.opacity = "1";
-  video.currentTime = 0;
   video.play();
 }
 
