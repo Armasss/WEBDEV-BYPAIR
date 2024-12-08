@@ -13,7 +13,7 @@
 
 @media screen and (max-width: 370px) {
   .card {
-    width: 15rem !important;
+    width: 17rem !important;
   }
   footer p {
         font-size: 16px;
