@@ -205,21 +205,6 @@
         font-size: 0.8rem; /* Scale down footer text size */
         padding: 5px 10px; /* Adjust footer spacing */
     }
-    body {
-        margin-bottom: 10rem;
-    }
+  
 }
 
-/* For iPhone 12 Pro (390px width) */
-@media screen and (max-width: 390px) and (min-height: 844px) {
-    body {
-        margin-bottom: 2rem; /* Adjust this value as per the footer visibility */
-    }
-}
-
-/* For Samsung Galaxy S8+ (360px width) */
-@media screen and (max-width: 360px) and (min-height: 740px) {
-    body {
-        margin-bottom: 5rem; /* Adjust this value as per the footer visibility */
-    }
-}
