@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
         imageInterval = setInterval(() => {
             currentImageIndex = (currentImageIndex + 1) % images.length;
             showImage(currentGameIndex, currentImageIndex);
-        }, 1000);
+        }, 2000);
     }
   
     // Start cycling words for cinematic text
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 word.classList.toggle("yellow", i === currentWordIndex);
             });
             currentWordIndex = (currentWordIndex + 1) % words.length;
-        }, 1000);
+        }, 2000);
     }
   
     // Show a specific game
